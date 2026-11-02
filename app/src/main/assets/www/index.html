@@ -1,0 +1,3011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#EFF1F8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1226" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icon-192.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="First light">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAN60lEQVR42u2dy48c13XGz3furUe/pudNRiL1YOgolBELSBCvggTZBtkFjhEY8MYIsgtg5G8w/AdkEeRvSJbZeuFssklgMI5FRXLEoUToMZxXv7se954sqmdISUOha0hWV9ecD1wQxDSn+tavvvOde29V4S9+8I+kUl0mCx0D1XPhUDpUCodK4VApHCoNpCp1DpXCoVq3sqJ0qNQ5VAqHSrsVlTqHSuFQKRwqzRyqpjiH4qHSsqJSOFQKh0oDqUqdQ6VwqLSsqNQ5VI2HQ+lQqXOoNHOo1DlUCodKy4pKnUOlcKiaAofSoVLnUGkgValzqBQOlcKh0syhUudQKRyqxpcVpUOlzqFSOFTarajUOVQKh0rhUCkcqqYEUqVDpc6hUjhUCoeqisxxfbXkdxd1juuDQnGyRbD4y3MgwTkVgHzz4wpHg4AQEkLBAUgMPLMLTC4Cy7llJ181Ei+cugCQ3Bsnxgu8gAhEAiJAcA1AaWZZWSBQACEAxLILOA9NFprMcm45Z4iBL04xLi8lICIv8MK5N7m3qQ9SF2TeZt56ASCgJlPSNOcAkRQlQ8DwkUljk7RsEnJm2J1XChQ1RRZnFv4bleVpTSGy8NY6UFL8gxPOnJ27aJZHqQ9zb4iI4dE4RJpzx1txbrwwSFpB0rbzlp0HnAFCBBESYnlOFsW3ptXCRS4+C1BsszhIN2mceTPP42kez/PYCYOEIY0xkvUvKyAQicALLOe9cNoNJpFJmcQXDnFeNF7iNxVa1JOAXRiON8Jx6sNJ1ppkrdSHBSINYGS9ywrwFIvNcNILJwFyIXhZVIpX/+0WITc0WWTSzWg0ydvDpJu4EBBmEVE4VldEFlgEE8u5CBwxqmDikiPyBIA2wnE3mE6y9jDtJi5kCGhdCVlLOEDkBSDZigYb4cRyXvQUL7d2XK1tLg6jF447wXSStQfpRubtmsbV9YFDFnXEC4SoHcy3okHIqdDqsbjkYIVB1I/GnWA2SDZGWUcIT4MI1gWONQqeIOfZcr4dDTrB9OIyrS3fXtiw322ddsPpyXxz7iK+pGtW53hJY90JZjvxqeW85lh8LYtENr3ZeXKWbAzTXjG7KmsCB2pvGVLMWW3Fw344JCJPhrAuBl1UEibIdmsQ2exkvunFMLzU/uDr7hwg8sLMfjc+adnZV+PFWpgenja9gm4wjUx2NN9OXGTgpe5w1HtcnXBk0u3oJDKpF173KTsRDji/0To6SbameZup1nzU1zkKz4htshcfGfZeuBm7XYXA8Hvx8UniR1m3zv5RUzguyNiNj4ry3KwFQgjRTnwK0Djrcl35sFy//AYiTxybZK91BPJC4Ff7C+k5S/avMNYUszY78SmIxnmXydcRjrp5NRN54cgke4VnyEu2DBQ7v4Q8sQg8MT1du3/mxyBExOQBYfLFR15if7HYBSLYjk+R1NQ/bH0ynpzPi8c22YkW1eSlnA6cX6teTC5cbPUIOIs4bdkpiPrhGZ42xiKEQbopRLO8nfgw84H3vNg/BndRF14WJ9tRUV86xRRqfa7WunQrQsQgEVh2u/Fx4Rn8wqgVJ9GLcWJA0raTzXDQC4YbwbATTEJOA86IiPF1Vy965swHqQ8nWWeYbYyyjbO0P807QjBwC0oEL3g6hYiA7ejUiZm7FsNLbSZA6jUJxiy70Yll74Vf0NKKupD7QAgdM9mJj/bjw63oJDIJSIoVGRHkYp+NGF+TgWvbaTcY36QvhJC46DTZPpzvH893J64DEss56NJ9hiVcrUg9O/Hp0dykPqyPf9SiW5FF1MBmeBbbxAu/yFEVO/wyCZhkOzq51Xl8I/48NAkRnDeZD579MXzrRHaxBdWJOR+s/Gb785vtz1IXfTn/nceTW2fpticEyIiunkhARATDfjs6fTLfL8hQOJ4lg7vhuGsnhZ9feZRBkosVor3o8O3exzvRE4Y4bzIfFiig/LLGxUeEULBl4G53Hr3e/uQ42Xs4unOU7IHIIpcXyCIiCDndjM5Ok62amMfqMweIhBCZdDM4oxfpWiEiyCTcCAZ3er99rfW48A8nV2TiW0C5oGQvOtyLDj+b3fp4dHeY9S0yhly5yghx104yH07yDkNWHj5W7Bzn14dsRqfMIlcdVkBybxn+93ofvN39P8N5cfLwypY/L4oXEb3Wfnwj/uLh+Hc/Ht91Yoo9aVe+TjbDQSZh7oOLu2OuIxwXBaUXDiOTXG2CvCglqQ/74em7/V9vhSeZDzIfoJJV8QUiPgDJdzY+2I0P3x/8wSDdKnYhXe0ImHw/HBwnu7zqdeeVZw4EnPXsiKh0e3LhOqmPbncOfn/jNwZ5sfkb1e6XKH5d6sN+cPb9nf/4YPjdT6dvhZyArtLoCqFl5h07neadb/bY1wKOc9ugjWBo2En5HFocuBN7b+PXb3Y+9sK5WKxuG02RhZn8d/v3u3b00ehdA4er/D9ERBvBMPHx+f2b1y+QFpdI20zlqh2KE3tv4/4bnYeJj6o3jEv5EEIu9k73I4v8wfA9g/zKhtq141HeX+Gyy2omwRa2QegG46vlDCLKxd7r37/dPijIqM9UHkgSH93uHBDowfA9i5zK7wsU4o6dzHx3hdunV1dWBLGZx2buy7Sv8gwZ727cv9U+KEIG1UxFRr7dPgDRg9F7FjlKpkshssg7djLK+qtKHqspKyDyoJ4dgYjLe4YTc69XXzKe5eNW+4CI/nf0vbL5A0RE3DHjmeusyjxW4BzFVoaY55GZl50PAEkm4Rvt395qP0xrVk2ez8fDqet+Mr0bIC07rWU579jJqpLHCuAAkRfq2DFKrliBJJdgN/rybvf9+pPxDB/R3e77U9c7TvctslJ8CHHbTKauu5LUUTUcxfkMOYtMUnayXIRbZvZO737xnAVaE4HEC7/Tu/+rsz/JfMgl58YsstjMZ64D+IoBYZyvAVb2h4hbZmYWu2bKDDGZO50HMU89Ma2VPHHM0zudB55MaayBtp0AwpWfqaqdo9ihF5upUInJcpDkEu7Hj/ejx5mEWLd7kouotB89Ps5uHCa3bJnwIYSQk4AzJ1V3D1XPcwghRFKsbnPJT73Z+lBkzTzja2XxzdaHZ+meJ1OyR/OxSSYuIqq0snC1BYWIEJs5UwmTZIiX4PXWQccMHFms5/NyQOLIdszg9daBl4AhZcYNMc9KDdr6lZWipoSclLoD2hPHZnozeuQkQC238C9vAE6Cm9GjL5M3MglRIpkiQGY492KqdI5K4Shm/SyXqLggcRLciD+KeLqOaeOboEc8vRE/+mR2r1TyYHKRSWauW+XlUTEcHHJqyMvS7YYQh5jvh586sVj/h/SBxIndDz/9Yv62J8tLfyMQhUjm6FKFMx7VwVGsLIScLP90iqJO74SfxTzNJUAjnuBYtLVb4eGT9LalZefEhDjglJ2v8mKurjsqAodFVuoeNojsBJ9T47QTfH6U3iplAoachXNkmukchpxlt/zEaHGR9cyJF4OmPB4YJF5Mz5zEZppKXKayeLuY7ZCmwUEEC7f86nMRRTftUcBJY2rKBfQBJ5v26MvsLV46loIkMHnmUCUcqMo52MJh6Zt/iozSt4fUUPXt4WH2lpS4g4kNcgCVvZavuszBRAauzJYXBEjaZrhey2xLVxZum2GAxJMpFTte6N7LGpcVMZxhWacSJ7ZlhiFmQqZ5r6wQMiFmLTMZuy2DfLkLBga58V6qeopipc/nMPBLmgCIHHHLjBguX/9HgV0ez+FaZjT2O8sbo1k8ch/VXCvVPdmn7B0cIIp50uiXIUnMk7Lc43x7dqPKCpOznC3/YFmGj3kg0tjXjIkg5gGzp+UTKTnLWSZxNSGsOjhQ8skCIOKmv2yPScqOSdGrVJQ5qpwhLVODYJGGmAo1rVW5aFiEOMTUInVl1lpBVcJRlXWAUKZHByNjyoka/PZKMOUM72nZKT4QFWNYGRwVlpUycICYwLV5ys2rwgPES7f3F2NYlXOQVLY/wJN3tOx2BBA5kpyabB5CxOQdkVu6KRMSR+KraeIsB0FlVRaIlt6rAhA77oFSaSgcIHEUwsYoUVaEKeSqVppQ71fUXYdXg9cXfftP//xvNT7VuAZwSG1HBK+9+UN1DnWOy51jd7dPKtWlcOS501FQXSrWIVApHCqFQ6VwqBQO1Uq7lbrDy9zgiTAvUucZ6rrDMRpNG3xpxnForaktHzWFA0TOCxH92Z9+j3llT2l9dRIRAP/zm4PTs3EUBfXko6ZwMPN4Mv35z37yN3/95w12jvcfPPrhj37mnGPmGvKhgVT1fP9+972f1LmsfP+P39GyomXlq2N3/v6VX/77fzc7kNaWjDXoVnq9trayCsdzhs97UmkgVSkcqrWRbcw3MYZRj9drO+/rvW37msEhIqenI+9XfUpARNTttILANoAP2wwyAPzd3/7l1mZXKnuyyWXtd2Eb//Kvv3xyNGgAH2sPh7Xm+Hjw07//q3/46Q9qckh/9Iff+dGPfx5FgXMKx4p7XYmi8D//68NHnxx2OzGAFTqH90Ikv/jFr9hwA1JHTafPy30HYDZL+v1OFAWy2psnQd7L0dEgjkMNpHXJHO12NJslk8mcsOI7oQC029Hqo7HC8WxxMcYYU5eD0XmO2vkHqV6qdIZUpXCoFA6VwqFSOFQKh0rhUCkcKoVDpXCoFA6VSuFQKRwqhUOlcKgUDpXCoVI4VAqHSuFQKRwqlcKhUjhUCodK4VApHCqFQ6VwqBQOlcKhUjhUKoVDpXCoFA6VwqGqRP8PXLwUarrnAuAAAAAASUVORK5CYII=">
+<title>First light – daily routine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F2F4FA;
+    --surface: #FFFFFF;
+    --ink: #151A38;
+    --muted: #5B6285;
+    --line: #E3E7F3;
+    --shadow: 0 10px 30px -18px rgba(28, 36, 100, .35);
+    --sun: #FFB629;
+    --water: #3B9CFF;
+    --rose: #FF6B9D;
+    --sage: #19B37D;
+    --lilac: #8B6CFF;
+    --on-acc: #17142B;
+    --dm: 0%;
+    --acc1: #FF7A59; --acc2: #FFB84D;
+    --p-a1: #2D2B6E; --p-a2: #7A5BA6; --p-b1: #5BB4F0; --p-b2: #FFD08A;
+    --p-la: #1D2052; --p-lb: #1F8A83;
+    --sky-a1: color-mix(in srgb, #000 var(--dm), var(--p-a1));
+    --sky-a2: color-mix(in srgb, #000 var(--dm), var(--p-a2));
+    --sky-b1: color-mix(in srgb, #000 var(--dm), var(--p-b1));
+    --sky-b2: color-mix(in srgb, #000 var(--dm), var(--p-b2));
+    --land-a: color-mix(in srgb, #000 var(--dm), var(--p-la));
+    --land-b: color-mix(in srgb, #000 var(--dm), var(--p-lb));
+    --display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+    --body: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #080B1D; --surface: #131732; --ink: #EEF0FF; --muted: #9AA1CB; --line: #232850;
+      --shadow: none; --dm: 38%;
+      --water: #5DB0FF; --rose: #FF86B0; --sage: #34CE98; --lilac: #A18AFF;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #080B1D; --surface: #131732; --ink: #EEF0FF; --muted: #9AA1CB; --line: #232850;
+    --shadow: none; --dm: 38%;
+    --water: #5DB0FF; --rose: #FF86B0; --sage: #34CE98; --lilac: #A18AFF;
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+  }
+  .app { max-width: 460px; margin: 0 auto; padding: 28px 22px 64px; }
+  button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 6px; }
+
+  /* Header */
+  .date { margin: 0; color: var(--muted); font-size: 15px; }
+  h1 { margin: 2px 0 0; font-family: var(--display); font-weight: 600; font-size: 34px; line-height: 1.1; letter-spacing: -0.02em; }
+
+  /* Sun */
+  @property --k { syntax: '<number>'; inherits: true; initial-value: 0; }
+  .sky {
+    --k: 0;
+    margin: 22px 0 0; border-radius: 28px; overflow: hidden;
+    background: linear-gradient(180deg,
+      color-mix(in srgb, var(--sky-b1) calc(var(--k) * 100%), var(--sky-a1)),
+      color-mix(in srgb, var(--sky-b2) calc(var(--k) * 100%), var(--sky-a2)));
+    transition: --k 1.3s cubic-bezier(.2,.8,.2,1);
+  }
+  .land { fill: color-mix(in srgb, var(--land-b) calc(var(--k) * 100%), var(--land-a)); }
+  .stars { opacity: max(0, calc(1 - var(--k) * 1.7)); }
+  .sky svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .sun-group { transition: transform 1.1s cubic-bezier(.2,.8,.2,1); }
+  .rays { transition: opacity .8s ease .5s; opacity: 0; }
+  .rays.on { opacity: 1; }
+  .sky-note { margin: 10px 0 0; text-align: center; color: var(--muted); font-size: 15px; }
+  .sky-note strong { color: var(--ink); font-weight: 600; }
+
+  /* Week */
+  .week { display: flex; justify-content: space-between; margin: 26px 0 0; padding: 0 4px; }
+  .day { display: flex; flex-direction: column; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+  .day.today { color: var(--ink); font-weight: 600; }
+  .ring {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: conic-gradient(var(--acc1), var(--acc2) calc(var(--p) * 1%), var(--line) 0);
+    display: grid; place-items: center;
+  }
+  .ring::after { content: ""; width: 26px; height: 26px; border-radius: 50%; background: var(--bg); }
+
+  /* Sections */
+  section { margin-top: 16px; padding: 20px 18px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 26px; box-shadow: var(--shadow); }
+  h2 { margin: 0; font-family: var(--display); font-weight: 600; font-size: 21px; letter-spacing: -0.01em; display: flex; align-items: baseline; justify-content: space-between; }
+  h2 small { font-family: var(--body); font-weight: 400; font-size: 14px; color: var(--muted); }
+  .list { margin: 10px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+  .row { display: flex; align-items: center; border-bottom: 1px solid var(--line); }
+  .toggle { flex: 1; display: flex; align-items: center; gap: 14px; text-align: left; padding: 14px 0; min-height: 52px; }
+  .box {
+    flex: none; width: 24px; height: 24px; border-radius: 50%;
+    border: 2px solid color-mix(in srgb, var(--muted) 70%, transparent); display: grid; place-items: center;
+    transition: background .2s, border-color .2s;
+  }
+  .box svg { width: 14px; height: 14px; stroke: var(--bg); stroke-width: 3; fill: none; stroke-linecap: round; stroke-linejoin: round; opacity: 0; transition: opacity .15s; }
+  .row.done .box { background: var(--sage); border-color: var(--sage); }
+  .row.done .box svg { opacity: 1; }
+  .name { transition: color .2s; }
+  .row.done .name { color: var(--muted); text-decoration: line-through; text-decoration-color: var(--line); }
+  .remove { width: 36px; height: 36px; color: var(--muted); font-size: 20px; line-height: 1; border-radius: 50%; }
+  .remove:hover { color: var(--ink); }
+  .empty { padding: 14px 0; color: var(--muted); font-size: 15px; border-bottom: 1px solid var(--line); }
+
+  .add-link { margin-top: 10px; color: var(--muted); font-size: 15px; font-weight: 500; padding: 8px 0; }
+  .add-link:hover { color: var(--ink); }
+  .add-form { display: flex; gap: 8px; margin-top: 12px; }
+  .add-form input {
+    flex: 1; min-width: 0; font: inherit; color: var(--ink); background: transparent;
+    border: 0; border-bottom: 2px solid var(--ink); padding: 8px 2px; border-radius: 0;
+  }
+  .add-form input::placeholder { color: var(--muted); }
+  .add-form input:focus { outline: none; }
+  .btn { padding: 8px 16px; border-radius: 999px; font-weight: 600; font-size: 15px; }
+  .btn.primary { background: linear-gradient(135deg, var(--acc1), var(--acc2)); color: var(--on-acc); }
+  .btn.quiet { color: var(--muted); }
+
+  /* Check-in */
+  .checkin { margin-top: 10px; border-top: 1px solid var(--line); }
+  .c-row { padding: 16px 0; border-bottom: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .c-label { font-weight: 500; }
+  .c-label span { display: block; font-weight: 400; font-size: 14px; color: var(--muted); }
+  .drops { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+  .drop { width: 26px; height: 26px; border-radius: 50%; border: 2px solid var(--water); transition: background .2s; }
+  .drop.on { background: var(--water); }
+  .stepper { display: flex; align-items: center; gap: 10px; }
+  .stepper button { width: 34px; height: 34px; border-radius: 50%; border: 1.5px solid var(--line); font-size: 18px; line-height: 1; }
+  .stepper button:hover { border-color: var(--ink); }
+  .stepper output { min-width: 56px; text-align: center; font-family: var(--display); font-weight: 600; font-size: 19px; }
+  .moods { display: flex; gap: 4px; }
+  .mood { width: 40px; height: 40px; border-radius: 50%; font-size: 22px; filter: grayscale(1); opacity: .55; transition: all .2s; }
+  .mood.on { filter: none; opacity: 1; background: color-mix(in srgb, var(--rose) 24%, transparent); }
+
+  header { position: relative; }
+  .sound-btn { position: absolute; top: 0; right: 0; font-size: 13px; color: var(--muted); padding: 6px 12px; border: 1.5px solid var(--line); border-radius: 999px; }
+  .sound-btn:hover { color: var(--ink); border-color: var(--ink); }
+
+  .quote { margin: 16px auto 0; max-width: 30ch; text-align: center; font-family: var(--display); font-weight: 500; font-size: 19px; line-height: 1.3; letter-spacing: -0.01em; }
+
+  .seg { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 14px; }
+  .seg button { padding: 6px 14px; border-radius: 999px; border: 1.5px solid var(--line); font-size: 14px; color: var(--muted); }
+  .seg button:hover { color: var(--ink); border-color: var(--ink); }
+  .seg button[aria-pressed="true"] { background: linear-gradient(135deg, var(--acc1), var(--acc2)); color: var(--on-acc); border-color: transparent; }
+  .chart { margin-top: 16px; }
+  .chart svg { display: block; width: 100%; height: auto; }
+  .chart-note { margin: 8px 0 0; color: var(--muted); font-size: 14px; }
+
+  .intro { margin: 8px 0 0; color: var(--muted); font-size: 14px; max-width: 48ch; }
+  #moveList { margin-top: 12px; border-top: 1px solid var(--line); }
+  .ex { border-bottom: 1px solid var(--line); }
+  .ex summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 0; min-height: 56px; }
+  .ex summary::-webkit-details-marker { display: none; }
+  .ex summary::after { content: ""; flex: none; width: 8px; height: 8px; margin-right: 4px; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg); transition: transform .2s; }
+  .ex[open] summary::after { transform: rotate(-135deg); }
+  .ex-title { display: block; font-weight: 500; }
+  .ex-meta { display: block; font-size: 14px; color: var(--muted); }
+  .ex-body { padding: 0 0 18px; }
+  .ex-body p { margin: 0 0 12px; font-size: 15px; max-width: 52ch; }
+  .ex-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+  a.btn { text-decoration: none; display: inline-block; }
+  .btn.outline { border: 1.5px solid var(--line); }
+  .btn[disabled] { opacity: .6; cursor: default; }
+
+  .cheer { position: fixed; left: 16px; right: 16px; bottom: calc(84px + env(safe-area-inset-bottom, 0px)); max-width: 420px; margin: 0 auto; background: var(--ink); color: var(--bg); border-radius: 18px; padding: 18px 20px; z-index: 10; animation: rise .5s cubic-bezier(.2,.8,.2,1); }
+  .cheer[hidden] { display: none; }
+  .cheer h3 { margin: 0; font-family: var(--display); font-weight: 600; font-size: 22px; }
+  .cheer p { margin: 6px 0 12px; }
+  .cheer button { font-weight: 600; font-size: 15px; text-decoration: underline; }
+  @keyframes rise { from { transform: translateY(30px); opacity: 0; } to { transform: none; opacity: 1; } }
+
+  .stats-row { display: flex; gap: 30px; margin-top: 14px; flex-wrap: wrap; }
+  .stat strong { display: block; font-family: var(--display); font-weight: 600; font-size: 26px; line-height: 1.1; letter-spacing: -0.02em; }
+  .stat span { font-size: 13px; color: var(--muted); }
+  .seg.flat { margin-top: 0; }
+
+  .edit { width: 36px; height: 36px; display: grid; place-items: center; color: var(--muted); border-radius: 50%; }
+  .edit:hover { color: var(--ink); }
+  .edit svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .edit-form { display: flex; gap: 8px; width: 100%; padding: 8px 0; align-items: center; }
+  .edit-form input { flex: 1; min-width: 0; font: inherit; color: var(--ink); background: transparent; border: 0; border-bottom: 2px solid var(--ink); padding: 8px 2px; border-radius: 0; }
+  .edit-form input:focus { outline: none; }
+  .name-input { font: inherit; color: var(--ink); background: transparent; border: 0; border-bottom: 1.5px solid var(--line); padding: 6px 2px; text-align: right; width: 180px; max-width: 100%; border-radius: 0; }
+  .name-input:focus { outline: none; border-bottom-color: var(--ink); }
+  .name-input::placeholder { color: var(--muted); }
+
+  .breath { margin-top: 14px; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  .orb-wrap { position: relative; width: 190px; height: 190px; display: grid; place-items: center; }
+  .orb { position: absolute; inset: 0; border-radius: 50%; background: color-mix(in srgb, var(--water) 28%, transparent); border: 2px solid var(--water); transform: scale(.55); transition-property: transform; transition-timing-function: ease-in-out; transition-duration: 1s; }
+  #orbText { position: relative; font-family: var(--display); font-weight: 600; font-size: 19px; text-align: center; }
+  #orbText small { display: block; margin-top: 2px; font-family: var(--body); font-weight: 400; font-size: 13px; color: var(--muted); }
+
+  .toast { position: fixed; left: 16px; right: 16px; bottom: calc(84px + env(safe-area-inset-bottom, 0px)); max-width: 420px; margin: 0 auto; background: var(--ink); color: var(--bg); border-radius: 999px; padding: 12px 20px; z-index: 11; display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: 15px; }
+  .toast[hidden] { display: none; }
+  .toast button { font-weight: 600; text-decoration: underline; }
+  @media (prefers-reduced-motion: reduce) { .orb { transition: none !important; } }
+
+  .good { margin-top: 14px; }
+  .g-label { display: block; margin: 20px 0 2px; font-size: 14px; color: var(--muted); }
+  .good > .g-label:first-child { margin-top: 0; }
+  .g-input { width: 100%; font: inherit; color: var(--ink); background: transparent; border: 0; border-bottom: 1.5px solid var(--line); padding: 10px 2px; border-radius: 0; }
+  .g-input::placeholder { color: var(--muted); opacity: .8; }
+  .g-input:focus { outline: none; border-bottom-color: var(--rose); }
+  .jar { margin-top: 26px; padding-left: 14px; border-left: 3px solid var(--rose); }
+  .jar span { display: block; font-size: 13px; color: var(--muted); }
+  .jar p { margin: 4px 0 0; font-family: var(--display); font-weight: 500; font-size: 18px; line-height: 1.3; letter-spacing: -0.01em; }
+
+  #joyList { margin-top: 12px; border-top: 1px solid var(--line); }
+  .joy { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+
+  html { color-scheme: light dark; }
+  :root[data-theme="light"] { color-scheme: light; }
+  :root[data-theme="dark"] { color-scheme: dark; }
+  .sub { margin: 28px 0 0; font-family: var(--display); font-weight: 600; font-size: 17px; }
+  .val { font-family: var(--display); font-weight: 600; font-size: 18px; }
+  .actions { display: flex; gap: 10px; flex-wrap: wrap; }
+  .time-input { font: inherit; color: var(--ink); background: transparent; border: 1.5px solid var(--line); border-radius: 10px; padding: 6px 10px; }
+  .time-input:focus-visible { outline: 2px solid var(--ink); }
+  .g-input[type="date"] { width: auto; min-width: 180px; }
+
+  .hard-row { display: flex; align-items: center; gap: 14px; margin-top: 12px; }
+  .hard-row .g-input { flex: 1; min-width: 0; }
+  .hard-box { flex: none; padding: 8px 0; }
+  .hard-row.done .box { background: var(--sage); border-color: var(--sage); }
+  .hard-row.done .box svg { opacity: 1; }
+  .hard-row.done .g-input { color: var(--muted); text-decoration: line-through; }
+
+  .focus { margin-top: 12px; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  .focus-time { font-family: var(--display); font-weight: 600; font-size: 64px; line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+  .seg button:disabled { opacity: .5; cursor: default; }
+
+  .goal { margin-top: 24px; }
+  .goal-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .goal-head strong { font-family: var(--display); font-weight: 600; font-size: 19px; letter-spacing: -0.01em; }
+  .goal-meta { margin-top: 2px; color: var(--muted); font-size: 14px; }
+  .bar { height: 6px; margin-top: 10px; border-radius: 999px; background: var(--line); overflow: hidden; }
+  .bar span { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--acc1), var(--acc2)); transition: width .5s; }
+  .steps { margin: 10px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+  .step-add { display: flex; gap: 8px; margin-top: 6px; }
+  .step-add input { flex: 1; min-width: 0; font: inherit; color: var(--ink); background: transparent; border: 0; border-bottom: 1.5px solid var(--line); padding: 8px 2px; border-radius: 0; }
+  .step-add input:focus { outline: none; border-bottom-color: var(--sage); }
+  .goal-add { margin-top: 28px; display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+  .goal-add .g-input[type="text"] { width: 100%; }
+
+  button { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+  body { overscroll-behavior-y: contain; }
+  .app { padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)); }
+  body[data-view="today"] [data-tab]:not([data-tab="today"]),
+  body[data-view="grow"] [data-tab]:not([data-tab="grow"]),
+  body[data-view="care"] [data-tab]:not([data-tab="care"]),
+  body[data-view="progress"] [data-tab]:not([data-tab="progress"]),
+  body[data-view="settings"] [data-tab]:not([data-tab="settings"]) { display: none !important; }
+  .tabbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 9; background: color-mix(in srgb, var(--surface) 90%, transparent); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .tabbar-in { max-width: 460px; margin: 0 auto; display: flex; }
+  .tab { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 10px 0 8px; font-size: 11.5px; color: var(--muted); }
+  .tab svg { width: 24px; height: 24px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .tab[aria-current="page"] { color: var(--ink); font-weight: 600; }
+  .tab[aria-current="page"] span { background: linear-gradient(90deg, var(--acc1), var(--acc2)) bottom / 100% 3px no-repeat; padding-bottom: 4px; }
+
+  :root[data-palette="ocean"] { --acc1: #3B9CFF; --acc2: #5EE0F0; --p-a1: #14275E; --p-a2: #4A62B8; --p-b1: #4FA8F5; --p-b2: #BFF0FF; --p-la: #0E2250; --p-lb: #1A7FA8; }
+  :root[data-palette="forest"] { --acc1: #2FC48D; --acc2: #B4E25A; --p-a1: #123C3A; --p-a2: #3C8F78; --p-b1: #6CCFB4; --p-b2: #F2F5B8; --p-la: #0C2E2B; --p-lb: #2A8F5C; }
+  :root[data-palette="blossom"] { --acc1: #FF6FA0; --acc2: #FFB37A; --p-a1: #3D1E5C; --p-a2: #A55A9E; --p-b1: #FF9EBB; --p-b2: #FFE0C2; --p-la: #2E1450; --p-lb: #B04F7E; }
+
+  [data-tab] { animation: tabin .32s ease both; }
+  @keyframes tabin { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+  .level { margin-top: 16px; padding: 14px 16px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow); }
+  .level-top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+  .level-top strong { font-family: var(--display); font-weight: 600; font-size: 18px; letter-spacing: -0.01em; }
+  .level-top span { font-size: 13px; color: var(--muted); }
+  .level .bar { margin-top: 10px; }
+  .level-top.lt2 { margin-top: 8px; }
+
+  .swatches { display: flex; gap: 10px; }
+  .sw { width: 34px; height: 34px; border-radius: 50%; background: linear-gradient(135deg, var(--s1), var(--s2)); border: 3px solid var(--surface); box-shadow: 0 0 0 1.5px var(--line); }
+  .sw[aria-pressed="true"] { box-shadow: 0 0 0 2.5px var(--ink); }
+
+  .confetti { position: fixed; inset: 0; pointer-events: none; z-index: 20; overflow: hidden; }
+  .confetti i { position: absolute; top: -16px; border-radius: 2px; animation-name: fall; animation-timing-function: linear; animation-fill-mode: forwards; }
+  @keyframes fall { to { transform: translate(var(--dx), 110vh) rotate(var(--rot)); opacity: .9; } }
+
+  .level { position: relative; }
+  .pet-wrap { display: flex; align-items: center; gap: 14px; }
+  .pet-art { flex: none; width: 96px; height: 96px; border-radius: 22px; background: color-mix(in srgb, var(--acc2) 14%, transparent); transition: transform .15s; }
+  .pet-art:active { transform: scale(.95); }
+  .pet-art svg { display: block; width: 100%; height: 100%; }
+  .pet-info { flex: 1; min-width: 0; }
+  .pet-say { margin: 0 0 8px; font-size: 14px; line-height: 1.35; }
+  .heart { position: absolute; font-size: 18px; pointer-events: none; animation: floatup 1.3s ease-out forwards; }
+  @keyframes floatup { from { opacity: 1; transform: translateY(0); } to { opacity: 0; transform: translateY(-70px) scale(1.2); } }
+  @media (prefers-reduced-motion: reduce) { .heart { animation: none; opacity: 0; } }
+
+  .gentle-row { text-align: center; margin-top: 12px; }
+  .btn.outline[aria-pressed="true"] { background: color-mix(in srgb, var(--rose) 16%, transparent); border-color: var(--rose); }
+  .ico { flex: none; font-size: 19px; line-height: 1; margin-left: -4px; }
+  .spark-text { margin: 10px 0 14px; font-family: var(--display); font-weight: 500; font-size: 19px; line-height: 1.3; letter-spacing: -0.01em; }
+
+  .badges { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 14px; }
+  .badge { text-align: center; padding: 12px 6px 10px; border-radius: 18px; border: 1px solid var(--line); background: var(--bg); }
+  .badge b { display: block; font-size: 28px; line-height: 1.1; filter: grayscale(1); opacity: .35; }
+  .badge.on b { filter: none; opacity: 1; }
+  .badge span { display: block; margin-top: 6px; font-size: 12.5px; line-height: 1.25; color: var(--muted); }
+  .badge.on span { color: var(--ink); font-weight: 600; }
+  .badge small { display: block; margin-top: 2px; font-size: 11px; font-weight: 400; color: var(--muted); }
+
+  .sheet { position: fixed; inset: 0; z-index: 25; background: var(--bg); overflow-y: auto; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  .sheet[hidden] { display: none; }
+  .sheet-in { max-width: 460px; margin: 0 auto; padding: 22px 22px 70px; }
+  .sheet-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+  .mrow { padding: 16px 0; border-bottom: 1px solid var(--line); }
+  .mtop { display: flex; align-items: center; gap: 10px; }
+  .mtop strong { font-weight: 600; }
+  .mstreak { margin-left: auto; font-size: 13px; color: var(--muted); white-space: nowrap; }
+  .chips { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+  .dchip { width: 34px; height: 34px; border-radius: 50%; border: 1.5px solid var(--line); font-size: 13px; color: var(--muted); }
+  .schip { padding: 5px 12px; border-radius: 999px; border: 1.5px solid var(--line); font-size: 13px; color: var(--muted); }
+  .dchip.on, .schip.on { background: linear-gradient(135deg, var(--acc1), var(--acc2)); color: var(--on-acc); border-color: transparent; font-weight: 600; }
+  .macts { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+  .macts .btn { padding: 6px 12px; font-size: 14px; }
+  .rs { margin-left: auto; flex: none; font-size: 12px; color: var(--muted); background: var(--bg); border: 1px solid var(--line); border-radius: 999px; padding: 2px 8px; }
+  .c-row.col { flex-direction: column; align-items: flex-start; }
+  .link { color: var(--ink); text-decoration: underline; font-weight: 600; }
+  .bk { width: 100%; margin-top: 12px; font: 12px/1.4 ui-monospace, Menlo, Consolas, monospace; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 10px; resize: vertical; }
+  .bk[hidden] { display: none; }
+
+  .splash { position: fixed; inset: 0; z-index: 100; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; background: linear-gradient(180deg, var(--p-a1), var(--p-a2) 55%, var(--p-b2)); animation: splashOut .5s ease 1.2s forwards; }
+  .splash-sun { width: 92px; height: 92px; border-radius: 50%; background: var(--sun); box-shadow: 0 0 70px 24px color-mix(in srgb, var(--sun) 55%, transparent); animation: sunrise 1.1s cubic-bezier(.2,.8,.2,1) both; }
+  .splash-name { font-family: var(--display); font-weight: 600; font-size: 30px; color: #fff; letter-spacing: -0.02em; animation: tabin .8s ease .3s both; }
+  @keyframes sunrise { from { transform: translateY(90px); opacity: 0; } to { transform: none; opacity: 1; } }
+  @keyframes splashOut { to { opacity: 0; visibility: hidden; } }
+  @media (prefers-reduced-motion: reduce) { .splash { display: none; } }
+
+  #onboard { z-index: 30; }
+  .ob h1 { font-family: var(--display); font-weight: 600; font-size: 30px; letter-spacing: -0.02em; line-height: 1.1; margin: 18px 0 6px; }
+  .ob-dots { display: flex; gap: 6px; }
+  .ob-dots i { width: 24px; height: 4px; border-radius: 2px; background: var(--line); }
+  .ob-dots i.on { background: linear-gradient(90deg, var(--acc1), var(--acc2)); }
+  .ob-sun { width: 70px; height: 70px; margin-top: 26px; border-radius: 50%; background: var(--sun); box-shadow: 0 0 40px 10px color-mix(in srgb, var(--sun) 45%, transparent); }
+  .ob-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 28px; }
+  .swatches.big { gap: 16px; margin-top: 22px; }
+  .swatches.big .sw { width: 56px; height: 56px; }
+
+  .foot { margin-top: 40px; text-align: center; }
+  .foot button { color: var(--muted); font-size: 14px; padding: 8px 12px; }
+  .foot button:hover { color: var(--ink); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sun-group, .rays, .box, .drop, .mood, .cheer, .ex summary::after, [data-tab] { transition: none; animation: none; }
+  }
+</style>
+</head>
+<body data-view="today">
+<div class="splash" id="splash" aria-hidden="true"><div class="splash-sun"></div><div class="splash-name">First light</div></div>
+<div class="sheet" id="manage" hidden></div>
+<div class="sheet" id="onboard" hidden></div>
+<main class="app">
+  <header data-tab="today">
+    <button type="button" class="sound-btn" id="soundBtn" data-a="sound"></button>
+    <p class="date" id="date"></p>
+    <h1 id="greeting">Good morning</h1>
+  </header>
+
+  <div class="sky" data-tab="today" aria-hidden="true">
+    <svg viewBox="0 0 320 150" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <clipPath id="above"><rect x="0" y="0" width="320" height="120"/></clipPath>
+      </defs>
+      <g class="stars" fill="#fff">
+        <circle cx="30" cy="24" r="1.6"/><circle cx="62" cy="60" r="1.2"/><circle cx="88" cy="18" r="1.4"/>
+        <circle cx="122" cy="46" r="1"/><circle cx="222" cy="14" r="1.5"/><circle cx="250" cy="34" r="1.1"/>
+        <circle cx="284" cy="66" r="1.6"/><circle cx="300" cy="18" r="1.2"/><circle cx="40" cy="94" r="1.1"/>
+      </g>
+      <g clip-path="url(#above)">
+        <g class="sun-group" id="sun" style="transform: translateY(100px)">
+          <g class="rays" id="rays" stroke="var(--sun)" stroke-width="4" stroke-linecap="round">
+            <line x1="160" y1="6"  x2="160" y2="-8"/>
+            <line x1="108" y1="26" x2="98"  y2="16"/>
+            <line x1="212" y1="26" x2="222" y2="16"/>
+            <line x1="86"  y1="74" x2="72"  y2="74"/>
+            <line x1="234" y1="74" x2="248" y2="74"/>
+          </g>
+          <circle cx="160" cy="74" r="84" fill="var(--sun)" opacity=".2"/>
+          <circle cx="160" cy="74" r="46" fill="var(--sun)"/>
+        </g>
+      </g>
+      <rect class="land" x="0" y="120" width="320" height="30"/>
+      <line x1="0" y1="120" x2="320" y2="120" stroke="#fff" stroke-opacity=".55" stroke-width="1.5"/>
+      <line x1="70" y1="134" x2="250" y2="134" stroke="#fff" stroke-opacity=".28" stroke-width="2" stroke-linecap="round"/>
+      <line x1="112" y1="146" x2="208" y2="146" stroke="#fff" stroke-opacity=".2" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <p class="sky-note" data-tab="today" id="skyNote" aria-live="polite"></p>
+  <p class="quote" data-tab="today" id="quote"></p>
+  <div class="gentle-row" data-tab="today"><button type="button" class="btn outline" id="gentleBtn" data-a="gentle" aria-pressed="false">Gentle day</button></div>
+
+  <div class="week" data-tab="today" id="week" aria-label="Last seven days"></div>
+  <div class="level" id="level" data-tab="today"></div>
+
+  <div id="lists" data-tab="today"></div>
+  <div class="gentle-row" data-tab="today"><button type="button" class="btn outline" data-a="manage">Manage routines</button></div>
+
+  <section data-tab="grow">
+    <h2>The hard thing<small>Do it first</small></h2>
+    <p class="intro">Pick the one task you keep avoiding that would move a goal forward. Do it before the easy things.</p>
+    <div class="hard-row" id="hardRow">
+      <button type="button" class="hard-box" id="hardBox" data-a="hardDone" role="checkbox" aria-checked="false" aria-label="Hard thing done"><span class="box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></button>
+      <input class="g-input" id="hardText" type="text" maxlength="90" placeholder="What is the one hard thing today?" autocomplete="off" aria-label="The hard thing for today">
+    </div>
+    <p class="chart-note" id="hardNote"></p>
+  </section>
+
+  <section data-tab="grow">
+    <h2>Focus<small id="focusToday">0 min today</small></h2>
+    <div class="focus">
+      <div class="focus-time" id="focusTime" role="timer">25:00</div>
+      <div class="seg flat" id="focusSeg">
+        <button type="button" data-a="focusLen" data-n="15" aria-pressed="false">15 min</button>
+        <button type="button" data-a="focusLen" data-n="25" aria-pressed="true">25 min</button>
+        <button type="button" data-a="focusLen" data-n="45" aria-pressed="false">45 min</button>
+      </div>
+      <button type="button" class="btn primary" id="focusBtn" data-a="focus">Start focus</button>
+    </div>
+    <p class="chart-note" id="workLine" style="text-align:center"></p>
+  </section>
+
+  <section data-tab="grow">
+    <h2>Goals<small>What you’re working toward</small></h2>
+    <div id="goals"></div>
+    <form class="goal-add" id="goalForm" autocomplete="off">
+      <input class="g-input" id="goalTitle" type="text" maxlength="60" placeholder="Add a goal, like Launch my first product" aria-label="Goal">
+      <input class="g-input" id="goalDue" type="date" aria-label="Target date, optional">
+      <button type="submit" class="btn primary">Add goal</button>
+    </form>
+  </section>
+
+  <section data-tab="today">
+    <h2>Body check-in</h2>
+    <div class="checkin" id="checkin"></div>
+  </section>
+
+  <section data-tab="today">
+    <h2>Today’s spark<small>One kind thing</small></h2>
+    <p class="spark-text" id="sparkText"></p>
+    <button type="button" class="btn primary" id="sparkBtn" data-a="spark">I did it</button>
+  </section>
+
+  <section data-tab="care">
+    <h2>Wind down<small id="bedCount"></small></h2>
+    <p class="intro">Give yourself the last half hour of the day. Slow down, and sleep comes easier.</p>
+    <ul class="list" id="windList"></ul>
+    <div class="c-row"><label class="c-label" for="tBed">Bedtime</label><input class="time-input" type="time" id="tBed"></div>
+    <div class="actions"><button type="button" class="btn outline" data-a="windBreathe">Breathe for a minute</button></div>
+  </section>
+
+  <section data-tab="care">
+    <h2>Health log<small>Optional and private</small></h2>
+    <p class="intro">Track your cycle, symptoms and energy. It stays on this device. Share it with your doctor if it helps.</p>
+    <div class="checkin" id="healthBody"></div>
+    <div id="healthNote"></div>
+  </section>
+
+  <section data-tab="care">
+    <h2>Calm sounds<small id="ambState">Off</small></h2>
+    <p class="intro">Soft background sound for focus, breathing or sleep. It stops by itself.</p>
+    <div class="seg" id="ambSeg">
+      <button type="button" data-a="amb" data-t="rain" aria-pressed="false">Rain</button>
+      <button type="button" data-a="amb" data-t="ocean" aria-pressed="false">Ocean</button>
+      <button type="button" data-a="amb" data-t="hush" aria-pressed="false">Hush</button>
+      <button type="button" data-a="amb" data-t="off" aria-pressed="true">Off</button>
+    </div>
+    <div class="seg" id="ambLenSeg">
+      <button type="button" data-a="ambLen" data-n="15" aria-pressed="false">15 min</button>
+      <button type="button" data-a="ambLen" data-n="30" aria-pressed="true">30 min</button>
+      <button type="button" data-a="ambLen" data-n="60" aria-pressed="false">60 min</button>
+    </div>
+  </section>
+
+  <section data-tab="care">
+    <h2>Breathe<small>1 minute</small></h2>
+    <div class="breath">
+      <div class="orb-wrap"><div class="orb" id="orb"></div><span id="orbText" aria-live="polite">Ready<small>6 slow breaths</small></span></div>
+      <button type="button" class="btn primary" id="breathBtn" data-a="breath">Start</button>
+    </div>
+  </section>
+
+  <section data-tab="care">
+    <h2>Good things<small>Just for today</small></h2>
+    <div class="good">
+      <label class="g-label" for="intent">Today’s intention</label>
+      <input class="g-input" id="intent" type="text" maxlength="80" placeholder="One thing that matters today" autocomplete="off">
+      <span class="g-label">Three good things</span>
+      <input class="g-input" id="good0" type="text" maxlength="90" aria-label="Good thing 1" placeholder="Something that made you smile" autocomplete="off">
+      <input class="g-input" id="good1" type="text" maxlength="90" aria-label="Good thing 2" placeholder="Someone you’re grateful for" autocomplete="off">
+      <input class="g-input" id="good2" type="text" maxlength="90" aria-label="Good thing 3" placeholder="A small win" autocomplete="off">
+      <div class="jar" id="jar"></div>
+    </div>
+  </section>
+
+  <section data-tab="progress">
+    <h2>Your progress<small>Last 14 days</small></h2>
+    <div id="stats"></div>
+    <div class="seg" id="seg">
+      <button type="button" data-a="chart" data-m="routines" aria-pressed="true">Routines</button>
+      <button type="button" data-a="chart" data-m="water" aria-pressed="false">Water</button>
+      <button type="button" data-a="chart" data-m="sleep" aria-pressed="false">Sleep</button>
+      <button type="button" data-a="chart" data-m="mood" aria-pressed="false">Mood</button>
+      <button type="button" data-a="chart" data-m="focus" aria-pressed="false">Focus</button>
+    </div>
+    <div class="chart" id="chartBody"></div>
+    <p class="chart-note" id="chartNote"></p>
+    <h3 class="sub">This week</h3>
+    <div id="recap"></div>
+  </section>
+
+  <section data-tab="progress">
+    <h2>Badges<small id="badgeCount"></small></h2>
+    <div class="badges" id="badges"></div>
+  </section>
+
+  <section data-tab="progress">
+    <h2>Weekly review<small id="wkLabel"></small></h2>
+    <p class="chart-note" id="wkPrev"></p>
+    <label class="g-label" for="rvWin">One win this week</label>
+    <input class="g-input" id="rvWin" type="text" maxlength="120" placeholder="Something you’re proud of" autocomplete="off">
+    <label class="g-label" for="rvHard">What was hard</label>
+    <input class="g-input" id="rvHard" type="text" maxlength="120" placeholder="What got in the way" autocomplete="off">
+    <label class="g-label" for="rvNext">Focus for next week</label>
+    <input class="g-input" id="rvNext" type="text" maxlength="120" placeholder="One thing to focus on" autocomplete="off">
+    <div class="actions" style="margin-top:18px"><button type="button" class="btn outline" data-a="shareWeek">Share my week</button></div>
+  </section>
+
+  <section data-tab="care">
+    <h2>Move<small>Example workouts</small></h2>
+    <p class="intro">General ideas often suggested for PCOD and PCOS. This is not medical advice: check with your doctor before starting, and stop if anything hurts.</p>
+    <div id="moveList"></div>
+  </section>
+
+  <section data-tab="care">
+    <h2>Little joys<small>Ideas to add</small></h2>
+    <p class="intro">Small things that make a day feel good. Add the ones you like to your routine.</p>
+    <div id="joyList"></div>
+  </section>
+
+  <section data-tab="settings">
+    <h2>Reminders<small id="notifState">Off</small></h2>
+    <div class="checkin">
+      <div class="c-row"><label class="c-label" for="tMorning">Morning<span>Add your routine</span></label><input class="time-input" type="time" id="tMorning"></div>
+      <div class="c-row"><label class="c-label" for="tEvening">Evening<span>Complete your routine</span></label><input class="time-input" type="time" id="tEvening"></div>
+      <div class="c-row"><div class="actions">
+        <button type="button" class="btn primary" id="notifBtn" data-a="notif">Turn on</button>
+        <button type="button" class="btn outline" data-a="notifTest">Send a test</button>
+      </div></div>
+    </div>
+    <p class="chart-note">Reminders appear while this page is open. Wind-down reminders come 30 minutes before your bedtime. A phone alarm is the only thing that can ring on a silent phone when the page is closed, so set one too.</p>
+  </section>
+
+  <section data-tab="settings">
+    <h2>Settings</h2>
+    <div class="checkin">
+      <div class="c-row"><label class="c-label" for="nameInput">Your name</label><input id="nameInput" class="name-input" type="text" maxlength="24" placeholder="Add your name" autocomplete="off"></div>
+      <div class="c-row"><div class="c-label">Theme</div>
+        <div class="seg flat" id="themeSeg">
+          <button type="button" data-a="theme" data-t="auto" aria-pressed="true">Auto</button>
+          <button type="button" data-a="theme" data-t="light" aria-pressed="false">Light</button>
+          <button type="button" data-a="theme" data-t="dark" aria-pressed="false">Dark</button>
+        </div>
+      </div>
+      <div class="c-row"><div class="c-label">Language</div>
+        <div class="seg flat" id="langSeg">
+          <button type="button" data-a="lang" data-l="en" aria-pressed="true">English</button>
+          <button type="button" data-a="lang" data-l="kn" aria-pressed="false">ಕನ್ನಡ</button>
+          <button type="button" data-a="lang" data-l="hi" aria-pressed="false">हिन्दी</button>
+        </div></div>
+      <div class="c-row"><div class="c-label">Setup<span>Name, times, routines</span></div><button type="button" class="btn outline" data-a="setupAgain">Run setup again</button></div>
+      <div class="c-row"><div class="c-label">Sprig’s style<span>Unlocks as you level up</span></div>
+        <div class="seg flat" id="outfitSeg">
+          <button type="button" data-a="outfit" data-o="" data-lv="1" aria-pressed="true">None</button>
+          <button type="button" data-a="outfit" data-o="glasses" data-lv="2" aria-pressed="false">Shades</button>
+          <button type="button" data-a="outfit" data-o="bow" data-lv="3" aria-pressed="false">Bow</button>
+          <button type="button" data-a="outfit" data-o="crown" data-lv="5" aria-pressed="false">Crown</button>
+        </div></div>
+      <div class="c-row"><div class="c-label">Colors<span>Pick your look</span></div>
+        <div class="swatches" id="palSeg">
+          <button type="button" class="sw" data-a="palette" data-p="sunrise" aria-label="Sunrise" aria-pressed="true" style="--s1:#FF7A59;--s2:#FFB84D"></button>
+          <button type="button" class="sw" data-a="palette" data-p="ocean" aria-label="Ocean" aria-pressed="false" style="--s1:#3B9CFF;--s2:#5EE0F0"></button>
+          <button type="button" class="sw" data-a="palette" data-p="forest" aria-label="Forest" aria-pressed="false" style="--s1:#2FC48D;--s2:#B4E25A"></button>
+          <button type="button" class="sw" data-a="palette" data-p="blossom" aria-label="Blossom" aria-pressed="false" style="--s1:#FF6FA0;--s2:#FFB37A"></button>
+        </div></div>
+      <div class="c-row"><div class="c-label">Water goal<span>Glasses per day</span></div>
+        <div class="stepper"><button type="button" data-a="wgoal" data-n="-1" aria-label="Fewer glasses">&minus;</button><output id="wgOut">8</output><button type="button" data-a="wgoal" data-n="1" aria-label="More glasses">+</button></div></div>
+    </div>
+  </section>
+
+  <section data-tab="settings">
+    <h2>Your data</h2>
+    <p class="intro">Everything is saved on this device only. Make a backup so you can restore it after clearing the browser or moving to a new phone.</p>
+    <div class="actions" style="margin-top:12px">
+      <button type="button" class="btn primary" data-a="backup">Create backup</button>
+      <button type="button" class="btn outline" data-a="restoreOpen">Restore</button>
+    </div>
+    <textarea id="bkText" class="bk" rows="5" hidden spellcheck="false" aria-label="Backup text"></textarea>
+    <div class="actions" id="bkActions" hidden style="margin-top:10px"><button type="button" class="btn primary" data-a="restoreGo">Restore from this text</button></div>
+    <p class="chart-note" id="bkNote"></p>
+  </section>
+
+  <section data-tab="settings">
+    <h2>Use it like an app</h2>
+    <p class="intro">On Android, open this page in Chrome, tap the menu, then choose Add to Home screen. On iPhone, open it in Safari, tap Share, then Add to Home Screen. It opens full screen with its own icon.</p>
+  </section>
+
+  <div class="cheer" id="cheer" role="status" hidden></div>
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <div class="foot" data-tab="settings"><button type="button" data-a="resetDay">Clear today's checks</button></div>
+</main>
+
+<nav class="tabbar" aria-label="Main">
+  <div class="tabbar-in">
+    <button type="button" class="tab" data-a="view" data-v="today" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><span>Today</span></button>
+    <button type="button" class="tab" data-a="view" data-v="grow"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg><span>Grow</span></button>
+    <button type="button" class="tab" data-a="view" data-v="care"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span>Care</span></button>
+    <button type="button" class="tab" data-a="view" data-v="progress"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V10M12 20V4M19 20v-7"/></svg><span>Progress</span></button>
+    <button type="button" class="tab" data-a="view" data-v="settings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg><span>Settings</span></button>
+  </div>
+</nav>
+
+<script>
+(function () {
+  var KEY = 'first-light-v1';
+  var SLOTS = [
+    { id: 'morning', label: 'Morning', hint: 'Start of day' },
+    { id: 'midday',  label: 'Midday',  hint: 'Keep going' },
+    { id: 'evening', label: 'Evening', hint: 'Wind down' }
+  ];
+  var MOODS = [
+    { e: '😞', l: 'Rough' }, { e: '🙁', l: 'Low' }, { e: '😐', l: 'Okay' },
+    { e: '🙂', l: 'Good' }, { e: '😄', l: 'Great' }
+  ];
+  var WATER_GOAL = 8;
+
+  function seed() {
+    var n = 0;
+    function r(name, slot) { n++; return { id: 's' + n, name: name, slot: slot }; }
+    return {
+      routines: [
+        r('Drink a glass of water', 'morning'),
+        r('Stretch for 5 minutes', 'morning'),
+        r('Get 10 minutes of daylight', 'morning'),
+        r('Write your top three tasks', 'morning'),
+        r('Eat a proper lunch', 'midday'),
+        r('Walk for 10 minutes', 'midday'),
+        r('Screens off 30 minutes before bed', 'evening'),
+        r('Write down tomorrow\u2019s first task', 'evening')
+      ],
+      log: {}
+    };
+  }
+
+  var S;
+  try {
+    var raw = localStorage.getItem(KEY);
+    S = raw ? JSON.parse(raw) : null;
+  } catch (e) { S = null; }
+  if (!S || !Array.isArray(S.routines) || typeof S.log !== 'object') S = seed();
+  if (!S.settings) S.settings = { sound: true };
+  if (S.settings.name === undefined) S.settings.name = 'Sammu';
+  if (!S.settings.theme) S.settings.theme = 'auto';
+  if (!S.settings.waterGoal) S.settings.waterGoal = 8;
+  if (!S.settings.remind) S.settings.remind = { on: false, morning: '07:00', evening: '20:00', last: { m: '', e: '' } };
+  if (!Array.isArray(S.goals)) S.goals = [];
+  if (!S.settings.bed) S.settings.bed = '22:30';
+  if (!S.settings.view) S.settings.view = 'today';
+  if (!S.settings.palette) S.settings.palette = 'sunrise';
+  if (!S.settings.lang) S.settings.lang = 'en';
+  if (S.settings.onboarded === undefined) S.settings.onboarded = !!raw;
+  if (!S.reviews || typeof S.reviews !== 'object') S.reviews = {};
+
+  function save() {
+    try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {}
+    nativeSync();
+  }
+
+  function keyOf(d) {
+    var m = d.getMonth() + 1, day = d.getDate();
+    return d.getFullYear() + '-' + (m < 10 ? '0' : '') + m + '-' + (day < 10 ? '0' : '') + day;
+  }
+  function todayKey() { return keyOf(new Date()); }
+  function dayOf(k) {
+    if (!S.log[k]) S.log[k] = { done: [], water: 0, sleep: 0, mood: 0, pct: 0 };
+    return S.log[k];
+  }
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  // prune entries older than 60 days
+  (function prune() {
+    var cutoff = new Date(); cutoff.setDate(cutoff.getDate() - 180);
+    var ck = keyOf(cutoff);
+    Object.keys(S.log).forEach(function (k) { if (k < ck) { S.xpBase = (S.xpBase || 0) + dayXp(S.log[k]); delete S.log[k]; } });
+  })();
+
+  var adding = null;      // slot id with the add form open
+  var editing = null;     // routine id being renamed
+  var shownKey = todayKey();
+
+  function stats() {
+    var d = dayOf(todayKey());
+    var ids = todays().map(function (r) { return r.id; });
+    d.done = d.done.filter(function (id) { return ids.indexOf(id) !== -1; });
+    var total = todays().length;
+    var done = d.done.length;
+    var pct = total ? Math.round(done / total * 100) : 0;
+    d.pct = pct;
+    return { d: d, total: total, done: done, pct: pct };
+  }
+
+  function renderHeader(st) {
+    var now = new Date();
+    var h = now.getHours();
+    var greet = h < 12 ? 'Good morning' : (h < 17 ? 'Good afternoon' : 'Good evening');
+    var nm = (S.settings.name || '').trim();
+    document.getElementById('greeting').textContent = nm ? greet + ', ' + nm : greet;
+    document.getElementById('date').textContent =
+      now.toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'long' });
+
+    var offset = 100 * (1 - st.pct / 100);
+    document.getElementById('sun').style.transform = 'translateY(' + offset + 'px)';
+    document.querySelector('.sky').style.setProperty('--k', st.pct / 100);
+    document.getElementById('rays').classList.toggle('on', st.total > 0 && st.pct === 100);
+
+    var note;
+    if (!st.total) note = 'Add your first routine below.';
+    else if (st.pct === 100) note = '<strong>All done.</strong> The sun is up.';
+    else if (st.done === 0) note = 'Nothing checked yet. Start with one.';
+    else note = '<strong>' + st.done + ' of ' + st.total + '</strong> done today';
+    document.getElementById('skyNote').innerHTML = note;
+  }
+
+  function renderWeek() {
+    var out = '';
+    for (var i = 6; i >= 0; i--) {
+      var d = new Date(); d.setDate(d.getDate() - i);
+      var k = keyOf(d);
+      var p = S.log[k] ? (S.log[k].pct || 0) : 0;
+      var letter = d.toLocaleDateString(undefined, { weekday: 'narrow' });
+      out += '<div class="day' + (i === 0 ? ' today' : '') + '">' +
+        '<div class="ring" style="--p:' + p + '" role="img" aria-label="' +
+        d.toLocaleDateString(undefined, { weekday: 'long' }) + ' ' + p + ' percent"></div>' +
+        '<span>' + letter + '</span></div>';
+    }
+    document.getElementById('week').innerHTML = out;
+  }
+
+  var CHECK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>';
+  var PENCIL = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>';
+
+  function renderLists(st) {
+    var html = '';
+    SLOTS.forEach(function (slot) {
+      var items = S.routines.filter(function (r) { return r.slot === slot.id && !r.archived && isSched(r, new Date()); });
+      var doneHere = items.filter(function (r) { return st.d.done.indexOf(r.id) !== -1; }).length;
+      html += '<section><h2>' + slot.label +
+        '<small>' + (items.length ? doneHere + ' of ' + items.length : slot.hint) + '</small></h2>';
+      if (items.length) {
+        html += '<ul class="list">';
+        items.forEach(function (r) {
+          var isDone = st.d.done.indexOf(r.id) !== -1;
+          if (editing === r.id) {
+            html += '<li class="row"><form class="edit-form" data-id="' + esc(r.id) + '" autocomplete="off"><input type="text" maxlength="60" id="editName" aria-label="Routine name" value="' + esc(r.name) + '"><button type="submit" class="btn primary">Save</button><button type="button" class="btn quiet" data-a="cancelEdit">Cancel</button></form></li>';
+            return;
+          }
+          html += '<li class="row' + (isDone ? ' done' : '') + '">' +
+            '<button type="button" class="toggle" data-a="toggle" data-id="' + esc(r.id) + '" role="checkbox" aria-checked="' + isDone + '">' +
+            '<span class="box">' + CHECK + '</span><span class="ico" aria-hidden="true">' + iconFor(r.name) + '</span><span class="name">' + esc(r.name) + '</span>' + streakChip(r) + '</button>' +
+            '<button type="button" class="edit" data-a="edit" data-id="' + esc(r.id) + '" aria-label="Edit ' + esc(r.name) + '">' + PENCIL + '</button>' +
+            '<button type="button" class="remove" data-a="remove" data-id="' + esc(r.id) + '" aria-label="Remove ' + esc(r.name) + '">&times;</button>' +
+            '</li>';
+        });
+        html += '</ul>';
+      } else {
+        html += '<div class="list"><div class="empty">Nothing here yet.</div></div>';
+      }
+      if (adding === slot.id) {
+        html += '<form class="add-form" data-slot="' + slot.id + '" autocomplete="off">' +
+          '<input type="text" maxlength="60" placeholder="New ' + slot.label.toLowerCase() + ' routine" aria-label="New routine name" id="newName">' +
+          '<button type="submit" class="btn primary">Add</button>' +
+          '<button type="button" class="btn quiet" data-a="cancelAdd">Cancel</button></form>';
+      } else {
+        html += '<button type="button" class="add-link" data-a="openAdd" data-slot="' + slot.id + '">+ Add a routine</button>';
+      }
+      html += '</section>';
+    });
+    document.getElementById('lists').innerHTML = html;
+    if (adding) {
+      var inp = document.getElementById('newName');
+      if (inp) inp.focus();
+    }
+    if (editing) {
+      var ei = document.getElementById('editName');
+      if (ei) { ei.focus(); ei.select(); }
+    }
+  }
+
+  function renderCheckin(st) {
+    var d = st.d, i, drops = '';
+    for (i = 1; i <= WATER_GOAL; i++) {
+      drops += '<button type="button" class="drop' + (i <= d.water ? ' on' : '') + '" data-a="water" data-n="' + i + '" aria-label="' + i + ' glasses"></button>';
+    }
+    var moods = '';
+    MOODS.forEach(function (m, idx) {
+      moods += '<button type="button" class="mood' + (d.mood === idx + 1 ? ' on' : '') + '" data-a="mood" data-n="' + (idx + 1) + '" aria-label="' + m.l + '" aria-pressed="' + (d.mood === idx + 1) + '">' + m.e + '</button>';
+    });
+    var sleepTxt = d.sleep ? (d.sleep % 1 ? d.sleep.toFixed(1) : d.sleep) + ' h' : '– h';
+    document.getElementById('checkin').innerHTML =
+      '<div class="c-row"><div class="c-label">Water<span>' + d.water + ' of ' + WATER_GOAL + ' glasses</span></div><div class="drops">' + drops + '</div></div>' +
+      '<div class="c-row"><div class="c-label">Sleep<span>Last night</span></div>' +
+        '<div class="stepper"><button type="button" data-a="sleep" data-n="-0.5" aria-label="Less sleep">&minus;</button>' +
+        '<output aria-live="polite">' + sleepTxt + '</output>' +
+        '<button type="button" data-a="sleep" data-n="0.5" aria-label="More sleep">+</button></div></div>' +
+      '<div class="c-row"><div class="c-label">Mood<span>How you feel right now</span></div><div class="moods">' + moods + '</div></div>';
+  }
+
+  /* ---------- Sound ---------- */
+  var audioCtx = null;
+  function ensureAudio() {
+    try {
+      if (!audioCtx) {
+        var AC = window.AudioContext || window.webkitAudioContext;
+        if (AC) audioCtx = new AC();
+      }
+      if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume();
+    } catch (e) {}
+  }
+  function note(freq, t, dur, vol) {
+    var o = audioCtx.createOscillator(), g = audioCtx.createGain();
+    o.type = 'sine'; o.frequency.value = freq;
+    g.gain.setValueAtTime(0.0001, t);
+    g.gain.exponentialRampToValueAtTime(vol, t + 0.02);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+    o.connect(g); g.connect(audioCtx.destination);
+    o.start(t); o.stop(t + dur + 0.05);
+  }
+  function tick() {
+    buzz(10);
+    if (!S.settings.sound || !audioCtx) return;
+    try { note(880, audioCtx.currentTime, 0.18, 0.08); } catch (e) {}
+  }
+  function chime() {
+    buzz([30, 60, 30]);
+    if (!S.settings.sound || !audioCtx) return;
+    try {
+      var t = audioCtx.currentTime;
+      [523.25, 659.25, 783.99, 1046.5].forEach(function (f, i) { note(f, t + i * 0.16, 1.0, 0.14); });
+      note(1318.5, t + 0.7, 1.4, 0.07);
+    } catch (e) {}
+  }
+  function updateSoundBtn() {
+    var b = document.getElementById('soundBtn');
+    b.textContent = S.settings.sound ? 'Sound on' : 'Sound off';
+    b.setAttribute('aria-pressed', String(!!S.settings.sound));
+  }
+
+  /* ---------- Motivation ---------- */
+  var LINES = {
+    start: [
+      'A good day starts with one small thing. Pick the easiest one.',
+      'You don\u2019t need a perfect morning. You just need a first step.',
+      'Show up gently today. That still counts.',
+      'Ten minutes for yourself is a real start.',
+      'Begin before you feel ready.',
+      'Tiny steps, taken daily, add up faster than you think.'
+    ],
+    low: [
+      'Good start. Keep the momentum, you\u2019re already moving.',
+      'One down is proof you can do the next.',
+      'Slow is fine. Stopping is the only thing that doesn\u2019t work.',
+      'You\u2019ve begun. That\u2019s the hardest part.',
+      'Keep going. You\u2019re building something steady.'
+    ],
+    mid: [
+      'Over halfway. Finish what you started, you\u2019ve got this.',
+      'Look at you go. Just a few more.',
+      'The sun is climbing, and so are you.',
+      'Almost there. Future you says thanks.',
+      'Strong work. Don\u2019t stop now.'
+    ],
+    done: [
+      'Everything done. Be proud of that, you earned it.',
+      'You kept your promises to yourself today.',
+      'A full day of caring for your body. Rest well.',
+      'That\u2019s how change happens: one finished day at a time.',
+      'Sun\u2019s up, list\u2019s done. Beautiful.'
+    ]
+  };
+  function renderQuote(st) {
+    var n = new Date();
+    var seed = n.getDate() + n.getMonth() * 3;
+    var arr, text;
+    if (!st.total) text = 'Small habits, repeated, change everything.';
+    else {
+      arr = (st.d.gentle && st.pct < 100) ? LINES.gentle : (st.pct === 100 ? LINES.done : st.pct >= 50 ? LINES.mid : st.pct > 0 ? LINES.low : LINES.start);
+      text = arr[seed % arr.length];
+    }
+    document.getElementById('quote').textContent = text;
+  }
+  var cheerTimer = null;
+  function celebrate() {
+    burst();
+    var el = document.getElementById('cheer');
+    var msg = LINES.done[Math.floor(Math.random() * LINES.done.length)];
+    el.innerHTML = '<h3>All done for today ✨</h3><p>' + esc(msg) + '</p><button type="button" data-a="closeCheer">Close</button>';
+    el.hidden = false;
+    clearTimeout(cheerTimer);
+    cheerTimer = setTimeout(hideCheer, 8000);
+  }
+  function hideCheer() {
+    clearTimeout(cheerTimer);
+    document.getElementById('cheer').hidden = true;
+  }
+
+  /* ---------- Graph ---------- */
+  var chartMode = 'routines';
+  var CHARTS = {
+    routines: { label: 'Routines done', max: 100, unit: '%', color: 'var(--acc1)', get: function (l) { return l.pct || 0; }, hint: 'Share of your routines finished each day.' },
+    water:    { label: 'Water', max: WATER_GOAL, unit: ' glasses', color: 'var(--water)', get: function (l) { return l.water || 0; }, hint: 'Goal: ' + WATER_GOAL + ' glasses a day.' },
+    sleep:    { label: 'Sleep', max: 10, unit: ' h', color: 'var(--lilac)', get: function (l) { return l.sleep || 0; }, hint: 'Hours of sleep the night before.' },
+    mood:     { label: 'Mood', max: 5, unit: ' of 5', color: 'var(--rose)', get: function (l) { return l.mood || 0; }, hint: '1 is rough, 5 is great.' }
+  };
+  function fmtNum(x) { return String(Math.round(x * 10) / 10); }
+  function renderChart() {
+    var m = CHARTS[chartMode], vals = [], marks = [], n = 14, i, d, l;
+    for (i = n - 1; i >= 0; i--) {
+      d = new Date(); d.setDate(d.getDate() - i);
+      l = S.log[keyOf(d)];
+      vals.push(l ? m.get(l) : 0);
+      marks.push({ t: d.toLocaleDateString(undefined, { weekday: 'narrow' }), today: i === 0 });
+    }
+    var max = m.max;
+    vals.forEach(function (x) { if (x > max) max = Math.ceil(x); });
+    var W = 340, H = 164, padL = 26, padR = 4, padT = 16, padB = 24;
+    var plotW = W - padL - padR, plotH = H - padT - padB, step = plotW / n, bw = Math.min(15, step * 0.62);
+    var sum = 0, cnt = 0;
+    vals.forEach(function (x) { if (x > 0) { sum += x; cnt++; } });
+    var svg = '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + m.label + ' over the last 14 days">';
+    [0, 0.5, 1].forEach(function (f) {
+      var y = padT + plotH - f * plotH;
+      svg += '<line x1="' + padL + '" x2="' + (W - padR) + '" y1="' + y + '" y2="' + y + '" stroke="var(--line)" stroke-width="1"/>';
+      if (f > 0) svg += '<text x="' + (padL - 5) + '" y="' + (y + 3) + '" text-anchor="end" font-size="9" fill="var(--muted)">' + fmtNum(max * f) + '</text>';
+    });
+    vals.forEach(function (x, idx) {
+      var cx = padL + idx * step + step / 2, h = x / max * plotH, y = padT + plotH - h;
+      if (x > 0) {
+        svg += '<rect x="' + (cx - bw / 2) + '" y="' + y + '" width="' + bw + '" height="' + h + '" rx="3" fill="' + m.color + '" opacity="' + (marks[idx].today ? 1 : 0.62) + '"/>';
+        svg += '<text x="' + cx + '" y="' + (y - 4) + '" text-anchor="middle" font-size="8.5" fill="var(--muted)">' + fmtNum(x) + '</text>';
+      } else {
+        svg += '<rect x="' + (cx - bw / 2) + '" y="' + (padT + plotH - 2) + '" width="' + bw + '" height="2" rx="1" fill="var(--line)"/>';
+      }
+      svg += '<text x="' + cx + '" y="' + (H - 7) + '" text-anchor="middle" font-size="10" fill="' + (marks[idx].today ? 'var(--ink)' : 'var(--muted)') + '" font-weight="' + (marks[idx].today ? 700 : 400) + '">' + marks[idx].t + '</text>';
+    });
+    if (cnt) {
+      var ay = padT + plotH - (sum / cnt) / max * plotH;
+      svg += '<line x1="' + padL + '" x2="' + (W - padR) + '" y1="' + ay + '" y2="' + ay + '" stroke="var(--ink)" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.55"/>';
+    }
+    svg += '</svg>';
+    document.getElementById('chartBody').innerHTML = svg;
+    document.getElementById('chartNote').textContent = cnt
+      ? 'Dashed line: average ' + fmtNum(sum / cnt) + m.unit + ' on days you logged. ' + m.hint
+      : 'Nothing logged yet. Bars appear as you use the app. ' + m.hint;
+    Array.prototype.forEach.call(document.querySelectorAll('#seg button'), function (btn) {
+      btn.setAttribute('aria-pressed', String(btn.getAttribute('data-m') === chartMode));
+    });
+  }
+
+  /* ---------- Streak ---------- */
+  function renderStats() {
+    var days = [], i, d, l;
+    for (i = 59; i >= 0; i--) {
+      d = new Date(); d.setDate(d.getDate() - i);
+      l = S.log[keyOf(d)];
+      days.push(l ? (l.gentle ? Math.min(100, (l.pct || 0) * 2) : (l.pct || 0)) : 0);
+    }
+    var TH = 80, best = 0, run = 0;
+    days.forEach(function (p) { if (p >= TH) { run++; if (run > best) best = run; } else run = 0; });
+    var cur = 0, idx = days.length - 1;
+    if (days[idx] < TH) idx--;
+    while (idx >= 0 && days[idx] >= TH) { cur++; idx--; }
+    var sum = 0, cnt = 0;
+    for (i = 6; i >= 0; i--) {
+      d = new Date(); d.setDate(d.getDate() - i);
+      l = S.log[keyOf(d)];
+      if (l) { sum += l.pct || 0; cnt++; }
+    }
+    var avg = cnt ? Math.round(sum / cnt) : 0;
+    document.getElementById('stats').innerHTML =
+      '<div class="stats-row">' +
+      '<div class="stat"><strong>' + cur + '</strong><span>Current streak</span></div>' +
+      '<div class="stat"><strong>' + best + '</strong><span>Best streak</span></div>' +
+      '<div class="stat"><strong>' + avg + '%</strong><span>Week average</span></div>' +
+      '</div><p class="chart-note">A day counts toward your streak at 80% or more, or 40% on a gentle day. XP: 10 per routine, 30 for the hard thing, 1 per focus minute, 5 per good thing, 15 for a full wind-down and 20 for a perfect day.</p>';
+  }
+
+  /* ---------- Breathing guide ---------- */
+  var breath = { on: false, timer: null, n: 0 };
+  var BREATHS = 6;
+  function setOrb(label, sub, scale, ms) {
+    var orb = document.getElementById('orb');
+    orb.style.transitionDuration = ms + 'ms';
+    orb.style.transform = 'scale(' + scale + ')';
+    document.getElementById('orbText').innerHTML = label + '<small>' + sub + '</small>';
+  }
+  function breathIn() {
+    if (!breath.on) return;
+    breath.n++;
+    if (breath.n > BREATHS) { breathDone(); return; }
+    setOrb('Breathe in', 'Breath ' + breath.n + ' of ' + BREATHS, 1, 4000);
+    breath.timer = setTimeout(breathOut, 4000);
+  }
+  function breathOut() {
+    if (!breath.on) return;
+    setOrb('Breathe out', 'Breath ' + breath.n + ' of ' + BREATHS, 0.55, 6000);
+    breath.timer = setTimeout(breathIn, 6000);
+  }
+  function breathStart() {
+    breath.on = true; breath.n = 0;
+    document.getElementById('breathBtn').textContent = 'Stop';
+    breathIn();
+  }
+  function breathStop() {
+    clearTimeout(breath.timer); breath.on = false;
+    setOrb('Ready', BREATHS + ' slow breaths', 0.55, 600);
+    document.getElementById('breathBtn').textContent = 'Start';
+  }
+  function breathDone() {
+    clearTimeout(breath.timer); breath.on = false;
+    setOrb('Well done', 'Calm and steady', 0.55, 1200);
+    document.getElementById('breathBtn').textContent = 'Start again';
+    if (S.settings.sound && audioCtx) {
+      try { var t = audioCtx.currentTime; note(659.25, t, 0.9, 0.1); note(783.99, t + 0.22, 1.3, 0.1); } catch (e) {}
+    }
+  }
+
+  /* ---------- Undo toast ---------- */
+  var toastTimer = null, lastRemoved = null;
+  function showToast(msg, label) {
+    var el = document.getElementById('toast');
+    el.innerHTML = '<span>' + esc(msg) + '</span><button type="button" data-a="undo">' + label + '</button>';
+    el.hidden = false;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(hideToast, 6000);
+  }
+  function hideToast() {
+    clearTimeout(toastTimer);
+    document.getElementById('toast').hidden = true;
+  }
+
+  /* ---------- Good things ---------- */
+  function setVal(id, v) {
+    var el = document.getElementById(id);
+    if (el && document.activeElement !== el && el.value !== v) el.value = v;
+  }
+  function renderGood() {
+    var d = dayOf(todayKey());
+    if (!d.good) d.good = ['', '', ''];
+    setVal('intent', d.intent || '');
+    for (var i = 0; i < 3; i++) setVal('good' + i, d.good[i] || '');
+    var tk = todayKey(), pool = [];
+    Object.keys(S.log).sort().forEach(function (k) {
+      if (k >= tk) return;
+      var g = S.log[k].good;
+      if (g) g.forEach(function (t) { if (t && t.trim()) pool.push({ k: k, t: t.trim() }); });
+    });
+    var jar = document.getElementById('jar');
+    if (!pool.length) {
+      jar.innerHTML = '<span>Your good-things jar</span><p>Write a few good things each day. One of them will come back to you here.</p>';
+      return;
+    }
+    var n = new Date();
+    var pick = pool[(n.getDate() * 7 + n.getMonth() * 3) % pool.length];
+    var p = pick.k.split('-');
+    var when = new Date(+p[0], +p[1] - 1, +p[2]).toLocaleDateString(undefined, { weekday: 'long', day: 'numeric', month: 'short' });
+    jar.innerHTML = '<span>From your jar, ' + esc(when) + '</span><p>' + esc(pick.t) + '</p>';
+  }
+
+  /* ---------- Little joys ---------- */
+  var JOYS = [
+    { id: 'msg', text: 'Message someone you love', slot: 'midday' },
+    { id: 'song', text: 'Play a song that lifts you', slot: 'morning' },
+    { id: 'dance', text: 'Dance to one song', slot: 'morning' },
+    { id: 'tea', text: 'Enjoy a quiet cup of tea', slot: 'midday' },
+    { id: 'thanks', text: 'Tell someone thank you', slot: 'midday' },
+    { id: 'read', text: 'Read ten pages', slot: 'evening' },
+    { id: 'make', text: 'Sketch, write or make something', slot: 'evening' },
+    { id: 'tidy', text: 'Tidy one small space', slot: 'morning' }
+  ];
+  function buildJoys() {
+    var html = '';
+    JOYS.forEach(function (j) {
+      html += '<div class="joy"><span>' + esc(j.text) + '</span><button type="button" class="btn outline" data-a="addJoy" data-id="' + j.id + '">Add</button></div>';
+    });
+    document.getElementById('joyList').innerHTML = html;
+  }
+  function updateJoyButtons() {
+    Array.prototype.forEach.call(document.querySelectorAll('[data-a="addJoy"]'), function (btn) {
+      var j = JOYS.filter(function (x) { return x.id === btn.getAttribute('data-id'); })[0];
+      var has = S.routines.some(function (r) { return r.name === j.text; });
+      btn.textContent = has ? 'Added' : 'Add';
+      btn.disabled = has;
+    });
+  }
+  function addJoy(id) {
+    var j = JOYS.filter(function (x) { return x.id === id; })[0];
+    if (!j || S.routines.some(function (r) { return r.name === j.text; })) return;
+    S.routines.push({ id: uid(), name: j.text, slot: j.slot });
+    save(); render();
+  }
+
+  /* ---------- Hard work: the hard thing, focus, goals ---------- */
+  LINES.work = [
+    'Hard things get easier the moment you start them.',
+    'Discipline is a promise you keep to the person you’re becoming.',
+    'Show up on the days you don’t feel like it. Those days count double.',
+    'Progress is made of ordinary hours, spent on purpose.',
+    'You don’t have to feel ready. Start the timer.'
+  ];
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function pickWork() { return LINES.work[Math.floor(Math.random() * LINES.work.length)]; }
+  function showCheer(title, msg) {
+    var el = document.getElementById('cheer');
+    el.innerHTML = '<h3>' + esc(title) + '</h3><p>' + esc(msg) + '</p><button type="button" data-a="closeCheer">Close</button>';
+    el.hidden = false;
+    clearTimeout(cheerTimer);
+    cheerTimer = setTimeout(hideCheer, 8000);
+  }
+
+  function renderHard() {
+    var d = dayOf(todayKey());
+    var h = d.hard || { t: '', done: false };
+    setVal('hardText', h.t || '');
+    var finished = !!(h.done && h.t);
+    document.getElementById('hardRow').classList.toggle('done', finished);
+    document.getElementById('hardBox').setAttribute('aria-checked', String(finished));
+    document.getElementById('hardNote').textContent = finished ? 'Done. That is the work that moves you forward.' : '';
+  }
+
+  var fx = { on: false, len: 25, end: 0, t: null };
+  function fmtClock(ms) {
+    var s = Math.max(0, Math.ceil(ms / 1000));
+    return pad(Math.floor(s / 60)) + ':' + pad(s % 60);
+  }
+  function renderFocus() {
+    var d = dayOf(todayKey());
+    document.getElementById('focusToday').textContent = (d.focus || 0) + ' min today';
+    document.getElementById('focusTime').textContent = fx.on ? fmtClock(fx.end - Date.now()) : fmtClock(fx.len * 60000);
+    document.getElementById('focusBtn').textContent = fx.on ? 'Stop' : 'Start focus';
+    document.getElementById('workLine').textContent = LINES.work[new Date().getDate() % LINES.work.length];
+    Array.prototype.forEach.call(document.querySelectorAll('#focusSeg button'), function (b) {
+      b.setAttribute('aria-pressed', String(+b.getAttribute('data-n') === fx.len));
+      b.disabled = fx.on;
+    });
+  }
+  function focusStart() {
+    fx.on = true;
+    fx.end = Date.now() + fx.len * 60000;
+    clearInterval(fx.t);
+    fx.t = setInterval(focusTick, 500);
+    renderFocus();
+  }
+  function focusTick() {
+    if (!fx.on) return;
+    if (Date.now() >= fx.end) focusFinish(true);
+    else document.getElementById('focusTime').textContent = fmtClock(fx.end - Date.now());
+  }
+  function focusFinish(complete) {
+    var d = dayOf(todayKey()), mins;
+    if (complete) mins = fx.len;
+    else mins = Math.floor((fx.len * 60000 - (fx.end - Date.now())) / 60000);
+    clearInterval(fx.t);
+    fx.on = false;
+    if (mins > 0) { d.focus = (d.focus || 0) + mins; save(); }
+    renderFocus(); renderChart(); renderRecap();
+    if (complete) {
+      chime();
+      showCheer('Focus session done ✨', pickWork());
+      notify('Focus session done', 'Take a short break. You earned it.');
+    }
+  }
+  CHARTS.focus = { label: 'Focus', max: 60, unit: ' min', color: 'var(--sage)', get: function (l) { return l.focus || 0; }, hint: 'Minutes of focus time each day.' };
+
+  function daysLeft(due) {
+    if (!due) return '';
+    var p = due.split('-');
+    var t = new Date(+p[0], +p[1] - 1, +p[2]);
+    var n = new Date(); n.setHours(0, 0, 0, 0);
+    var diff = Math.round((t - n) / 864e5);
+    if (diff > 1) return diff + ' days left';
+    if (diff === 1) return '1 day left';
+    if (diff === 0) return 'Due today';
+    return 'Overdue by ' + (-diff) + (diff === -1 ? ' day' : ' days');
+  }
+  function renderGoals() {
+    var el = document.getElementById('goals'), html = '';
+    if (!S.goals.length) {
+      el.innerHTML = '<p class="intro">Add a goal, then break it into small steps. Each step you finish moves the bar.</p>';
+      return;
+    }
+    S.goals.forEach(function (g) {
+      var total = g.steps.length;
+      var done = g.steps.filter(function (s) { return s.done; }).length;
+      var pct = total ? Math.round(done / total * 100) : 0;
+      var meta = total ? done + ' of ' + total + ' steps' : 'No steps yet';
+      var dl = daysLeft(g.due);
+      if (dl) meta += ', ' + dl;
+      html += '<div class="goal"><div class="goal-head"><strong>' + esc(g.title) + '</strong>' +
+        '<button type="button" class="remove" data-a="goalDel" data-id="' + esc(g.id) + '" aria-label="Remove goal ' + esc(g.title) + '">&times;</button></div>' +
+        '<div class="goal-meta">' + esc(meta) + '</div><div class="bar"><span style="width:' + pct + '%"></span></div><ul class="steps">';
+      g.steps.forEach(function (s) {
+        html += '<li class="row' + (s.done ? ' done' : '') + '">' +
+          '<button type="button" class="toggle" data-a="stepToggle" data-g="' + esc(g.id) + '" data-id="' + esc(s.id) + '" role="checkbox" aria-checked="' + !!s.done + '"><span class="box">' + CHECK + '</span><span class="name">' + esc(s.t) + '</span></button>' +
+          '<button type="button" class="remove" data-a="stepDel" data-g="' + esc(g.id) + '" data-id="' + esc(s.id) + '" aria-label="Remove step ' + esc(s.t) + '">&times;</button></li>';
+      });
+      html += '</ul><form class="step-add" data-id="' + esc(g.id) + '" autocomplete="off"><input type="text" maxlength="70" placeholder="Add a next step" aria-label="Add a step to ' + esc(g.title) + '"><button type="submit" class="btn quiet">Add</button></form></div>';
+    });
+    el.innerHTML = html;
+  }
+  function toggleStep(gid, sid) {
+    var reached = null;
+    S.goals.forEach(function (g) {
+      if (g.id !== gid) return;
+      g.steps.forEach(function (s) { if (s.id === sid) s.done = !s.done; });
+      var allDone = g.steps.length > 0 && g.steps.every(function (s) { return s.done; });
+      if (allDone) reached = g;
+    });
+    save(); renderGoals();
+    if (reached) { chime(); burst(); showCheer('Goal reached ✨', reached.title); }
+    else tick();
+  }
+
+  /* ---------- Weekly recap ---------- */
+  function fmtMin(m) { return m < 60 ? m + ' min' : Math.floor(m / 60) + ' h ' + (m % 60) + ' min'; }
+  function renderRecap() {
+    var i, d, l, p, days80 = 0, sum = 0, cnt = 0, fm = 0, hardN = 0, goodN = 0, best = null;
+    for (i = 6; i >= 0; i--) {
+      d = new Date(); d.setDate(d.getDate() - i);
+      l = S.log[keyOf(d)];
+      if (!l) continue;
+      p = l.pct || 0; cnt++; sum += p;
+      if ((l.gentle ? p * 2 : p) >= 80) days80++;
+      fm += l.focus || 0;
+      if (l.hard && l.hard.done && l.hard.t) hardN++;
+      if (l.good) l.good.forEach(function (t) { if (t && t.trim()) goodN++; });
+      if (!best || p > best.p) best = { p: p, name: d.toLocaleDateString(undefined, { weekday: 'long' }) };
+    }
+    var avg = cnt ? Math.round(sum / cnt) : 0;
+    lastRecap = { days80: days80, avg: avg, fm: fm, hardN: hardN, goodN: goodN };
+    function row(a, b) { return '<div class="c-row"><div class="c-label">' + a + '</div><strong class="val">' + b + '</strong></div>'; }
+    var line = days80 >= 5 ? 'A strong week. Keep the standard.' : (days80 >= 3 ? 'Solid week. Pick one routine to tighten next week.' : 'Every week is a fresh start. Aim for one more good day than last week.');
+    document.getElementById('recap').innerHTML = '<div class="checkin">' +
+      row('Days at 80% or more', days80 + ' of 7') + row('Average day', avg + '%') +
+      row('Best day', best ? best.name + ' (' + best.p + '%)' : 'None yet') +
+      row('Hard things done', hardN) + row('Focus time', fmtMin(fm)) + row('Good things written', goodN) +
+      '</div><p class="chart-note">' + line + '</p>';
+  }
+
+  /* ---------- Reminders ---------- */
+  function notify(title, body) {
+    title = tx(title); body = tx(body);
+    try {
+      if ('Notification' in window && Notification.permission === 'granted') {
+        var nopts = { body: body, tag: 'first-light' };
+        if (navigator.serviceWorker && navigator.serviceWorker.getRegistration) {
+          navigator.serviceWorker.getRegistration().then(function (reg) {
+            if (reg && reg.showNotification) reg.showNotification(title, nopts);
+            else { try { new Notification(title, nopts); } catch (e2) {} }
+          }).catch(function () { try { new Notification(title, nopts); } catch (e3) {} });
+        } else new Notification(title, nopts);
+      }
+    } catch (e) {}
+    try { if (navigator.vibrate) navigator.vibrate([200, 100, 200]); } catch (e) {}
+  }
+  function remind(title, body) { notify(title, body); showCheer(title, body); chime(); }
+  function toMin(s) { var p = s.split(':'); return (+p[0]) * 60 + (+p[1]); }
+  function checkReminders() {
+    var r = S.settings.remind;
+    if (!r || !r.on) return;
+    if (window.Android && window.Android.scheduleReminders) return;
+    if (!r.last) r.last = { m: '', e: '' };
+    var now = new Date(), tk = todayKey();
+    var mins = now.getHours() * 60 + now.getMinutes();
+    var st = stats();
+    var mm = toMin(r.morning), em = toMin(r.evening);
+    if (r.last.m !== tk && mins >= mm && mins <= mm + 180) {
+      r.last.m = tk; save();
+      remind('Good morning. Add your routine', st.total ? 'You have ' + st.total + ' routines today. Check in with the first one.' : 'Add a few routines to start your day.');
+    }
+    var ws = toMin(S.settings.bed) - 30;
+    if (ws >= 0 && r.last.w !== tk && mins >= ws && mins <= ws + 120) {
+      r.last.w = tk; save();
+      remind('Time to wind down', 'Screens down, lights low. Bedtime is at ' + fmt12(S.settings.bed) + '.');
+    }
+    if (r.last.e !== tk && mins >= em && mins <= em + 180) {
+      r.last.e = tk; save();
+      if (!st.total) remind('Evening check-in', 'Add a routine for tomorrow.');
+      else if (st.pct < 100) remind('Evening check-in', (st.total - st.done) + ' routines left. A few minutes will finish the day.');
+    }
+  }
+  function updateNotifUI() {
+    var r = S.settings.remind, granted = false;
+    try { granted = ('Notification' in window) && Notification.permission === 'granted'; } catch (e) {}
+    try { if (window.Android && window.Android.canNotify) granted = !!window.Android.canNotify(); } catch (e3) {}
+    document.getElementById('notifState').textContent = r.on ? (granted ? 'On' : 'On, in-page only') : 'Off';
+    document.getElementById('notifBtn').textContent = r.on ? 'Turn off' : 'Turn on';
+  }
+  function toggleReminders() {
+    var r = S.settings.remind;
+    if (r.on) { r.on = false; save(); updateNotifUI(); return; }
+    r.on = true; r.last = { m: '', e: '' }; save(); updateNotifUI();
+    try { if (window.Android && window.Android.requestNotifications) { window.Android.requestNotifications(); setTimeout(updateNotifUI, 3000); setTimeout(updateNotifUI, 8000); } } catch (e0) {}
+    try {
+      if ('Notification' in window && Notification.permission === 'default') {
+        var pr = Notification.requestPermission(function () { updateNotifUI(); });
+        if (pr && pr.then) pr.then(updateNotifUI);
+      }
+    } catch (e) {}
+    checkReminders();
+  }
+  function applyWaterGoal() {
+    WATER_GOAL = S.settings.waterGoal || 8;
+    CHARTS.water.max = WATER_GOAL;
+    CHARTS.water.hint = 'Goal: ' + WATER_GOAL + ' glasses a day.';
+    var o = document.getElementById('wgOut');
+    if (o) o.textContent = WATER_GOAL;
+  }
+
+  /* ---------- Bedtime wind-down ---------- */
+  var WIND = [
+    { id: 'screens', t: 'Put screens away' },
+    { id: 'lights', t: 'Dim the lights' },
+    { id: 'task', t: 'Write tomorrow’s first task' },
+    { id: 'things', t: 'Lay out tomorrow’s things' },
+    { id: 'stretch', t: 'Stretch or breathe for a few minutes' },
+    { id: 'charge', t: 'Charge your phone away from the bed' }
+  ];
+  function fmt12(s) {
+    var p = s.split(':'), h = +p[0];
+    return ((h % 12) || 12) + ':' + p[1] + ' ' + (h < 12 ? 'am' : 'pm');
+  }
+  function fmtHM(mins) {
+    var h = Math.floor(mins / 60), m = mins % 60;
+    return h ? h + ' h' + (m ? ' ' + m + ' min' : '') : m + ' min';
+  }
+  function renderWind() {
+    var d = dayOf(todayKey());
+    if (!d.wind) d.wind = [];
+    var html = '';
+    WIND.forEach(function (w) {
+      var on = d.wind.indexOf(w.id) !== -1;
+      html += '<li class="row' + (on ? ' done' : '') + '"><button type="button" class="toggle" data-a="windToggle" data-id="' + w.id + '" role="checkbox" aria-checked="' + on + '"><span class="box">' + CHECK + '</span><span class="name">' + esc(w.t) + '</span></button></li>';
+    });
+    document.getElementById('windList').innerHTML = html;
+    var now = new Date(), nm = now.getHours() * 60 + now.getMinutes();
+    var bm = toMin(S.settings.bed);
+    if (bm < 360 && nm >= 720) bm += 1440;
+    var diff = bm - nm, txt;
+    if (diff > 0) txt = 'Bedtime in ' + fmtHM(diff);
+    else if (diff > -90) txt = 'Bedtime now. Lights out.';
+    else if (diff > -360) txt = 'Past bedtime. Rest well.';
+    else txt = 'Bedtime ' + fmt12(S.settings.bed);
+    document.getElementById('bedCount').textContent = txt;
+    var tb = document.getElementById('tBed');
+    if (tb && document.activeElement !== tb) tb.value = S.settings.bed;
+  }
+  function toggleWind(id) {
+    var d = dayOf(todayKey());
+    if (!d.wind) d.wind = [];
+    var ix = d.wind.indexOf(id);
+    if (ix === -1) d.wind.push(id); else d.wind.splice(ix, 1);
+    save(); renderWind();
+    if (ix === -1 && d.wind.length === WIND.length) { chime(); showCheer('Ready for sleep ✨', 'Sleep well. Tomorrow starts fresh.'); }
+    else if (ix === -1) tick();
+  }
+  function setView(v) {
+    document.body.setAttribute('data-view', v);
+    S.settings.view = v; save();
+    Array.prototype.forEach.call(document.querySelectorAll('.tab'), function (t) {
+      if (t.getAttribute('data-v') === v) t.setAttribute('aria-current', 'page'); else t.removeAttribute('aria-current');
+    });
+    window.scrollTo(0, 0);
+  }
+
+  /* ---------- Levels, confetti, haptics, palettes ---------- */
+  var TITLES = ['Seed', 'Sprout', 'Sapling', 'Bloom', 'Climber', 'Sunrise', 'Flame', 'Summit', 'Legend'];
+  function dayXp(l) {
+    var x = 0;
+    if (l.done) x += l.done.length * 10;
+    if (l.pct === 100) x += 20;
+    if (l.hard && l.hard.done && l.hard.t) x += 30;
+    x += l.focus || 0;
+    if (l.good) l.good.forEach(function (t) { if (t && t.trim()) x += 5; });
+    if (l.wind && l.wind.length >= 6) x += 15;
+    if (l.spark) x += 5;
+    return x;
+  }
+  function totalXp() {
+    var t = S.xpBase || 0;
+    Object.keys(S.log).forEach(function (k) { t += dayXp(S.log[k]); });
+    return t;
+  }
+  function levelInfo(xp) {
+    var lvl = Math.floor(Math.sqrt(xp / 60)) + 1;
+    var start = (lvl - 1) * (lvl - 1) * 60, next = lvl * lvl * 60;
+    return { lvl: lvl, next: next, pct: Math.round((xp - start) / (next - start) * 100) };
+  }
+  function queueCheer(title, msg, tries) {
+    var el = document.getElementById('cheer');
+    if (el.hidden || (tries || 0) > 5) showCheer(title, msg);
+    else setTimeout(function () { queueCheer(title, msg, (tries || 0) + 1); }, 2000);
+  }
+  function renderLevel() {
+    var xp = totalXp(), li = levelInfo(xp);
+    var title = TITLES[Math.min(li.lvl - 1, TITLES.length - 1)];
+    var today = dayXp(dayOf(todayKey()));
+    var st = stats();
+    document.getElementById('level').innerHTML =
+      '<div class="pet-wrap"><button type="button" class="pet-art" data-a="pet" aria-label="Pet Sprig, your plant">' + plantSvg(stageOf(li.lvl), petMood(st), st.pct === 100, outfitOk(S.settings.outfit, li.lvl) ? S.settings.outfit : '') + '</button>' +
+      '<div class="pet-info"><p class="pet-say">' + esc(petLine(st)) + '</p>' +
+      '<div class="level-top"><strong>Level ' + li.lvl + ', ' + title + '</strong><span>' + xp + ' XP</span></div>' +
+      '<div class="bar"><span style="width:' + li.pct + '%"></span></div>' +
+      '<div class="level-top lt2"><span>+' + today + ' XP today</span><span>' + (li.next - xp) + ' XP to level ' + (li.lvl + 1) + '</span></div></div></div>';
+    var gb = document.getElementById('gentleBtn');
+    if (gb) { gb.setAttribute('aria-pressed', String(!!st.d.gentle)); gb.textContent = st.d.gentle ? 'Gentle day is on' : 'Gentle day'; }
+    if (typeof S.maxLevel !== 'number') { S.maxLevel = li.lvl; save(); }
+    else if (li.lvl > S.maxLevel) {
+      S.maxLevel = li.lvl; save();
+      burst();
+      setTimeout(function () { queueCheer('Level up ✨', 'You are now Level ' + li.lvl + ', ' + title + '. Keep going.'); }, 500);
+    }
+  }
+  function buzz(p) { try { if (navigator.vibrate) navigator.vibrate(p); } catch (e) {} }
+  function burst() {
+    try {
+      if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var host = document.createElement('div');
+      host.className = 'confetti';
+      host.setAttribute('aria-hidden', 'true');
+      var cols = ['var(--acc1)', 'var(--acc2)', 'var(--sun)', 'var(--water)', 'var(--rose)', 'var(--sage)', 'var(--lilac)'];
+      for (var i = 0; i < 46; i++) {
+        var p = document.createElement('i');
+        p.style.cssText = 'left:' + (Math.random() * 100) + '%;background:' + cols[i % cols.length] +
+          ';--dx:' + Math.round((Math.random() - 0.5) * 160) + 'px;--rot:' + Math.round(Math.random() * 720 - 360) + 'deg' +
+          ';animation-duration:' + (1.6 + Math.random() * 1.4).toFixed(2) + 's;animation-delay:' + (Math.random() * 0.25).toFixed(2) + 's' +
+          ';width:' + Math.round(6 + Math.random() * 6) + 'px;height:' + Math.round(8 + Math.random() * 8) + 'px';
+        host.appendChild(p);
+      }
+      document.body.appendChild(host);
+      setTimeout(function () { if (host.parentNode) host.parentNode.removeChild(host); }, 3600);
+    } catch (e) {}
+  }
+  function applyPalette() {
+    var p = S.settings.palette || 'sunrise';
+    document.documentElement.setAttribute('data-palette', p);
+    Array.prototype.forEach.call(document.querySelectorAll('#palSeg button'), function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-p') === p));
+    });
+  }
+
+  /* ---------- Companion, icons, spark, badges, calm sounds ---------- */
+  LINES.gentle = [
+    'Gentle day. Doing a little is still doing something.',
+    'Rest is part of the plan. Be kind to yourself.',
+    'Low energy is allowed. Pick the smallest thing.',
+    'Your body is asking for softness today. Listen.',
+    'Half a step still moves you forward.'
+  ];
+
+  var ICONS = [['water', '💧'], ['drink', '💧'], ['stretch', '🤸'], ['yoga', '🧘'], ['breath', '🌬️'], ['meditat', '🧘'], ['walk', '🚶'], ['run', '🏃'], ['cycl', '🚴'], ['swim', '🏊'], ['strength', '💪'], ['gym', '🏋️'], ['dance', '💃'], ['song', '🎵'], ['music', '🎵'], ['read', '📖'], ['tea', '🍵'], ['lunch', '🥗'], ['breakfast', '🍳'], ['eat', '🥗'], ['daylight', '🌤️'], ['sun', '🌤️'], ['plan', '📝'], ['task', '📝'], ['write', '✍️'], ['journal', '✍️'], ['screen', '📵'], ['sleep', '😴'], ['message', '💌'], ['thank', '💌'], ['tidy', '🧹'], ['clean', '🧹'], ['sketch', '🎨'], ['make', '🎨'], ['badminton', '🏸'], ['call', '📞'], ['study', '🎓'], ['vitamin', '💊'], ['medic', '💊'], ['skin', '🧴']];
+  function iconFor(name) {
+    var n = String(name).toLowerCase();
+    for (var i = 0; i < ICONS.length; i++) { if (n.indexOf(ICONS[i][0]) !== -1) return ICONS[i][1]; }
+    return '✨';
+  }
+
+  var petTalk = null;
+  var PET_TAPS = ['Hehe, that tickles!', 'I’m growing because of you.', 'Water break? I’ll join you.', 'You make me happy.', 'Keep going. I believe in you.', 'Tap me anytime!'];
+  function stageOf(lvl) { return lvl <= 1 ? 0 : (lvl === 2 ? 1 : (lvl === 3 ? 2 : (lvl <= 5 ? 3 : 4))); }
+  function petMood(st) {
+    var h = new Date().getHours();
+    if (h >= 22 || h < 5) return 'sleepy';
+    if (st.pct === 100) return 'proud';
+    if (st.d.gentle) return 'happy';
+    if (st.pct >= 50) return 'excited';
+    if (st.pct > 0) return 'happy';
+    return 'calm';
+  }
+  function petLine(st) {
+    if (petTalk && Date.now() < petTalk.until) return petTalk.t;
+    var h = new Date().getHours(), nm = (S.settings.name || '').trim();
+    if (h >= 22 || h < 5) return 'Shh. Time to rest. Sleep well' + (nm ? ', ' + nm : '') + '.';
+    if (st.d.gentle && st.pct < 100) return 'Gentle day. Just being here is enough.';
+    if (st.pct === 100) return 'All done! I bloomed for you' + (nm ? ', ' + nm : '') + '.';
+    if (st.pct >= 50) return 'Halfway there. I’m cheering for you!';
+    if (st.pct > 0) return 'Nice start. I feel taller already.';
+    return h < 12 ? 'Good morning! Ready when you are.' : 'Hi! Let’s start with something small.';
+  }
+  function plantSvg(stage, mood, flower, outfit) {
+    var top = [58, 48, 38, 30, 26][stage], ink = '#2A1A2E', i, k;
+    var s = '<svg viewBox="0 0 120 124" aria-hidden="true">';
+    s += '<circle cx="60" cy="62" r="48" fill="var(--sun)" opacity=".13"/>';
+    s += '<path d="M60 74 L60 ' + top + '" stroke="var(--sage)" stroke-width="4" stroke-linecap="round" fill="none"/>';
+    var pairs = stage === 0 ? 1 : (stage === 1 ? 2 : 3), size = stage < 2 ? 0.75 : 1;
+    for (i = 0; i < pairs; i++) {
+      var y = top + 8 + i * 12;
+      for (k = -1; k <= 1; k += 2) {
+        var cx = 60 + k * 11 * size, cy = y - 4;
+        s += '<ellipse cx="' + cx + '" cy="' + cy + '" rx="' + (10 * size) + '" ry="' + (5 * size) + '" transform="rotate(' + (k * -28) + ' ' + cx + ' ' + cy + ')" fill="var(--sage)"/>';
+      }
+    }
+    if (flower || stage >= 3) {
+      var fy = top - 4;
+      for (k = 0; k < 6; k++) {
+        var an = k * Math.PI / 3;
+        s += '<circle cx="' + (60 + Math.cos(an) * 8).toFixed(1) + '" cy="' + (fy + Math.sin(an) * 8).toFixed(1) + '" r="5.5" fill="var(--rose)"/>';
+      }
+      s += '<circle cx="60" cy="' + fy + '" r="5" fill="var(--sun)"/>';
+    }
+    if (stage >= 4) s += '<text x="22" y="34" font-size="12" fill="var(--sun)">✦</text><text x="92" y="46" font-size="9" fill="var(--sun)">✦</text><text x="88" y="22" font-size="7" fill="var(--rose)">✦</text>';
+    s += '<path d="M32 83 H88 L82 112 Q81.3 116 77 116 H43 Q38.7 116 38 112 Z" fill="var(--acc1)"/>';
+    s += '<rect x="26" y="70" width="68" height="14" rx="7" fill="var(--acc2)"/>';
+    s += '<ellipse cx="60" cy="71" rx="25" ry="3.6" fill="#6B4A3A"/>';
+    var eyes, mouth, blush = '';
+    if (mood === 'sleepy') {
+      eyes = '<path d="M45 97 Q50 101 55 97 M65 97 Q70 101 75 97" stroke="' + ink + '" stroke-width="2.4" fill="none" stroke-linecap="round"/>';
+      mouth = '<circle cx="60" cy="105" r="2.2" fill="' + ink + '"/><text x="84" y="64" font-size="11" fill="var(--lilac)">z</text>';
+    } else if (mood === 'proud') {
+      eyes = '<path d="M45 99 Q50 93 55 99 M65 99 Q70 93 75 99" stroke="' + ink + '" stroke-width="2.6" fill="none" stroke-linecap="round"/>';
+      mouth = '<path d="M52 102 Q60 115 68 102 Z" fill="' + ink + '"/>';
+    } else {
+      eyes = '<circle cx="50" cy="96" r="3.2" fill="' + ink + '"/><circle cx="70" cy="96" r="3.2" fill="' + ink + '"/>';
+      if (mood === 'excited') mouth = '<path d="M52 101 Q60 114 68 101 Z" fill="' + ink + '"/>';
+      else if (mood === 'happy') mouth = '<path d="M52 103 Q60 111 68 103" stroke="' + ink + '" stroke-width="2.6" fill="none" stroke-linecap="round"/>';
+      else mouth = '<path d="M54 104 Q60 107 66 104" stroke="' + ink + '" stroke-width="2.6" fill="none" stroke-linecap="round"/>';
+    }
+    if (mood !== 'sleepy' && mood !== 'calm') blush = '<circle cx="42" cy="103" r="4.2" fill="#fff" opacity=".35"/><circle cx="78" cy="103" r="4.2" fill="#fff" opacity=".35"/>';
+    return s + blush + eyes + mouth + outfitSvg(outfit, top) + '</svg>';
+  }
+  function petHearts() {
+    var host = document.getElementById('level');
+    for (var i = 0; i < 5; i++) {
+      var h = document.createElement('span');
+      h.className = 'heart';
+      h.textContent = '💛';
+      h.style.left = (14 + Math.random() * 70) + '%';
+      h.style.bottom = (26 + Math.random() * 30) + '%';
+      h.style.animationDelay = (i * 0.08) + 's';
+      host.appendChild(h);
+      (function (el) { setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 1600); })(h);
+    }
+  }
+  function petTap() {
+    buzz(15);
+    var nm = (S.settings.name || '').trim();
+    var line = PET_TAPS[Math.floor(Math.random() * PET_TAPS.length)];
+    if (nm && Math.random() < 0.3) line = 'Thank you, ' + nm + '!';
+    petTalk = { t: line, until: Date.now() + 4000 };
+    renderLevel();
+    petHearts();
+    if (S.settings.sound && audioCtx) {
+      try { var t = audioCtx.currentTime; note(660, t, 0.15, 0.07); note(880, t + 0.09, 0.2, 0.07); } catch (e) {}
+    }
+    setTimeout(renderLevel, 4100);
+  }
+
+  var SPARKS = [
+    'Send a kind message to someone you care about.',
+    'Take five slow breaths before your next task.',
+    'Drink a glass of water slowly, with no screen.',
+    'Step outside and look at the sky for one minute.',
+    'Write down one thing you did well this week.',
+    'Stretch your arms overhead and roll your shoulders.',
+    'Play one song you love and listen to all of it.',
+    'Tidy one small corner of your room.',
+    'Give someone a real compliment.',
+    'Eat one thing today just because it tastes good.',
+    'Smile at yourself in the mirror.',
+    'Text a friend you haven’t spoken to in a while.',
+    'Do something creative for five minutes.',
+    'Say thank you to someone out loud.'
+  ];
+  function sparkOf() {
+    var n = new Date();
+    var seed = Math.floor((new Date(n.getFullYear(), n.getMonth(), n.getDate()) - new Date(n.getFullYear(), 0, 0)) / 864e5);
+    return SPARKS[seed % SPARKS.length];
+  }
+  function renderSpark() {
+    var d = dayOf(todayKey()), b = document.getElementById('sparkBtn');
+    document.getElementById('sparkText').textContent = sparkOf();
+    b.textContent = d.spark ? 'Done, +5 XP' : 'I did it';
+    b.disabled = !!d.spark;
+  }
+
+  var BADGES = [
+    { id: 'first', e: '🌱', n: 'First step', d: 'Check off a routine' },
+    { id: 'streak3', e: '🔥', n: 'Three in a row', d: 'A 3-day streak' },
+    { id: 'streak7', e: '🌟', n: 'Full week', d: 'A 7-day streak' },
+    { id: 'perfect', e: '☀️', n: 'Perfect day', d: 'Finish every routine' },
+    { id: 'hydrated', e: '💧', n: 'Hydrated', d: 'Hit your water goal' },
+    { id: 'focus60', e: '🎯', n: 'Deep focus', d: '60 focus minutes in a day' },
+    { id: 'grateful', e: '💛', n: 'Grateful heart', d: 'Write three good things' },
+    { id: 'hard3', e: '🦁', n: 'Hard things', d: 'Finish 3 hard things' },
+    { id: 'goal', e: '🏆', n: 'Goal getter', d: 'Finish every step of a goal' },
+    { id: 'wind', e: '🌙', n: 'Sleep ritual', d: 'Finish a full wind-down' },
+    { id: 'gentle', e: '🤍', n: 'Kind to myself', d: 'Use a gentle day' },
+    { id: 'bloom', e: '🌸', n: 'In bloom', d: 'Reach level 4' }
+  ];
+  function streakBest() {
+    var run = 0, best = 0, i, d, l, p;
+    for (i = 59; i >= 0; i--) {
+      d = new Date(); d.setDate(d.getDate() - i);
+      l = S.log[keyOf(d)];
+      p = l ? (l.pct || 0) : 0;
+      if (l && l.gentle) p = Math.min(100, p * 2);
+      if (p >= 80) { run++; if (run > best) best = run; } else run = 0;
+    }
+    return best;
+  }
+  function earnedBadges() {
+    var e = {}, hard = 0;
+    Object.keys(S.log).forEach(function (k) {
+      var l = S.log[k];
+      if (l.done && l.done.length) e.first = 1;
+      if (l.pct === 100) e.perfect = 1;
+      if ((l.water || 0) >= WATER_GOAL) e.hydrated = 1;
+      if ((l.focus || 0) >= 60) e.focus60 = 1;
+      if (l.good && l.good.filter(function (t) { return t && t.trim(); }).length >= 3) e.grateful = 1;
+      if (l.hard && l.hard.done && l.hard.t) hard++;
+      if (l.wind && l.wind.length >= 6) e.wind = 1;
+      if (l.gentle) e.gentle = 1;
+    });
+    if (hard >= 3) e.hard3 = 1;
+    if (S.goals.some(function (g) { return g.steps.length > 0 && g.steps.every(function (s) { return s.done; }); })) e.goal = 1;
+    var sb = streakBest();
+    if (sb >= 3) e.streak3 = 1;
+    if (sb >= 7) e.streak7 = 1;
+    if (levelInfo(totalXp()).lvl >= 4) e.bloom = 1;
+    return e;
+  }
+  function renderBadges() {
+    var e = earnedBadges(), ids = Object.keys(e), html = '';
+    BADGES.forEach(function (b) {
+      var on = !!e[b.id];
+      html += '<div class="badge' + (on ? ' on' : '') + '"><b aria-hidden="true">' + b.e + '</b><span>' + esc(b.n) + '<small>' + esc(b.d) + '</small></span></div>';
+    });
+    document.getElementById('badges').innerHTML = html;
+    document.getElementById('badgeCount').textContent = ids.length + ' of ' + BADGES.length;
+    if (!Array.isArray(S.badges)) { S.badges = ids; save(); return; }
+    var fresh = ids.filter(function (i) { return S.badges.indexOf(i) === -1; });
+    if (fresh.length) {
+      S.badges = S.badges.concat(fresh); save();
+      var nb = BADGES.filter(function (x) { return x.id === fresh[0]; })[0];
+      burst();
+      setTimeout(function () { queueCheer('Badge unlocked ✨', nb.e + ' ' + nb.n + ': ' + nb.d); }, 700);
+    }
+  }
+
+  var amb = { src: null, lfo: null, timer: null, type: 'off', mins: 30 };
+  function noiseBuf(brown) {
+    var len = audioCtx.sampleRate * 3, buf = audioCtx.createBuffer(1, len, audioCtx.sampleRate), data = buf.getChannelData(0), last = 0;
+    for (var i = 0; i < len; i++) {
+      var w = Math.random() * 2 - 1;
+      if (brown) { last = (last + 0.02 * w) / 1.02; data[i] = last * 3.5; } else data[i] = w;
+    }
+    return buf;
+  }
+  function renderAmb() {
+    document.getElementById('ambState').textContent = amb.type === 'off' ? 'Off' : amb.type.charAt(0).toUpperCase() + amb.type.slice(1) + ' on';
+    Array.prototype.forEach.call(document.querySelectorAll('#ambSeg button'), function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-t') === amb.type)); });
+    Array.prototype.forEach.call(document.querySelectorAll('#ambLenSeg button'), function (b) { b.setAttribute('aria-pressed', String(+b.getAttribute('data-n') === amb.mins)); });
+  }
+  function ambStop() {
+    try { if (amb.src) { amb.src.stop(); amb.src.disconnect(); } if (amb.lfo) amb.lfo.stop(); } catch (e) {}
+    amb.src = null; amb.lfo = null; clearTimeout(amb.timer); amb.type = 'off';
+    renderAmb();
+  }
+  function ambStart(type) {
+    ensureAudio();
+    if (!audioCtx) return;
+    ambStop();
+    try {
+      var src = audioCtx.createBufferSource();
+      src.buffer = noiseBuf(type !== 'rain'); src.loop = true;
+      var g = audioCtx.createGain(), target = 0.22, now = audioCtx.currentTime;
+      g.gain.setValueAtTime(0.0001, now);
+      if (type === 'rain') {
+        var hp = audioCtx.createBiquadFilter(); hp.type = 'highpass'; hp.frequency.value = 900;
+        var lp = audioCtx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 6500;
+        src.connect(hp); hp.connect(lp); lp.connect(g); target = 0.10;
+      } else if (type === 'ocean') {
+        var lp2 = audioCtx.createBiquadFilter(); lp2.type = 'lowpass'; lp2.frequency.value = 650;
+        src.connect(lp2); lp2.connect(g); target = 0.28;
+        var lfo = audioCtx.createOscillator(), lg = audioCtx.createGain();
+        lfo.frequency.value = 0.11; lg.gain.value = 0.12;
+        lfo.connect(lg); lg.connect(g.gain); lfo.start(); amb.lfo = lfo;
+      } else { src.connect(g); }
+      g.connect(audioCtx.destination);
+      g.gain.exponentialRampToValueAtTime(target, now + 2);
+      src.start();
+      amb.src = src; amb.type = type;
+      clearTimeout(amb.timer);
+      amb.timer = setTimeout(ambStop, amb.mins * 60000);
+    } catch (e) { amb.type = 'off'; }
+    renderAmb();
+  }
+
+  /* ---------- Schedules, manage sheet, health log, review, backup ---------- */
+  function tx(s) { return trStr(s); }
+  function parseKey(k) { var p = k.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
+  function prevKey(k) { var d = parseKey(k); d.setDate(d.getDate() - 1); return keyOf(d); }
+  function isSched(r, date) { return !r.days || !r.days.length || r.days.indexOf(date.getDay()) !== -1; }
+  function todays() {
+    var n = new Date();
+    return S.routines.filter(function (r) { return !r.archived && isSched(r, n); });
+  }
+  function routineStreak(r) {
+    var cur = 0, best = 0, run = 0, i, d, l, done;
+    for (i = 0; i < 90; i++) {
+      d = new Date(); d.setDate(d.getDate() - i);
+      if (!isSched(r, d)) continue;
+      l = S.log[keyOf(d)];
+      done = !!(l && l.done && l.done.indexOf(r.id) !== -1);
+      if (done) cur++;
+      else if (i === 0) continue;
+      else break;
+    }
+    for (i = 89; i >= 0; i--) {
+      d = new Date(); d.setDate(d.getDate() - i);
+      if (!isSched(r, d)) continue;
+      l = S.log[keyOf(d)];
+      done = !!(l && l.done && l.done.indexOf(r.id) !== -1);
+      if (done) { run++; if (run > best) best = run; } else if (i !== 0) run = 0;
+    }
+    return { cur: cur, best: best };
+  }
+  function streakChip(r) {
+    var n = routineStreak(r).cur;
+    return n >= 2 ? '<span class="rs">🔥 ' + n + '</span>' : '';
+  }
+
+  var managing = false, pendingDel = null;
+  function manageRow(r, wd, archived) {
+    var rs = routineStreak(r), d, h = '<div class="mrow"><div class="mtop"><span class="ico" aria-hidden="true">' + iconFor(r.name) + '</span><strong>' + esc(r.name) + '</strong>';
+    if (!archived) h += '<span class="mstreak">Streak ' + rs.cur + ', best ' + rs.best + '</span>';
+    h += '</div>';
+    if (!archived) {
+      h += '<div class="chips">';
+      for (d = 0; d < 7; d++) {
+        var on = !r.days || !r.days.length || r.days.indexOf(d) !== -1;
+        h += '<button type="button" class="dchip' + (on ? ' on' : '') + '" data-a="mDay" data-id="' + esc(r.id) + '" data-n="' + d + '" aria-pressed="' + on + '">' + esc(wd[d]) + '</button>';
+      }
+      h += '</div><div class="chips">';
+      SLOTS.forEach(function (s) {
+        h += '<button type="button" class="schip' + (r.slot === s.id ? ' on' : '') + '" data-a="mSlot" data-id="' + esc(r.id) + '" data-s="' + s.id + '">' + s.label + '</button>';
+      });
+      h += '</div><div class="macts">' +
+        '<button type="button" class="btn outline" data-a="mUp" data-id="' + esc(r.id) + '" aria-label="Move up">↑</button>' +
+        '<button type="button" class="btn outline" data-a="mDown" data-id="' + esc(r.id) + '" aria-label="Move down">↓</button>' +
+        '<button type="button" class="btn outline" data-a="mArchive" data-id="' + esc(r.id) + '">Archive</button>';
+    } else {
+      h += '<div class="macts"><button type="button" class="btn outline" data-a="mRestore" data-id="' + esc(r.id) + '">Restore</button>';
+    }
+    h += '<button type="button" class="btn quiet" data-a="mDelete" data-id="' + esc(r.id) + '">' + (pendingDel === r.id ? 'Tap again to delete' : 'Delete') + '</button></div></div>';
+    return h;
+  }
+  function renderManage() {
+    var el = document.getElementById('manage');
+    el.hidden = !managing;
+    if (!managing) return;
+    var wd = [], i;
+    for (i = 0; i < 7; i++) wd.push(new Date(2024, 0, 7 + i).toLocaleDateString(undefined, { weekday: 'narrow' }));
+    var html = '<div class="sheet-in"><div class="sheet-head"><h2>Manage routines</h2><button type="button" class="btn primary" data-a="manageClose">Done</button></div>' +
+      '<p class="intro">Choose the days each routine appears, move it between parts of the day, or change the order.</p>';
+    SLOTS.forEach(function (slot) {
+      var items = S.routines.filter(function (r) { return r.slot === slot.id && !r.archived; });
+      if (!items.length) return;
+      html += '<h3 class="sub">' + slot.label + '</h3>';
+      items.forEach(function (r) { html += manageRow(r, wd, false); });
+    });
+    var arch = S.routines.filter(function (r) { return r.archived; });
+    if (arch.length) {
+      html += '<h3 class="sub">Archived</h3>';
+      arch.forEach(function (r) { html += manageRow(r, wd, true); });
+    }
+    el.innerHTML = html + '</div>';
+  }
+  function moveRoutine(id, dir) {
+    var i = -1;
+    S.routines.forEach(function (r, ix) { if (r.id === id) i = ix; });
+    if (i < 0) return;
+    var slot = S.routines[i].slot, j = i + dir;
+    while (j >= 0 && j < S.routines.length && (S.routines[j].slot !== slot || S.routines[j].archived)) j += dir;
+    if (j < 0 || j >= S.routines.length) return;
+    var tmp = S.routines[i]; S.routines[i] = S.routines[j]; S.routines[j] = tmp;
+  }
+  function manageAction(a, id, b) {
+    var r = S.routines.filter(function (x) { return x.id === id; })[0];
+    if (!r) return;
+    if (a === 'mDay') {
+      var n = +b.getAttribute('data-n'), days = (r.days && r.days.length) ? r.days.slice() : [0, 1, 2, 3, 4, 5, 6];
+      var ix = days.indexOf(n);
+      if (ix === -1) days.push(n); else if (days.length > 1) days.splice(ix, 1);
+      days.sort();
+      if (days.length === 7) delete r.days; else r.days = days;
+    } else if (a === 'mSlot') { r.slot = b.getAttribute('data-s'); }
+    else if (a === 'mUp') { moveRoutine(id, -1); }
+    else if (a === 'mDown') { moveRoutine(id, 1); }
+    else if (a === 'mArchive') { r.archived = true; pendingDel = null; }
+    else if (a === 'mRestore') { r.archived = false; }
+    else if (a === 'mDelete') {
+      if (pendingDel === id) { S.routines = S.routines.filter(function (x) { return x.id !== id; }); pendingDel = null; }
+      else { pendingDel = id; renderManage(); return; }
+    }
+    save(); renderManage(); render();
+  }
+
+  /* Health log */
+  var SYMS = [
+    { id: 'cramps', t: 'Cramps' }, { id: 'bloating', t: 'Bloating' }, { id: 'acne', t: 'Acne' }, { id: 'fatigue', t: 'Fatigue' },
+    { id: 'headache', t: 'Headache' }, { id: 'mood', t: 'Mood swings' }, { id: 'cravings', t: 'Cravings' }, { id: 'backpain', t: 'Back pain' },
+    { id: 'hair', t: 'Hair fall' }, { id: 'nausea', t: 'Nausea' }
+  ];
+  var ENERGY = [{ e: '😴', l: 'Very low' }, { e: '🥱', l: 'Low' }, { e: '😐', l: 'Okay' }, { e: '🙂', l: 'Good' }, { e: '⚡', l: 'High' }];
+  function cycleInfo() {
+    var keys = Object.keys(S.log).sort(), starts = [], i;
+    keys.forEach(function (k) {
+      if ((S.log[k].flow || 0) > 0) {
+        var pk = S.log[prevKey(k)];
+        if (!(pk && (pk.flow || 0) > 0)) starts.push(k);
+      }
+    });
+    var lens = [];
+    for (i = 1; i < starts.length; i++) {
+      var L = Math.round((parseKey(starts[i]) - parseKey(starts[i - 1])) / 864e5);
+      if (L >= 15 && L <= 60) lens.push(L);
+    }
+    lens = lens.slice(-6);
+    var avg = lens.length ? Math.round(lens.reduce(function (a, b) { return a + b; }, 0) / lens.length) : 0;
+    var last = starts.length ? starts[starts.length - 1] : '', dayN = 0, next = null;
+    if (last) {
+      var t0 = new Date(); t0.setHours(0, 0, 0, 0);
+      dayN = Math.round((t0 - parseKey(last)) / 864e5) + 1;
+      if (avg) { next = parseKey(last); next.setDate(next.getDate() + avg); }
+    }
+    return { starts: starts, lens: lens, avg: avg, dayN: dayN, next: next };
+  }
+  function renderHealth() {
+    var d = dayOf(todayKey());
+    if (!d.sym) d.sym = [];
+    var flows = ['None', 'Light', 'Medium', 'Heavy'], html = '', i;
+    html += '<div class="c-row"><div class="c-label">Period<span>Today’s flow</span></div><div class="seg flat">';
+    flows.forEach(function (f, ix) { html += '<button type="button" data-a="flow" data-n="' + ix + '" aria-pressed="' + ((d.flow || 0) === ix) + '">' + f + '</button>'; });
+    html += '</div></div>';
+    html += '<div class="c-row"><div class="c-label">Energy<span>How strong you feel</span></div><div class="moods">';
+    ENERGY.forEach(function (en, ix) { html += '<button type="button" class="mood' + (d.energy === ix + 1 ? ' on' : '') + '" data-a="energy" data-n="' + (ix + 1) + '" aria-label="' + en.l + '" aria-pressed="' + (d.energy === ix + 1) + '">' + en.e + '</button>'; });
+    html += '</div></div>';
+    html += '<div class="c-row col"><div class="c-label">Symptoms<span>Tap any that apply</span></div><div class="chips">';
+    SYMS.forEach(function (s) { var on = d.sym.indexOf(s.id) !== -1; html += '<button type="button" class="schip' + (on ? ' on' : '') + '" data-a="sym" data-id="' + s.id + '" aria-pressed="' + on + '">' + s.t + '</button>'; });
+    html += '</div></div>';
+    document.getElementById('healthBody').innerHTML = html;
+
+    var ci = cycleInfo(), lines = [];
+    if (!ci.starts.length) lines.push('Log your period days to see your cycle here.');
+    else {
+      if (ci.dayN > 0 && ci.dayN <= 60) lines.push('Cycle day ' + ci.dayN + '.');
+      if (ci.avg && ci.next) {
+        lines.push('Average cycle ' + ci.avg + ' days. Next period around ' + ci.next.toLocaleDateString(undefined, { day: 'numeric', month: 'short' }) + '.');
+        if (Math.max.apply(null, ci.lens) - Math.min.apply(null, ci.lens) > 7) lines.push('Your cycle length varies, so treat dates as a rough guide.');
+      } else lines.push('Log one more period to see predictions.');
+    }
+    var cutoff = new Date(); cutoff.setDate(cutoff.getDate() - 30);
+    var ck = keyOf(cutoff), counts = {}, eP = [], eO = [];
+    Object.keys(S.log).forEach(function (k) {
+      if (k < ck) return;
+      var l = S.log[k];
+      (l.sym || []).forEach(function (s) { counts[s] = (counts[s] || 0) + 1; });
+      if (l.energy > 0) ((l.flow || 0) > 0 ? eP : eO).push(l.energy);
+    });
+    var top = SYMS.filter(function (s) { return (counts[s.id] || 0) >= 3; })
+      .sort(function (a, b) { return counts[b.id] - counts[a.id]; }).slice(0, 3).map(function (s) { return tx(s.t); });
+    if (top.length) lines.push('Most common lately: ' + top.join(', ') + '.');
+    function mean(a) { return Math.round(a.reduce(function (x, y) { return x + y; }, 0) / a.length * 10) / 10; }
+    if (eP.length >= 3 && eO.length >= 3) lines.push('Energy averages ' + mean(eP) + ' of 5 on period days and ' + mean(eO) + ' on other days.');
+    var out = '';
+    lines.forEach(function (l) { out += '<p class="chart-note">' + esc(l) + '</p>'; });
+    if (((d.flow || 0) > 0 || (d.energy > 0 && d.energy <= 2)) && !d.gentle) {
+      out += '<p class="chart-note">Low energy today?</p><button type="button" class="btn outline" data-a="gentle">Switch on Gentle day</button>';
+    }
+    out += '<p class="chart-note">This is a simple log, not medical advice. Share it with your doctor if anything worries you.</p>';
+    document.getElementById('healthNote').innerHTML = out;
+  }
+
+  /* Weekly review and sharing */
+  var lastRecap = {};
+  function weekKey(d) { var x = new Date(d); x.setDate(x.getDate() - ((x.getDay() + 6) % 7)); return keyOf(x); }
+  function renderReview() {
+    var wk = weekKey(new Date()), cur = S.reviews[wk] || {};
+    setVal('rvWin', cur.win || ''); setVal('rvHard', cur.hard || ''); setVal('rvNext', cur.next || '');
+    var pw = new Date(); pw.setDate(pw.getDate() - 7);
+    var prev = S.reviews[weekKey(pw)];
+    document.getElementById('wkPrev').textContent = (prev && prev.next) ? 'Last week you planned: ' + prev.next : 'Write a short review each week. It takes one minute.';
+    document.getElementById('wkLabel').textContent = 'Week of ' + parseKey(wk).toLocaleDateString(undefined, { day: 'numeric', month: 'short' });
+  }
+  document.addEventListener('input', function (e) {
+    var id = e.target.id, f = id === 'rvWin' ? 'win' : (id === 'rvHard' ? 'hard' : (id === 'rvNext' ? 'next' : null));
+    if (!f) return;
+    var wk = weekKey(new Date());
+    if (!S.reviews[wk]) S.reviews[wk] = {};
+    S.reviews[wk][f] = e.target.value;
+    save();
+  });
+  function shareWeek() {
+    var r = lastRecap || {}, li = levelInfo(totalXp());
+    var text = 'My week on First light: ' + (r.days80 || 0) + ' of 7 strong days, ' + (r.fm || 0) + ' focus minutes, ' + (r.hardN || 0) + ' hard things done. Level ' + li.lvl + '.';
+    try { if (window.Android && window.Android.share) { window.Android.share(text); return; } } catch (e4) {}
+    try { if (navigator.share) { navigator.share({ text: text }).catch(function () {}); return; } } catch (e) {}
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () { showCheer('Copied', text); }, function () { showCheer('Share this', text); });
+        return;
+      }
+    } catch (e2) {}
+    showCheer('Share this', text);
+  }
+
+  /* Sprig outfits */
+  function outfitOk(o, lvl) { return !o || (o === 'glasses' && lvl >= 2) || (o === 'bow' && lvl >= 3) || (o === 'crown' && lvl >= 5); }
+  function outfitSvg(o, top) {
+    if (o === 'glasses') return '<rect x="41" y="90" width="17" height="12" rx="5.5" fill="#2A1A2E" opacity=".9"/><rect x="62" y="90" width="17" height="12" rx="5.5" fill="#2A1A2E" opacity=".9"/><path d="M58 95 H62" stroke="#2A1A2E" stroke-width="2.2"/><path d="M44 93.5 l4 -1" stroke="#fff" stroke-width="1.4" opacity=".5" stroke-linecap="round"/>';
+    if (o === 'bow') return '<path d="M36 77 L25 70 L25 84 Z" fill="var(--rose)"/><path d="M36 77 L47 70 L47 84 Z" fill="var(--rose)"/><circle cx="36" cy="77" r="3.4" fill="#fff" opacity=".85"/>';
+    if (o === 'crown') return '<path d="M49 ' + (top - 13) + ' L49 ' + (top - 22) + ' L55 ' + (top - 17) + ' L60 ' + (top - 25) + ' L65 ' + (top - 17) + ' L71 ' + (top - 22) + ' L71 ' + (top - 13) + ' Z" fill="var(--sun)" stroke="#E09A00" stroke-width="1"/>';
+    return '';
+  }
+  function renderOutfitSeg() {
+    var lvl = levelInfo(totalXp()).lvl, cur = S.settings.outfit || '';
+    Array.prototype.forEach.call(document.querySelectorAll('#outfitSeg button'), function (b) {
+      var need = +b.getAttribute('data-lv');
+      b.disabled = need > lvl;
+      b.setAttribute('aria-pressed', String((b.getAttribute('data-o') || '') === cur));
+    });
+  }
+
+  /* Backup and restore */
+  var pendingRestore = false;
+  function ensureDefaults() {
+    if (!S || typeof S !== 'object') S = seed();
+    if (!Array.isArray(S.routines)) S.routines = seed().routines;
+    if (!S.log || typeof S.log !== 'object') S.log = {};
+    if (!S.settings) S.settings = { sound: true };
+    if (S.settings.name === undefined) S.settings.name = 'Sammu';
+    if (!S.settings.theme) S.settings.theme = 'auto';
+    if (!S.settings.waterGoal) S.settings.waterGoal = 8;
+    if (!S.settings.remind) S.settings.remind = { on: false, morning: '07:00', evening: '20:00', last: { m: '', e: '' } };
+    if (!Array.isArray(S.goals)) S.goals = [];
+    if (!S.settings.bed) S.settings.bed = '22:30';
+    if (!S.settings.view) S.settings.view = 'today';
+    if (!S.settings.palette) S.settings.palette = 'sunrise';
+    if (!S.reviews || typeof S.reviews !== 'object') S.reviews = {};
+    if (!S.settings.lang) S.settings.lang = 'en';
+    if (S.settings.onboarded === undefined) S.settings.onboarded = true;
+  }
+  function bkNote(t) { document.getElementById('bkNote').textContent = t; }
+  function backupNow() {
+    var txt = JSON.stringify(S), ta = document.getElementById('bkText');
+    ta.value = txt; ta.hidden = false;
+    document.getElementById('bkActions').hidden = true;
+    pendingRestore = false;
+    ta.focus(); ta.select();
+    bkNote('Backup created. Select all, copy it and keep it somewhere safe.');
+    try {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(txt).then(function () { bkNote('Backup created and copied. Paste it into a note or a message to yourself.'); }, function () {});
+      }
+    } catch (e) {}
+  }
+  function restoreOpen() {
+    var ta = document.getElementById('bkText');
+    ta.value = ''; ta.hidden = false;
+    document.getElementById('bkActions').hidden = false;
+    pendingRestore = false;
+    ta.focus();
+    bkNote('Paste your backup text here, then tap Restore.');
+  }
+  function restoreGo() {
+    var o = null;
+    try { o = JSON.parse(document.getElementById('bkText').value); } catch (e) {}
+    if (!o || !Array.isArray(o.routines) || !o.log || typeof o.log !== 'object') { pendingRestore = false; bkNote('That does not look like a First light backup.'); return; }
+    if (!pendingRestore) { pendingRestore = true; bkNote('This replaces everything on this device. Tap Restore again to confirm.'); return; }
+    S = o; ensureDefaults(); save();
+    bkNote('Restored. Reloading.');
+    try { location.reload(); } catch (e2) { bkNote('Restored. Close and reopen the app.'); }
+  }
+  setTimeout(function () { var sp = document.getElementById('splash'); if (sp && sp.parentNode) sp.parentNode.removeChild(sp); }, 1800);
+
+  /* ---------- Languages and first-time setup ---------- */
+  var LANG = 'en';
+  var TR = [
+    ['Today', 'ಇಂದು', 'आज'],
+    ['Grow', 'ಬೆಳವಣಿಗೆ', 'विकास'],
+    ['Care', 'ಆರೈಕೆ', 'देखभाल'],
+    ['Progress', 'ಪ್ರಗತಿ', 'प्रगति'],
+    ['Settings', 'ಸೆಟ್ಟಿಂಗ್‌ಗಳು', 'सेटिंग्स'],
+    ['Sound on', 'ಧ್ವನಿ ಆನ್', 'आवाज़ चालू'],
+    ['Sound off', 'ಧ್ವನಿ ಆಫ್', 'आवाज़ बंद'],
+    ['Good morning', 'ಶುಭೋದಯ', 'सुप्रभात'],
+    ['Good afternoon', 'ಶುಭ ಮಧ್ಯಾಹ್ನ', 'शुभ दोपहर'],
+    ['Good evening', 'ಶುಭ ಸಂಜೆ', 'शुभ संध्या'],
+    ['All done.', 'ಎಲ್ಲಾ ಮುಗಿದಿದೆ.', 'सब पूरा हुआ।'],
+    ['The sun is up.', 'ಸೂರ್ಯ ಉದಯಿಸಿದ್ದಾನೆ.', 'सूरज निकल आया है।'],
+    ['Nothing checked yet. Start with one.', 'ಇನ್ನೂ ಏನೂ ಮಾಡಿಲ್ಲ. ಒಂದರಿಂದ ಶುರು ಮಾಡಿ.', 'अभी कुछ नहीं हुआ। एक से शुरू करें।'],
+    ['Add your first routine below.', 'ಕೆಳಗೆ ನಿಮ್ಮ ಮೊದಲ ದಿನಚರಿ ಸೇರಿಸಿ.', 'नीचे अपनी पहली दिनचर्या जोड़ें।'],
+    ['done today', 'ಇಂದು ಮುಗಿದಿದೆ', 'आज पूरा हुआ'],
+    ['Gentle day', 'ಮೃದು ದಿನ', 'नरम दिन'],
+    ['Gentle day is on', 'ಮೃದು ದಿನ ಆನ್ ಆಗಿದೆ', 'नरम दिन चालू है'],
+    ['Today counts at half the effort. Do what you can, and rest when you need to.', 'ಇಂದು ಅರ್ಧ ಪ್ರಯತ್ನವೇ ಸಾಕು. ಸಾಧ್ಯವಾದಷ್ಟು ಮಾಡಿ, ಬೇಕಾದಾಗ ವಿಶ್ರಾಂತಿ ಪಡೆಯಿರಿ.', 'आज आधी मेहनत भी गिनी जाएगी। जितना हो सके करें, ज़रूरत हो तो आराम करें।'],
+    ['Manage routines', 'ದಿನಚರಿ ನಿರ್ವಹಿಸಿ', 'दिनचर्या प्रबंधित करें'],
+    ['Morning', 'ಬೆಳಿಗ್ಗೆ', 'सुबह'],
+    ['Midday', 'ಮಧ್ಯಾಹ್ನ', 'दोपहर'],
+    ['Evening', 'ಸಂಜೆ', 'शाम'],
+    ['morning', 'ಬೆಳಗಿನ', 'सुबह की'],
+    ['midday', 'ಮಧ್ಯಾಹ್ನದ', 'दोपहर की'],
+    ['evening', 'ಸಂಜೆಯ', 'शाम की'],
+    ['Start of day', 'ದಿನದ ಆರಂಭ', 'दिन की शुरुआत'],
+    ['Keep going', 'ಮುಂದುವರಿಸಿ', 'चलते रहें'],
+    ['Wind down', 'ವಿಶ್ರಾಂತಿಗೆ ಸಿದ್ಧರಾಗಿ', 'आराम की तैयारी'],
+    ['Nothing here yet.', 'ಇಲ್ಲಿ ಇನ್ನೂ ಏನೂ ಇಲ್ಲ.', 'यहाँ अभी कुछ नहीं है।'],
+    ['+ Add a routine', '+ ದಿನಚರಿ ಸೇರಿಸಿ', '+ दिनचर्या जोड़ें'],
+    ['Add', 'ಸೇರಿಸಿ', 'जोड़ें'],
+    ['Added', 'ಸೇರಿಸಲಾಗಿದೆ', 'जोड़ दिया'],
+    ['Cancel', 'ರದ್ದು', 'रद्द करें'],
+    ['Save', 'ಉಳಿಸಿ', 'सहेजें'],
+    ['Close', 'ಮುಚ್ಚಿ', 'बंद करें'],
+    ['Undo', 'ರದ್ದುಮಾಡು', 'पूर्ववत'],
+    ['Done', 'ಮುಗಿಯಿತು', 'हो गया'],
+    ['The hard thing', 'ಕಠಿಣ ಕೆಲಸ', 'मुश्किल काम'],
+    ['Do it first', 'ಮೊದಲು ಮಾಡಿ', 'पहले करें'],
+    ['Pick the one task you keep avoiding that would move a goal forward. Do it before the easy things.', 'ನೀವು ತಪ್ಪಿಸುತ್ತಿರುವ, ಆದರೆ ಗುರಿಯತ್ತ ಮುಂದೆ ಕರೆದೊಯ್ಯುವ ಒಂದು ಕೆಲಸವನ್ನು ಆರಿಸಿ. ಸುಲಭದ ಕೆಲಸಗಳಿಗಿಂತ ಮೊದಲು ಅದನ್ನು ಮಾಡಿ.', 'वह एक काम चुनें जिसे आप टालते रहते हैं और जो लक्ष्य की ओर ले जाता है। आसान कामों से पहले उसे करें।'],
+    ['What is the one hard thing today?', 'ಇಂದಿನ ಒಂದು ಕಠಿಣ ಕೆಲಸ ಯಾವುದು?', 'आज का वह एक मुश्किल काम क्या है?'],
+    ['Done. That is the work that moves you forward.', 'ಮುಗಿಯಿತು. ಇದೇ ನಿಮ್ಮನ್ನು ಮುಂದೆ ಕರೆದೊಯ್ಯುವ ಕೆಲಸ.', 'हो गया। यही वह काम है जो आपको आगे ले जाता है।'],
+    ['Focus', 'ಏಕಾಗ್ರತೆ', 'फ़ोकस'],
+    ['Start focus', 'ಏಕಾಗ್ರತೆ ಶುರು ಮಾಡಿ', 'फ़ोकस शुरू करें'],
+    ['Stop', 'ನಿಲ್ಲಿಸಿ', 'रोकें'],
+    ['Goals', 'ಗುರಿಗಳು', 'लक्ष्य'],
+    ['What you’re working toward', 'ನೀವು ಯಾವುದರತ್ತ ಕೆಲಸ ಮಾಡುತ್ತಿದ್ದೀರಿ', 'आप किस ओर काम कर रहे हैं'],
+    ['Add a goal, like Launch my first product', 'ಗುರಿ ಸೇರಿಸಿ, ಉದಾ: ನನ್ನ ಮೊದಲ ಉತ್ಪನ್ನ ಬಿಡುಗಡೆ', 'लक्ष्य जोड़ें, जैसे: मेरा पहला प्रोडक्ट लॉन्च करना'],
+    ['Add goal', 'ಗುರಿ ಸೇರಿಸಿ', 'लक्ष्य जोड़ें'],
+    ['Add a goal, then break it into small steps. Each step you finish moves the bar.', 'ಗುರಿ ಸೇರಿಸಿ, ನಂತರ ಅದನ್ನು ಸಣ್ಣ ಹಂತಗಳಾಗಿ ಒಡೆಯಿರಿ. ನೀವು ಮುಗಿಸುವ ಪ್ರತಿ ಹಂತವೂ ಪಟ್ಟಿಯನ್ನು ಮುಂದಕ್ಕೆ ಸರಿಸುತ್ತದೆ.', 'लक्ष्य जोड़ें, फिर उसे छोटे कदमों में बाँटें। हर पूरा कदम बार को आगे बढ़ाता है।'],
+    ['Add a next step', 'ಮುಂದಿನ ಹಂತ ಸೇರಿಸಿ', 'अगला कदम जोड़ें'],
+    ['No steps yet', 'ಇನ್ನೂ ಹಂತಗಳಿಲ್ಲ', 'अभी कोई कदम नहीं'],
+    ['Due today', 'ಇಂದೇ ಕೊನೆ ದಿನ', 'आज अंतिम तिथि है'],
+    ['1 day left', '1 ದಿನ ಬಾಕಿ', '1 दिन बाकी'],
+    ['Body check-in', 'ದೇಹದ ಪರಿಶೀಲನೆ', 'शरीर की जाँच'],
+    ['Water', 'ನೀರು', 'पानी'],
+    ['Sleep', 'ನಿದ್ರೆ', 'नींद'],
+    ['Last night', 'ನಿನ್ನೆ ರಾತ್ರಿ', 'कल रात'],
+    ['Mood', 'ಮನಸ್ಥಿತಿ', 'मूड'],
+    ['How you feel right now', 'ಈಗ ನಿಮಗೆ ಹೇಗನಿಸುತ್ತಿದೆ', 'अभी आप कैसा महसूस कर रहे हैं'],
+    ['Today’s spark', 'ಇಂದಿನ ಸ್ಪಾರ್ಕ್', 'आज की चिंगारी'],
+    ['One kind thing', 'ಒಂದು ದಯೆಯ ಕೆಲಸ', 'एक दयालु काम'],
+    ['I did it', 'ನಾನು ಮಾಡಿದೆ', 'मैंने कर दिया'],
+    ['Done, +5 XP', 'ಮುಗಿಯಿತು, +5 XP', 'हो गया, +5 XP'],
+    ['A good day starts with one small thing. Pick the easiest one.', 'ಒಳ್ಳೆಯ ದಿನ ಒಂದು ಸಣ್ಣ ಕೆಲಸದಿಂದ ಶುರುವಾಗುತ್ತದೆ. ಅತ್ಯಂತ ಸುಲಭವಾದದ್ದನ್ನು ಆರಿಸಿ.', 'एक अच्छा दिन एक छोटी चीज़ से शुरू होता है। सबसे आसान वाली चुनें।'],
+    ['You don’t need a perfect morning. You just need a first step.', 'ನಿಮಗೆ ಪರಿಪೂರ್ಣ ಬೆಳಿಗ್ಗೆ ಬೇಕಿಲ್ಲ. ಮೊದಲ ಹೆಜ್ಜೆ ಸಾಕು.', 'आपको एक परफ़ेक्ट सुबह नहीं चाहिए। बस पहला कदम चाहिए।'],
+    ['Show up gently today. That still counts.', 'ಇಂದು ಮೃದುವಾಗಿ ಬನ್ನಿ. ಅದೂ ಲೆಕ್ಕಕ್ಕೆ ಬರುತ್ತದೆ.', 'आज नरमी से आइए। वह भी गिना जाता है।'],
+    ['Ten minutes for yourself is a real start.', 'ನಿಮಗಾಗಿ ಹತ್ತು ನಿಮಿಷ ಕೂಡ ನಿಜವಾದ ಆರಂಭ.', 'अपने लिए दस मिनट भी एक सच्ची शुरुआत है।'],
+    ['Begin before you feel ready.', 'ಸಿದ್ಧರಾದೆ ಎನಿಸುವ ಮೊದಲೇ ಶುರು ಮಾಡಿ.', 'तैयार महसूस करने से पहले ही शुरू करें।'],
+    ['Tiny steps, taken daily, add up faster than you think.', 'ಪ್ರತಿದಿನ ಇಡುವ ಸಣ್ಣ ಹೆಜ್ಜೆಗಳು ನೀವು ಅಂದುಕೊಂಡದ್ದಕ್ಕಿಂತ ಬೇಗ ಸೇರುತ್ತವೆ.', 'रोज़ उठाए गए छोटे कदम सोच से ज़्यादा जल्दी जुड़ जाते हैं।'],
+    ['Good start. Keep the momentum, you’re already moving.', 'ಒಳ್ಳೆಯ ಆರಂಭ. ಲಯವನ್ನು ಉಳಿಸಿಕೊಳ್ಳಿ, ನೀವು ಈಗಾಗಲೇ ಮುಂದೆ ಸಾಗುತ್ತಿದ್ದೀರಿ.', 'अच्छी शुरुआत। रफ़्तार बनाए रखें, आप चल पड़े हैं।'],
+    ['One down is proof you can do the next.', 'ಒಂದು ಮುಗಿದಿದ್ದರೆ ಮುಂದಿನದೂ ಮಾಡಬಹುದು ಎಂಬುದಕ್ಕೆ ಸಾಕ್ಷಿ.', 'एक पूरा हुआ, यही सबूत है कि अगला भी हो सकता है।'],
+    ['Slow is fine. Stopping is the only thing that doesn’t work.', 'ನಿಧಾನವಾದರೂ ಸರಿ. ನಿಲ್ಲಿಸುವುದೊಂದೇ ಕೆಲಸ ಮಾಡದ ವಿಷಯ.', 'धीरे चलना ठीक है। बस रुक जाना ही काम नहीं करता।'],
+    ['You’ve begun. That’s the hardest part.', 'ನೀವು ಶುರು ಮಾಡಿದ್ದೀರಿ. ಅದೇ ಕಠಿಣ ಭಾಗ.', 'आपने शुरू कर दिया। यही सबसे मुश्किल हिस्सा है।'],
+    ['Keep going. You’re building something steady.', 'ಮುಂದುವರಿಸಿ. ನೀವು ಸ್ಥಿರವಾದದ್ದನ್ನು ಕಟ್ಟುತ್ತಿದ್ದೀರಿ.', 'चलते रहिए। आप कुछ मज़बूत बना रहे हैं।'],
+    ['Over halfway. Finish what you started, you’ve got this.', 'ಅರ್ಧಕ್ಕಿಂತ ಹೆಚ್ಚು ಆಯಿತು. ಶುರು ಮಾಡಿದ್ದನ್ನು ಮುಗಿಸಿ, ನಿಮ್ಮಿಂದ ಸಾಧ್ಯ.', 'आधे से ज़्यादा हो गया। जो शुरू किया उसे पूरा करें, आप कर सकते हैं।'],
+    ['Look at you go. Just a few more.', 'ನೋಡಿ, ಎಷ್ಟು ಚೆನ್ನಾಗಿ ಹೋಗುತ್ತಿದ್ದೀರಿ. ಇನ್ನು ಸ್ವಲ್ಪವೇ.', 'देखिए आप कैसे आगे बढ़ रहे हैं। बस कुछ और।'],
+    ['The sun is climbing, and so are you.', 'ಸೂರ್ಯ ಮೇಲೇರುತ್ತಿದ್ದಾನೆ, ನೀವೂ ಕೂಡ.', 'सूरज चढ़ रहा है, और आप भी।'],
+    ['Almost there. Future you says thanks.', 'ಬಹುತೇಕ ತಲುಪಿದ್ದೀರಿ. ಭವಿಷ್ಯದ ನೀವು ಧನ್ಯವಾದ ಹೇಳುತ್ತೀರಿ.', 'लगभग पहुँच गए। भविष्य का आप धन्यवाद कहेगा।'],
+    ['Strong work. Don’t stop now.', 'ಅದ್ಭುತ ಕೆಲಸ. ಈಗ ನಿಲ್ಲಬೇಡಿ.', 'बहुत बढ़िया। अब मत रुकिए।'],
+    ['Everything done. Be proud of that, you earned it.', 'ಎಲ್ಲವೂ ಮುಗಿದಿದೆ. ಅದರ ಬಗ್ಗೆ ಹೆಮ್ಮೆ ಪಡಿ, ನೀವು ಗಳಿಸಿದ್ದೀರಿ.', 'सब कुछ पूरा हुआ। इस पर गर्व करें, यह आपने कमाया है।'],
+    ['You kept your promises to yourself today.', 'ಇಂದು ನೀವು ನಿಮಗೆ ಕೊಟ್ಟ ಮಾತನ್ನು ಉಳಿಸಿಕೊಂಡಿರಿ.', 'आज आपने खुद से किए वादे निभाए।'],
+    ['A full day of caring for your body. Rest well.', 'ದೇಹವನ್ನು ನೋಡಿಕೊಂಡ ಪೂರ್ಣ ದಿನ. ಚೆನ್ನಾಗಿ ವಿಶ್ರಾಂತಿ ಪಡೆಯಿರಿ.', 'अपने शरीर की देखभाल का पूरा दिन। अच्छे से आराम करें।'],
+    ['That’s how change happens: one finished day at a time.', 'ಬದಲಾವಣೆ ಹೀಗೇ ಆಗುತ್ತದೆ: ಒಂದೊಂದು ಮುಗಿದ ದಿನದಿಂದ.', 'बदलाव ऐसे ही आता है: एक पूरे हुए दिन से।'],
+    ['Sun’s up, list’s done. Beautiful.', 'ಸೂರ್ಯ ಉದಯಿಸಿದ, ಪಟ್ಟಿ ಮುಗಿದಿದೆ. ಸುಂದರ.', 'सूरज निकला, सूची पूरी। बहुत सुंदर।'],
+    ['Hard things get easier the moment you start them.', 'ಕಠಿಣ ಕೆಲಸ ಶುರು ಮಾಡಿದ ಕ್ಷಣದಿಂದಲೇ ಸುಲಭವಾಗುತ್ತದೆ.', 'मुश्किल काम शुरू करते ही आसान होने लगते हैं।'],
+    ['Discipline is a promise you keep to the person you’re becoming.', 'ಶಿಸ್ತು ಎಂದರೆ ನೀವು ಆಗುತ್ತಿರುವ ವ್ಯಕ್ತಿಗೆ ಕೊಡುವ ಮಾತು.', 'अनुशासन उस इंसान से किया वादा है जो आप बन रहे हैं।'],
+    ['Show up on the days you don’t feel like it. Those days count double.', 'ಮನಸ್ಸಿಲ್ಲದ ದಿನಗಳಲ್ಲೂ ಬನ್ನಿ. ಆ ದಿನಗಳು ಎರಡು ಪಟ್ಟು ಲೆಕ್ಕಕ್ಕೆ ಬರುತ್ತವೆ.', 'जिन दिनों मन न हो, तब भी आइए। वे दिन दोगुना गिने जाते हैं।'],
+    ['Progress is made of ordinary hours, spent on purpose.', 'ಪ್ರಗತಿ ಸಾಮಾನ್ಯ ಗಂಟೆಗಳಿಂದಾಗುತ್ತದೆ, ಉದ್ದೇಶದಿಂದ ಕಳೆದರೆ.', 'प्रगति साधारण घंटों से बनती है, जो मकसद के साथ बिताए जाएँ।'],
+    ['You don’t have to feel ready. Start the timer.', 'ಸಿದ್ಧರಾದೆ ಎನಿಸಬೇಕಿಲ್ಲ. ಟೈಮರ್ ಶುರು ಮಾಡಿ.', 'तैयार महसूस करना ज़रूरी नहीं। टाइमर शुरू करें।'],
+    ['Gentle day. Doing a little is still doing something.', 'ಮೃದು ದಿನ. ಸ್ವಲ್ಪ ಮಾಡಿದರೂ ಅದು ಏನೋ ಮಾಡಿದಂತೆಯೇ.', 'नरम दिन। थोड़ा करना भी कुछ करना ही है।'],
+    ['Rest is part of the plan. Be kind to yourself.', 'ವಿಶ್ರಾಂತಿ ಯೋಜನೆಯ ಭಾಗ. ನಿಮ್ಮ ಬಗ್ಗೆ ದಯೆ ತೋರಿಸಿ.', 'आराम भी योजना का हिस्सा है। खुद पर दया रखिए।'],
+    ['Low energy is allowed. Pick the smallest thing.', 'ಕಡಿಮೆ ಶಕ್ತಿ ಇರಬಹುದು. ಅತಿ ಸಣ್ಣ ಕೆಲಸವನ್ನು ಆರಿಸಿ.', 'कम ऊर्जा ठीक है। सबसे छोटा काम चुनिए।'],
+    ['Your body is asking for softness today. Listen.', 'ಇಂದು ನಿಮ್ಮ ದೇಹ ಮೃದುತನ ಕೇಳುತ್ತಿದೆ. ಕೇಳಿ.', 'आज आपका शरीर नरमी माँग रहा है। उसकी सुनिए।'],
+    ['Half a step still moves you forward.', 'ಅರ್ಧ ಹೆಜ್ಜೆಯೂ ನಿಮ್ಮನ್ನು ಮುಂದೆ ಕರೆದೊಯ್ಯುತ್ತದೆ.', 'आधा कदम भी आपको आगे ले जाता है।'],
+    ['Small habits, repeated, change everything.', 'ಸಣ್ಣ ಅಭ್ಯಾಸಗಳು, ಪುನರಾವರ್ತನೆಯಾದರೆ, ಎಲ್ಲವನ್ನೂ ಬದಲಿಸುತ್ತವೆ.', 'छोटी आदतें, बार-बार दोहराई जाएँ तो सब कुछ बदल देती हैं।'],
+    ['Hehe, that tickles!', 'ಹೆಹೆ, ಕಚಗುಳಿ ಆಗ್ತಿದೆ!', 'हेहे, गुदगुदी हो रही है!'],
+    ['I’m growing because of you.', 'ನಿಮ್ಮಿಂದಲೇ ನಾನು ಬೆಳೆಯುತ್ತಿದ್ದೇನೆ.', 'मैं आपकी वजह से बढ़ रहा हूँ।'],
+    ['Water break? I’ll join you.', 'ನೀರು ಕುಡಿಯೋಣವೇ? ನಾನೂ ಬರ್ತೀನಿ.', 'पानी पीने का ब्रेक? मैं भी आता हूँ।'],
+    ['You make me happy.', 'ನೀವು ನನ್ನನ್ನು ಖುಷಿಪಡಿಸುತ್ತೀರಿ.', 'आप मुझे खुश करते हैं।'],
+    ['Keep going. I believe in you.', 'ಮುಂದುವರಿಸಿ. ನನಗೆ ನಿಮ್ಮ ಮೇಲೆ ನಂಬಿಕೆ ಇದೆ.', 'चलते रहिए। मुझे आप पर भरोसा है।'],
+    ['Tap me anytime!', 'ಯಾವಾಗ ಬೇಕಾದರೂ ನನ್ನನ್ನು ಒತ್ತಿ!', 'कभी भी मुझे छू लीजिए!'],
+    ['Gentle day. Just being here is enough.', 'ಮೃದು ದಿನ. ಇಲ್ಲಿರುವುದೇ ಸಾಕು.', 'नरम दिन। यहाँ होना ही काफ़ी है।'],
+    ['Halfway there. I’m cheering for you!', 'ಅರ್ಧ ದಾರಿ ಬಂದಿದ್ದೀರಿ. ನಾನು ಚಪ್ಪಾಳೆ ತಟ್ಟುತ್ತಿದ್ದೇನೆ!', 'आधा रास्ता तय हुआ। मैं आपका हौसला बढ़ा रहा हूँ!'],
+    ['Nice start. I feel taller already.', 'ಒಳ್ಳೆಯ ಆರಂಭ. ನಾನು ಈಗಲೇ ಎತ್ತರವಾದಂತೆ ಅನಿಸುತ್ತಿದೆ.', 'अच्छी शुरुआत। मैं अभी से लंबा महसूस कर रहा हूँ।'],
+    ['Good morning! Ready when you are.', 'ಶುಭೋದಯ! ನೀವು ಸಿದ್ಧರಾದಾಗ ನಾನೂ ಸಿದ್ಧ.', 'सुप्रभात! आप तैयार हों तो मैं भी तैयार हूँ।'],
+    ['Hi! Let’s start with something small.', 'ಹಾಯ್! ಸಣ್ಣದೊಂದರಿಂದ ಶುರು ಮಾಡೋಣ.', 'हाय! चलिए कुछ छोटा करके शुरू करें।'],
+    ['Send a kind message to someone you care about.', 'ನೀವು ಕಾಳಜಿ ವಹಿಸುವ ಯಾರಿಗಾದರೂ ದಯೆಯ ಸಂದೇಶ ಕಳುಹಿಸಿ.', 'जिसकी आप परवाह करते हैं उसे एक प्यारा संदेश भेजें।'],
+    ['Take five slow breaths before your next task.', 'ಮುಂದಿನ ಕೆಲಸದ ಮೊದಲು ಐದು ನಿಧಾನ ಉಸಿರು ತೆಗೆದುಕೊಳ್ಳಿ.', 'अगले काम से पहले पाँच धीमी साँसें लें।'],
+    ['Drink a glass of water slowly, with no screen.', 'ಪರದೆ ಇಲ್ಲದೆ, ನಿಧಾನವಾಗಿ ಒಂದು ಲೋಟ ನೀರು ಕುಡಿಯಿರಿ.', 'बिना स्क्रीन के, धीरे-धीरे एक गिलास पानी पिएँ।'],
+    ['Step outside and look at the sky for one minute.', 'ಹೊರಗೆ ಹೋಗಿ ಒಂದು ನಿಮಿಷ ಆಕಾಶ ನೋಡಿ.', 'बाहर जाकर एक मिनट आसमान देखें।'],
+    ['Write down one thing you did well this week.', 'ಈ ವಾರ ನೀವು ಚೆನ್ನಾಗಿ ಮಾಡಿದ ಒಂದು ವಿಷಯವನ್ನು ಬರೆಯಿರಿ.', 'इस हफ़्ते आपने जो एक चीज़ अच्छी की, उसे लिखें।'],
+    ['Stretch your arms overhead and roll your shoulders.', 'ಕೈಗಳನ್ನು ತಲೆಯ ಮೇಲೆ ಚಾಚಿ, ಭುಜಗಳನ್ನು ತಿರುಗಿಸಿ.', 'हाथ सिर के ऊपर तानें और कंधे घुमाएँ।'],
+    ['Play one song you love and listen to all of it.', 'ನಿಮಗೆ ಇಷ್ಟವಾದ ಒಂದು ಹಾಡನ್ನು ಪೂರ್ತಿ ಕೇಳಿ.', 'अपना पसंदीदा एक गाना पूरा सुनें।'],
+    ['Tidy one small corner of your room.', 'ನಿಮ್ಮ ಕೋಣೆಯ ಒಂದು ಸಣ್ಣ ಮೂಲೆಯನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಿ.', 'अपने कमरे का एक छोटा कोना साफ़ करें।'],
+    ['Give someone a real compliment.', 'ಯಾರಿಗಾದರೂ ನಿಜವಾದ ಹೊಗಳಿಕೆ ನೀಡಿ.', 'किसी को सच्ची तारीफ़ दें।'],
+    ['Eat one thing today just because it tastes good.', 'ಇಂದು ರುಚಿಯಾಗಿದೆ ಎಂಬ ಕಾರಣಕ್ಕೇ ಒಂದು ತಿನಿಸು ತಿನ್ನಿ.', 'आज एक चीज़ सिर्फ़ इसलिए खाएँ क्योंकि वह स्वादिष्ट है।'],
+    ['Smile at yourself in the mirror.', 'ಕನ್ನಡಿಯಲ್ಲಿ ನಿಮ್ಮನ್ನು ನೋಡಿ ನಗಿ.', 'आईने में खुद को देखकर मुस्कुराएँ।'],
+    ['Text a friend you haven’t spoken to in a while.', 'ಸ್ವಲ್ಪ ಕಾಲದಿಂದ ಮಾತನಾಡದ ಸ್ನೇಹಿತರಿಗೆ ಸಂದೇಶ ಕಳುಹಿಸಿ.', 'किसी ऐसे दोस्त को संदेश भेजें जिससे काफ़ी समय से बात नहीं हुई।'],
+    ['Do something creative for five minutes.', 'ಐದು ನಿಮಿಷ ಸೃಜನಶೀಲ ಏನಾದರೂ ಮಾಡಿ.', 'पाँच मिनट कुछ रचनात्मक करें।'],
+    ['Say thank you to someone out loud.', 'ಯಾರಿಗಾದರೂ ಜೋರಾಗಿ ಧನ್ಯವಾದ ಹೇಳಿ.', 'किसी को ज़ोर से धन्यवाद कहें।'],
+    ['Give yourself the last half hour of the day. Slow down, and sleep comes easier.', 'ದಿನದ ಕೊನೆಯ ಅರ್ಧ ಗಂಟೆಯನ್ನು ನಿಮಗಾಗಿ ಇಡಿ. ನಿಧಾನವಾದರೆ ನಿದ್ರೆ ಸುಲಭವಾಗಿ ಬರುತ್ತದೆ.', 'दिन का आख़िरी आधा घंटा खुद को दें। धीमे पड़ें, नींद आसानी से आएगी।'],
+    ['Bedtime', 'ಮಲಗುವ ಸಮಯ', 'सोने का समय'],
+    ['Breathe for a minute', 'ಒಂದು ನಿಮಿಷ ಉಸಿರಾಡಿ', 'एक मिनट साँस लें'],
+    ['Put screens away', 'ಪರದೆಗಳನ್ನು ದೂರವಿಡಿ', 'स्क्रीन दूर रखें'],
+    ['Dim the lights', 'ದೀಪಗಳನ್ನು ಮಂದಗೊಳಿಸಿ', 'रोशनी धीमी करें'],
+    ['Write tomorrow’s first task', 'ನಾಳೆಯ ಮೊದಲ ಕೆಲಸ ಬರೆಯಿರಿ', 'कल का पहला काम लिखें'],
+    ['Lay out tomorrow’s things', 'ನಾಳೆಯ ವಸ್ತುಗಳನ್ನು ಸಿದ್ಧಪಡಿಸಿ', 'कल की चीज़ें तैयार रखें'],
+    ['Stretch or breathe for a few minutes', 'ಕೆಲವು ನಿಮಿಷ ಸ್ಟ್ರೆಚ್ ಮಾಡಿ ಅಥವಾ ಉಸಿರಾಡಿ', 'कुछ मिनट स्ट्रेच करें या साँस लें'],
+    ['Charge your phone away from the bed', 'ಫೋನನ್ನು ಹಾಸಿಗೆಯಿಂದ ದೂರ ಚಾರ್ಜ್ ಮಾಡಿ', 'फ़ोन को बिस्तर से दूर चार्ज करें'],
+    ['Bedtime now. Lights out.', 'ಮಲಗುವ ಸಮಯ ಈಗ. ದೀಪ ಆರಿಸಿ.', 'अब सोने का समय है। बत्ती बंद करें।'],
+    ['Past bedtime. Rest well.', 'ಮಲಗುವ ಸಮಯ ಮೀರಿದೆ. ಚೆನ್ನಾಗಿ ವಿಶ್ರಾಂತಿ ಪಡೆಯಿರಿ.', 'सोने का समय निकल गया। अच्छे से आराम करें।'],
+    ['Ready for sleep ✨', 'ನಿದ್ರೆಗೆ ಸಿದ್ಧ ✨', 'सोने के लिए तैयार ✨'],
+    ['Sleep well. Tomorrow starts fresh.', 'ಚೆನ್ನಾಗಿ ನಿದ್ರಿಸಿ. ನಾಳೆ ಹೊಸದಾಗಿ ಶುರುವಾಗುತ್ತದೆ.', 'अच्छी नींद लें। कल नई शुरुआत होगी।'],
+    ['Health log', 'ಆರೋಗ್ಯ ದಾಖಲೆ', 'स्वास्थ्य लॉग'],
+    ['Optional and private', 'ಐಚ್ಛಿಕ ಮತ್ತು ಖಾಸಗಿ', 'वैकल्पिक और निजी'],
+    ['Track your cycle, symptoms and energy. It stays on this device. Share it with your doctor if it helps.', 'ನಿಮ್ಮ ಮುಟ್ಟಿನ ಚಕ್ರ, ಲಕ್ಷಣಗಳು ಮತ್ತು ಶಕ್ತಿಯನ್ನು ದಾಖಲಿಸಿ. ಇದು ಈ ಸಾಧನದಲ್ಲೇ ಇರುತ್ತದೆ. ಅನುಕೂಲವಾದರೆ ವೈದ್ಯರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ.', 'अपना चक्र, लक्षण और ऊर्जा दर्ज करें। यह इसी डिवाइस पर रहता है। ज़रूरत हो तो अपने डॉक्टर से साझा करें।'],
+    ['Period', 'ಮುಟ್ಟು', 'पीरियड'],
+    ['Today’s flow', 'ಇಂದಿನ ಸ್ರಾವ', 'आज का फ़्लो'],
+    ['None', 'ಯಾವುದೂ ಇಲ್ಲ', 'कुछ नहीं'],
+    ['Light', 'ಲೈಟ್', 'हल्का'],
+    ['Medium', 'ಮಧ್ಯಮ', 'मध्यम'],
+    ['Heavy', 'ಹೆಚ್ಚು', 'भारी'],
+    ['Energy', 'ಶಕ್ತಿ', 'ऊर्जा'],
+    ['How strong you feel', 'ನೀವು ಎಷ್ಟು ಶಕ್ತಿಯುತರಾಗಿದ್ದೀರಿ', 'आप कितना ऊर्जावान महसूस करते हैं'],
+    ['Symptoms', 'ಲಕ್ಷಣಗಳು', 'लक्षण'],
+    ['Tap any that apply', 'ಅನ್ವಯವಾಗುವುದನ್ನು ಒತ್ತಿ', 'जो लागू हो उसे दबाएँ'],
+    ['Cramps', 'ಹೊಟ್ಟೆ ನೋವು', 'ऐंठन'],
+    ['Bloating', 'ಹೊಟ್ಟೆ ಉಬ್ಬರ', 'पेट फूलना'],
+    ['Acne', 'ಮೊಡವೆ', 'मुँहासे'],
+    ['Fatigue', 'ಆಯಾಸ', 'थकान'],
+    ['Headache', 'ತಲೆನೋವು', 'सिरदर्द'],
+    ['Mood swings', 'ಮನಸ್ಥಿತಿ ಏರಿಳಿತ', 'मूड स्विंग'],
+    ['Cravings', 'ತಿನ್ನುವ ಹಂಬಲ', 'खाने की तलब'],
+    ['Back pain', 'ಬೆನ್ನು ನೋವು', 'पीठ दर्द'],
+    ['Hair fall', 'ಕೂದಲು ಉದುರುವಿಕೆ', 'बाल झड़ना'],
+    ['Nausea', 'ವಾಕರಿಕೆ', 'मतली'],
+    ['Log your period days to see your cycle here.', 'ನಿಮ್ಮ ಚಕ್ರವನ್ನು ಇಲ್ಲಿ ನೋಡಲು ಮುಟ್ಟಿನ ದಿನಗಳನ್ನು ದಾಖಲಿಸಿ.', 'अपना चक्र यहाँ देखने के लिए पीरियड के दिन दर्ज करें।'],
+    ['Your cycle length varies, so treat dates as a rough guide.', 'ನಿಮ್ಮ ಚಕ್ರದ ಅವಧಿ ಬದಲಾಗುತ್ತದೆ, ಆದ್ದರಿಂದ ದಿನಾಂಕಗಳನ್ನು ಅಂದಾಜು ಎಂದು ಪರಿಗಣಿಸಿ.', 'आपके चक्र की लंबाई बदलती है, इसलिए तारीख़ों को मोटा अंदाज़ा मानें।'],
+    ['Log one more period to see predictions.', 'ಮುನ್ಸೂಚನೆ ನೋಡಲು ಇನ್ನೊಂದು ಮುಟ್ಟನ್ನು ದಾಖಲಿಸಿ.', 'अनुमान देखने के लिए एक और पीरियड दर्ज करें।'],
+    ['Low energy today?', 'ಇಂದು ಶಕ್ತಿ ಕಡಿಮೆಯೇ?', 'आज ऊर्जा कम है?'],
+    ['Switch on Gentle day', 'ಮೃದು ದಿನ ಆನ್ ಮಾಡಿ', 'नरम दिन चालू करें'],
+    ['This is a simple log, not medical advice. Share it with your doctor if anything worries you.', 'ಇದು ಸರಳ ದಾಖಲೆ, ವೈದ್ಯಕೀಯ ಸಲಹೆಯಲ್ಲ. ಏನಾದರೂ ಚಿಂತೆಯಾದರೆ ವೈದ್ಯರೊಂದಿಗೆ ಹಂಚಿಕೊಳ್ಳಿ.', 'यह एक साधारण लॉग है, चिकित्सीय सलाह नहीं। कुछ चिंता हो तो अपने डॉक्टर से साझा करें।'],
+    ['Calm sounds', 'ಶಾಂತ ಶಬ್ದಗಳು', 'शांत आवाज़ें'],
+    ['Off', 'ಆಫ್', 'बंद'],
+    ['On', 'ಆನ್', 'चालू'],
+    ['Soft background sound for focus, breathing or sleep. It stops by itself.', 'ಏಕಾಗ್ರತೆ, ಉಸಿರಾಟ ಅಥವಾ ನಿದ್ರೆಗಾಗಿ ಮೃದುವಾದ ಹಿನ್ನೆಲೆ ಶಬ್ದ. ಇದು ತಾನಾಗಿಯೇ ನಿಲ್ಲುತ್ತದೆ.', 'फ़ोकस, साँस या नींद के लिए हल्की बैकग्राउंड आवाज़। यह अपने आप रुक जाती है।'],
+    ['Rain', 'ಮಳೆ', 'बारिश'],
+    ['Ocean', 'ಸಾಗರ', 'समुद्र'],
+    ['Hush', 'ಮೌನ', 'सन्नाटा'],
+    ['Breathe', 'ಉಸಿರಾಡಿ', 'साँस लें'],
+    ['1 minute', '1 ನಿಮಿಷ', '1 मिनट'],
+    ['Ready', 'ಸಿದ್ಧ', 'तैयार'],
+    ['Start', 'ಶುರು', 'शुरू'],
+    ['Start again', 'ಮತ್ತೆ ಶುರು', 'फिर शुरू करें'],
+    ['Breathe in', 'ಉಸಿರೆಳೆಯಿರಿ', 'साँस भीतर लें'],
+    ['Breathe out', 'ಉಸಿರು ಬಿಡಿ', 'साँस बाहर छोड़ें'],
+    ['Well done', 'ಚೆನ್ನಾಗಿ ಮಾಡಿದಿರಿ', 'बहुत बढ़िया'],
+    ['Calm and steady', 'ಶಾಂತ ಮತ್ತು ಸ್ಥಿರ', 'शांत और स्थिर'],
+    ['Good things', 'ಒಳ್ಳೆಯ ವಿಷಯಗಳು', 'अच्छी बातें'],
+    ['Just for today', 'ಇಂದಿಗಾಗಿ ಮಾತ್ರ', 'सिर्फ़ आज के लिए'],
+    ['Today’s intention', 'ಇಂದಿನ ಉದ್ದೇಶ', 'आज का इरादा'],
+    ['One thing that matters today', 'ಇಂದು ಮುಖ್ಯವಾದ ಒಂದು ವಿಷಯ', 'आज जो एक बात मायने रखती है'],
+    ['Three good things', 'ಮೂರು ಒಳ್ಳೆಯ ವಿಷಯಗಳು', 'तीन अच्छी बातें'],
+    ['Something that made you smile', 'ನಿಮ್ಮನ್ನು ನಗಿಸಿದ ಏನೋ ಒಂದು', 'कुछ जिसने आपको मुस्कुराया'],
+    ['Someone you’re grateful for', 'ನೀವು ಕೃತಜ್ಞರಾಗಿರುವ ಯಾರೋ ಒಬ್ಬರು', 'कोई जिसके लिए आप आभारी हैं'],
+    ['A small win', 'ಒಂದು ಸಣ್ಣ ಗೆಲುವು', 'एक छोटी जीत'],
+    ['Your good-things jar', 'ನಿಮ್ಮ ಒಳ್ಳೆಯ ವಿಷಯಗಳ ಜಾರ್', 'आपका अच्छी बातों का जार'],
+    ['Write a few good things each day. One of them will come back to you here.', 'ಪ್ರತಿದಿನ ಕೆಲವು ಒಳ್ಳೆಯ ವಿಷಯಗಳನ್ನು ಬರೆಯಿರಿ. ಅವುಗಳಲ್ಲಿ ಒಂದು ಇಲ್ಲಿ ನಿಮಗೆ ಮರಳಿ ಬರುತ್ತದೆ.', 'हर दिन कुछ अच्छी बातें लिखें। उनमें से एक यहाँ आपके पास लौटकर आएगी।'],
+    ['Your progress', 'ನಿಮ್ಮ ಪ್ರಗತಿ', 'आपकी प्रगति'],
+    ['Last 14 days', 'ಕಳೆದ 14 ದಿನ', 'पिछले 14 दिन'],
+    ['Current streak', 'ಪ್ರಸ್ತುತ ಸರಣಿ', 'मौजूदा स्ट्रीक'],
+    ['Best streak', 'ಅತ್ಯುತ್ತಮ ಸರಣಿ', 'सबसे अच्छी स्ट्रीक'],
+    ['Week average', 'ವಾರದ ಸರಾಸರಿ', 'सप्ताह का औसत'],
+    ['A day counts toward your streak at 80% or more, or 40% on a gentle day. XP: 10 per routine, 30 for the hard thing, 1 per focus minute, 5 per good thing, 15 for a full wind-down and 20 for a perfect day.', 'ಸರಣಿಗೆ ಒಂದು ದಿನ 80% ಅಥವಾ ಹೆಚ್ಚಾದರೆ, ಮೃದು ದಿನದಲ್ಲಿ 40% ಆದರೆ ಲೆಕ್ಕಕ್ಕೆ ಬರುತ್ತದೆ. XP: ದಿನಚರಿಗೆ 10, ಕಠಿಣ ಕೆಲಸಕ್ಕೆ 30, ಏಕಾಗ್ರತೆಯ ಪ್ರತಿ ನಿಮಿಷಕ್ಕೆ 1, ಒಳ್ಳೆಯ ವಿಷಯಕ್ಕೆ 5, ಪೂರ್ಣ ವಿಶ್ರಾಂತಿಗೆ 15, ಪರಿಪೂರ್ಣ ದಿನಕ್ಕೆ 20.', 'स्ट्रीक के लिए दिन 80% या ज़्यादा पर गिना जाता है, नरम दिन में 40% पर। XP: हर दिनचर्या के 10, मुश्किल काम के 30, फ़ोकस के हर मिनट का 1, हर अच्छी बात के 5, पूरे वाइंड-डाउन के 15 और परफ़ेक्ट दिन के 20।'],
+    ['Routines', 'ದಿನಚರಿಗಳು', 'दिनचर्याएँ'],
+    ['Share of your routines finished each day.', 'ಪ್ರತಿದಿನ ಮುಗಿದ ನಿಮ್ಮ ದಿನಚರಿಗಳ ಪಾಲು.', 'हर दिन पूरी हुई दिनचर्याओं का हिस्सा।'],
+    ['Hours of sleep the night before.', 'ಹಿಂದಿನ ರಾತ್ರಿಯ ನಿದ್ರೆಯ ಗಂಟೆಗಳು.', 'पिछली रात की नींद के घंटे।'],
+    ['1 is rough, 5 is great.', '1 ಎಂದರೆ ಕಷ್ಟ, 5 ಎಂದರೆ ಅದ್ಭುತ.', '1 मतलब मुश्किल, 5 मतलब बढ़िया।'],
+    ['Minutes of focus time each day.', 'ಪ್ರತಿದಿನದ ಏಕಾಗ್ರತೆಯ ನಿಮಿಷಗಳು.', 'हर दिन फ़ोकस के मिनट।'],
+    ['This week', 'ಈ ವಾರ', 'इस सप्ताह'],
+    ['Days at 80% or more', '80% ಅಥವಾ ಹೆಚ್ಚಿನ ದಿನಗಳು', '80% या ज़्यादा वाले दिन'],
+    ['Average day', 'ಸರಾಸರಿ ದಿನ', 'औसत दिन'],
+    ['Best day', 'ಅತ್ಯುತ್ತಮ ದಿನ', 'सबसे अच्छा दिन'],
+    ['None yet', 'ಇನ್ನೂ ಇಲ್ಲ', 'अभी नहीं'],
+    ['Hard things done', 'ಮುಗಿಸಿದ ಕಠಿಣ ಕೆಲಸಗಳು', 'पूरे किए मुश्किल काम'],
+    ['Focus time', 'ಏಕಾಗ್ರತೆಯ ಸಮಯ', 'फ़ोकस समय'],
+    ['Good things written', 'ಬರೆದ ಒಳ್ಳೆಯ ವಿಷಯಗಳು', 'लिखी अच्छी बातें'],
+    ['A strong week. Keep the standard.', 'ಬಲವಾದ ವಾರ. ಇದೇ ಮಟ್ಟ ಉಳಿಸಿಕೊಳ್ಳಿ.', 'एक मज़बूत सप्ताह। यही स्तर बनाए रखें।'],
+    ['Solid week. Pick one routine to tighten next week.', 'ಒಳ್ಳೆಯ ವಾರ. ಮುಂದಿನ ವಾರ ಒಂದು ದಿನಚರಿಯನ್ನು ಬಿಗಿಗೊಳಿಸಿ.', 'अच्छा सप्ताह। अगले हफ़्ते एक दिनचर्या को और पक्का करें।'],
+    ['Every week is a fresh start. Aim for one more good day than last week.', 'ಪ್ರತಿ ವಾರವೂ ಹೊಸ ಆರಂಭ. ಕಳೆದ ವಾರಕ್ಕಿಂತ ಒಂದು ಹೆಚ್ಚು ಒಳ್ಳೆಯ ದಿನ ಗುರಿಯಾಗಿಸಿ.', 'हर सप्ताह एक नई शुरुआत है। पिछले हफ़्ते से एक और अच्छा दिन लक्ष्य बनाएँ।'],
+    ['Badges', 'ಬ್ಯಾಡ್ಜ್‌ಗಳು', 'बैज'],
+    ['First step', 'ಮೊದಲ ಹೆಜ್ಜೆ', 'पहला कदम'],
+    ['Check off a routine', 'ಒಂದು ದಿನಚರಿ ಪೂರೈಸಿ', 'एक दिनचर्या पूरी करें'],
+    ['Three in a row', 'ಸತತ ಮೂರು', 'लगातार तीन'],
+    ['A 3-day streak', '3 ದಿನಗಳ ಸರಣಿ', '3 दिन की स्ट्रीक'],
+    ['Full week', 'ಪೂರ್ಣ ವಾರ', 'पूरा सप्ताह'],
+    ['A 7-day streak', '7 ದಿನಗಳ ಸರಣಿ', '7 दिन की स्ट्रीक'],
+    ['Perfect day', 'ಪರಿಪೂರ್ಣ ದಿನ', 'परफ़ेक्ट दिन'],
+    ['Finish every routine', 'ಎಲ್ಲಾ ದಿನಚರಿ ಮುಗಿಸಿ', 'हर दिनचर्या पूरी करें'],
+    ['Hydrated', 'ನೀರು ಕುಡಿದಿದ್ದೀರಿ', 'हाइड्रेटेड'],
+    ['Hit your water goal', 'ನೀರಿನ ಗುರಿ ತಲುಪಿ', 'पानी का लक्ष्य पूरा करें'],
+    ['Deep focus', 'ಆಳವಾದ ಏಕಾಗ್ರತೆ', 'गहरा फ़ोकस'],
+    ['60 focus minutes in a day', 'ಒಂದು ದಿನದಲ್ಲಿ 60 ನಿಮಿಷ ಏಕಾಗ್ರತೆ', 'एक दिन में 60 मिनट फ़ोकस'],
+    ['Grateful heart', 'ಕೃತಜ್ಞ ಹೃದಯ', 'आभारी दिल'],
+    ['Write three good things', 'ಮೂರು ಒಳ್ಳೆಯ ವಿಷಯ ಬರೆಯಿರಿ', 'तीन अच्छी बातें लिखें'],
+    ['Hard things', 'ಕಠಿಣ ಕೆಲಸಗಳು', 'मुश्किल काम'],
+    ['Finish 3 hard things', '3 ಕಠಿಣ ಕೆಲಸ ಮುಗಿಸಿ', '3 मुश्किल काम पूरे करें'],
+    ['Goal getter', 'ಗುರಿ ಸಾಧಕ', 'लक्ष्य साधक'],
+    ['Finish every step of a goal', 'ಗುರಿಯ ಎಲ್ಲಾ ಹಂತ ಮುಗಿಸಿ', 'किसी लक्ष्य के सभी कदम पूरे करें'],
+    ['Sleep ritual', 'ನಿದ್ರೆಯ ಆಚರಣೆ', 'नींद की रस्म'],
+    ['Finish a full wind-down', 'ಪೂರ್ಣ ವಿಶ್ರಾಂತಿ ಪೂರೈಸಿ', 'पूरा वाइंड-डाउन पूरा करें'],
+    ['Kind to myself', 'ನನಗೆ ನಾನೇ ದಯೆ', 'खुद के प्रति दयालु'],
+    ['Use a gentle day', 'ಮೃದು ದಿನ ಬಳಸಿ', 'नरम दिन इस्तेमाल करें'],
+    ['In bloom', 'ಅರಳಿದೆ', 'खिल उठा'],
+    ['Reach level 4', 'ಹಂತ 4 ತಲುಪಿ', 'लेवल 4 तक पहुँचें'],
+    ['Weekly review', 'ವಾರದ ವಿಮರ್ಶೆ', 'साप्ताहिक समीक्षा'],
+    ['Write a short review each week. It takes one minute.', 'ಪ್ರತಿ ವಾರ ಒಂದು ಚಿಕ್ಕ ವಿಮರ್ಶೆ ಬರೆಯಿರಿ. ಒಂದು ನಿಮಿಷ ಸಾಕು.', 'हर हफ़्ते एक छोटी समीक्षा लिखें। एक मिनट लगता है।'],
+    ['One win this week', 'ಈ ವಾರದ ಒಂದು ಗೆಲುವು', 'इस हफ़्ते की एक जीत'],
+    ['What was hard', 'ಏನು ಕಷ್ಟವಾಯಿತು', 'क्या मुश्किल रहा'],
+    ['Focus for next week', 'ಮುಂದಿನ ವಾರದ ಗಮನ', 'अगले हफ़्ते का फ़ोकस'],
+    ['Something you’re proud of', 'ನೀವು ಹೆಮ್ಮೆ ಪಡುವ ಏನೋ ಒಂದು', 'कुछ जिस पर आपको गर्व है'],
+    ['What got in the way', 'ಯಾವುದು ಅಡ್ಡಿಯಾಯಿತು', 'किस बात ने रोका'],
+    ['One thing to focus on', 'ಗಮನ ಹರಿಸಬೇಕಾದ ಒಂದು ವಿಷಯ', 'ध्यान देने की एक बात'],
+    ['Share my week', 'ನನ್ನ ವಾರವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ', 'मेरा सप्ताह साझा करें'],
+    ['Move', 'ವ್ಯಾಯಾಮ', 'व्यायाम'],
+    ['Example workouts', 'ಉದಾಹರಣೆ ವ್ಯಾಯಾಮಗಳು', 'उदाहरण वर्कआउट'],
+    ['General ideas often suggested for PCOD and PCOS. This is not medical advice: check with your doctor before starting, and stop if anything hurts.', 'PCOD ಮತ್ತು PCOS ಗೆ ಸಾಮಾನ್ಯವಾಗಿ ಸೂಚಿಸುವ ಐಡಿಯಾಗಳು. ಇದು ವೈದ್ಯಕೀಯ ಸಲಹೆಯಲ್ಲ: ಶುರು ಮಾಡುವ ಮೊದಲು ವೈದ್ಯರನ್ನು ಕೇಳಿ, ನೋವಾದರೆ ನಿಲ್ಲಿಸಿ.', 'PCOD और PCOS के लिए आम तौर पर सुझाए जाने वाले विचार। यह चिकित्सीय सलाह नहीं है: शुरू करने से पहले डॉक्टर से पूछें, दर्द हो तो रुक जाएँ।'],
+    ['Brisk walk', 'ವೇಗದ ನಡಿಗೆ', 'तेज़ चाल'],
+    ['Strength basics', 'ಶಕ್ತಿ ತರಬೇತಿ ಮೂಲಗಳು', 'स्ट्रेंथ की बुनियादें'],
+    ['Gentle yoga flow', 'ಮೃದು ಯೋಗ ಹರಿವು', 'हल्का योग क्रम'],
+    ['Surya namaskar', 'ಸೂರ್ಯ ನಮಸ್ಕಾರ', 'सूर्य नमस्कार'],
+    ['Walk-run intervals', 'ನಡಿಗೆ-ಓಟ ಅಂತರಗಳು', 'वॉक-रन इंटरवल'],
+    ['Cycling or swimming', 'ಸೈಕ್ಲಿಂಗ್ ಅಥವಾ ಈಜು', 'साइक्लिंग या तैराकी'],
+    ['Breathing practice', 'ಉಸಿರಾಟದ ಅಭ್ಯಾಸ', 'साँस का अभ्यास'],
+    ['30 min · 4 to 5 days a week', '30 ನಿಮಿ · ವಾರಕ್ಕೆ 4 ರಿಂದ 5 ದಿನ', '30 मिनट · हफ़्ते में 4 से 5 दिन'],
+    ['Squats, glute bridges, wall push-ups · 2 to 3 days a week', 'ಸ್ಕ್ವಾಟ್, ಗ್ಲೂಟ್ ಬ್ರಿಡ್ಜ್, ವಾಲ್ ಪುಶ್-ಅಪ್ · ವಾರಕ್ಕೆ 2 ರಿಂದ 3 ದಿನ', 'स्क्वाट, ग्लूट ब्रिज, वॉल पुश-अप · हफ़्ते में 2 से 3 दिन'],
+    ['Butterfly, cat-cow, child’s pose, cobra · 15 to 20 min', 'ಚಿಟ್ಟೆ, ಬೆಕ್ಕು-ಹಸು, ಮಗುವಿನ ಭಂಗಿ, ಭುಜಂಗಾಸನ · 15 ರಿಂದ 20 ನಿಮಿ', 'तितली, बिल्ली-गाय, बालासन, भुजंगासन · 15 से 20 मिनट'],
+    ['5 to 10 rounds · morning', '5 ರಿಂದ 10 ಸುತ್ತು · ಬೆಳಿಗ್ಗೆ', '5 से 10 राउंड · सुबह'],
+    ['1 min fast, 2 min easy · 6 rounds', '1 ನಿಮಿ ವೇಗ, 2 ನಿಮಿ ಸುಲಭ · 6 ಸುತ್ತು', '1 मिनट तेज़, 2 मिनट आसान · 6 राउंड'],
+    ['20 to 30 min · 2 to 3 days a week', '20 ರಿಂದ 30 ನಿಮಿ · ವಾರಕ್ಕೆ 2 ರಿಂದ 3 ದಿನ', '20 से 30 मिनट · हफ़्ते में 2 से 3 दिन'],
+    ['Anulom vilom · 5 min', 'ಅನುಲೋಮ ವಿಲೋಮ · 5 ನಿಮಿ', 'अनुलोम विलोम · 5 मिनट'],
+    ['Watch videos', 'ವೀಡಿಯೊ ನೋಡಿ', 'वीडियो देखें'],
+    ['Add to routine', 'ದಿನಚರಿಗೆ ಸೇರಿಸಿ', 'दिनचर्या में जोड़ें'],
+    ['In your routine', 'ನಿಮ್ಮ ದಿನಚರಿಯಲ್ಲಿದೆ', 'आपकी दिनचर्या में है'],
+    ['Brisk walk, 30 minutes', 'ವೇಗದ ನಡಿಗೆ, 30 ನಿಮಿಷ', 'तेज़ चाल, 30 मिनट'],
+    ['Strength basics: squats, bridges, push-ups', 'ಶಕ್ತಿ ತರಬೇತಿ: ಸ್ಕ್ವಾಟ್, ಬ್ರಿಡ್ಜ್, ಪುಶ್-ಅಪ್', 'स्ट्रेंथ: स्क्वाट, ब्रिज, पुश-अप'],
+    ['Gentle yoga flow, 15 minutes', 'ಮೃದು ಯೋಗ, 15 ನಿಮಿಷ', 'हल्का योग, 15 मिनट'],
+    ['Surya namaskar, 5 rounds', 'ಸೂರ್ಯ ನಮಸ್ಕಾರ, 5 ಸುತ್ತು', 'सूर्य नमस्कार, 5 राउंड'],
+    ['Walk-run intervals, 6 rounds', 'ನಡಿಗೆ-ಓಟ, 6 ಸುತ್ತು', 'वॉक-रन, 6 राउंड'],
+    ['Cycling or swimming, 20 minutes', 'ಸೈಕ್ಲಿಂಗ್ ಅಥವಾ ಈಜು, 20 ನಿಮಿಷ', 'साइक्लिंग या तैराकी, 20 मिनट'],
+    ['Breathing practice, 5 minutes', 'ಉಸಿರಾಟ ಅಭ್ಯಾಸ, 5 ನಿಮಿಷ', 'साँस का अभ्यास, 5 मिनट'],
+    ['Little joys', 'ಸಣ್ಣ ಸಂತೋಷಗಳು', 'छोटी खुशियाँ'],
+    ['Ideas to add', 'ಸೇರಿಸಲು ಐಡಿಯಾಗಳು', 'जोड़ने के लिए विचार'],
+    ['Small things that make a day feel good. Add the ones you like to your routine.', 'ದಿನವನ್ನು ಚೆನ್ನಾಗಿಸುವ ಸಣ್ಣ ವಿಷಯಗಳು. ನಿಮಗಿಷ್ಟವಾದವನ್ನು ನಿಮ್ಮ ದಿನಚರಿಗೆ ಸೇರಿಸಿ.', 'दिन को अच्छा बनाने वाली छोटी बातें। जो पसंद आएँ उन्हें अपनी दिनचर्या में जोड़ें।'],
+    ['Message someone you love', 'ನೀವು ಪ್ರೀತಿಸುವ ಯಾರಿಗಾದರೂ ಸಂದೇಶ ಕಳುಹಿಸಿ', 'जिसे आप प्यार करते हैं उसे संदेश भेजें'],
+    ['Play a song that lifts you', 'ನಿಮ್ಮ ಮನಸ್ಸು ಹಗುರಾಗಿಸುವ ಹಾಡು ಹಾಕಿ', 'मन खिला देने वाला गाना बजाएँ'],
+    ['Dance to one song', 'ಒಂದು ಹಾಡಿಗೆ ನೃತ್ಯ ಮಾಡಿ', 'एक गाने पर नाचें'],
+    ['Enjoy a quiet cup of tea', 'ಶಾಂತವಾಗಿ ಒಂದು ಕಪ್ ಚಹಾ ಆನಂದಿಸಿ', 'शांति से एक कप चाय का आनंद लें'],
+    ['Tell someone thank you', 'ಯಾರಿಗಾದರೂ ಧನ್ಯವಾದ ಹೇಳಿ', 'किसी को धन्यवाद कहें'],
+    ['Read ten pages', 'ಹತ್ತು ಪುಟ ಓದಿ', 'दस पन्ने पढ़ें'],
+    ['Sketch, write or make something', 'ಚಿತ್ರ ಬಿಡಿಸಿ, ಬರೆಯಿರಿ ಅಥವಾ ಏನಾದರೂ ಮಾಡಿ', 'स्केच करें, लिखें या कुछ बनाएँ'],
+    ['Tidy one small space', 'ಒಂದು ಸಣ್ಣ ಜಾಗವನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸಿ', 'एक छोटी जगह साफ़ करें'],
+    ['Reminders', 'ನೆನಪಿನ ಸೂಚನೆಗಳು', 'रिमाइंडर'],
+    ['On, in-page only', 'ಆನ್, ಪುಟದೊಳಗೆ ಮಾತ್ರ', 'चालू, केवल पेज के अंदर'],
+    ['Add your routine', 'ನಿಮ್ಮ ದಿನಚರಿ ಸೇರಿಸಿ', 'अपनी दिनचर्या जोड़ें'],
+    ['Complete your routine', 'ನಿಮ್ಮ ದಿನಚರಿ ಪೂರೈಸಿ', 'अपनी दिनचर्या पूरी करें'],
+    ['Turn on', 'ಆನ್ ಮಾಡಿ', 'चालू करें'],
+    ['Turn off', 'ಆಫ್ ಮಾಡಿ', 'बंद करें'],
+    ['Send a test', 'ಪರೀಕ್ಷೆ ಕಳುಹಿಸಿ', 'टेस्ट भेजें'],
+    ['Reminders appear while this page is open. Wind-down reminders come 30 minutes before your bedtime. A phone alarm is the only thing that can ring on a silent phone when the page is closed, so set one too.', 'ಈ ಪುಟ ತೆರೆದಿರುವಾಗ ನೆನಪಿನ ಸೂಚನೆಗಳು ಕಾಣಿಸುತ್ತವೆ. ವಿಶ್ರಾಂತಿ ಸೂಚನೆ ನಿಮ್ಮ ಮಲಗುವ ಸಮಯಕ್ಕೆ 30 ನಿಮಿಷ ಮೊದಲು ಬರುತ್ತದೆ. ಪುಟ ಮುಚ್ಚಿದ್ದಾಗ, ಸೈಲೆಂಟ್ ಫೋನ್‌ನಲ್ಲಿ ಮೊಳಗುವುದು ಫೋನ್ ಅಲಾರಂ ಮಾತ್ರ, ಆದ್ದರಿಂದ ಒಂದನ್ನು ಹೊಂದಿಸಿ.', 'यह पेज खुला होने पर रिमाइंडर दिखते हैं। वाइंड-डाउन रिमाइंडर आपके सोने के समय से 30 मिनट पहले आता है। पेज बंद होने पर साइलेंट फ़ोन में सिर्फ़ फ़ोन का अलार्म बज सकता है, इसलिए एक अलार्म भी लगाएँ।'],
+    ['Your name', 'ನಿಮ್ಮ ಹೆಸರು', 'आपका नाम'],
+    ['Add your name', 'ನಿಮ್ಮ ಹೆಸರು ಸೇರಿಸಿ', 'अपना नाम जोड़ें'],
+    ['Theme', 'ಥೀಮ್', 'थीम'],
+    ['Auto', 'ಸ್ವಯಂ', 'ऑटो'],
+    ['Dark', 'ಗಾಢ', 'गहरा'],
+    ['Language', 'ಭಾಷೆ', 'भाषा'],
+    ['Setup', 'ಸೆಟಪ್', 'सेटअप'],
+    ['Name, times, routines', 'ಹೆಸರು, ಸಮಯ, ದಿನಚರಿಗಳು', 'नाम, समय, दिनचर्याएँ'],
+    ['Run setup again', 'ಸೆಟಪ್ ಮತ್ತೆ ಚಲಾಯಿಸಿ', 'सेटअप फिर से चलाएँ'],
+    ['Sprig’s style', 'ಸ್ಪ್ರಿಗ್‌ನ ಶೈಲಿ', 'स्प्रिग की स्टाइल'],
+    ['Unlocks as you level up', 'ಹಂತ ಏರಿದಂತೆ ಅನ್‌ಲಾಕ್ ಆಗುತ್ತದೆ', 'लेवल बढ़ने पर अनलॉक होता है'],
+    ['Shades', 'ಕನ್ನಡಕ', 'चश्मा'],
+    ['Bow', 'ರಿಬ್ಬನ್', 'बो'],
+    ['Crown', 'ಕಿರೀಟ', 'ताज'],
+    ['Colors', 'ಬಣ್ಣಗಳು', 'रंग'],
+    ['Pick your look', 'ನಿಮ್ಮ ಶೈಲಿ ಆರಿಸಿ', 'अपना लुक चुनें'],
+    ['Water goal', 'ನೀರಿನ ಗುರಿ', 'पानी का लक्ष्य'],
+    ['Glasses per day', 'ದಿನಕ್ಕೆ ಲೋಟಗಳು', 'प्रतिदिन गिलास'],
+    ['Your data', 'ನಿಮ್ಮ ಡೇಟಾ', 'आपका डेटा'],
+    ['Everything is saved on this device only. Make a backup so you can restore it after clearing the browser or moving to a new phone.', 'ಎಲ್ಲವೂ ಈ ಸಾಧನದಲ್ಲಿ ಮಾತ್ರ ಉಳಿಯುತ್ತದೆ. ಬ್ರೌಸರ್ ಕ್ಲಿಯರ್ ಮಾಡಿದ ಮೇಲೆ ಅಥವಾ ಹೊಸ ಫೋನ್‌ಗೆ ಹೋದಾಗ ಮರುಸ್ಥಾಪಿಸಲು ಬ್ಯಾಕಪ್ ಮಾಡಿ.', 'सब कुछ सिर्फ़ इसी डिवाइस पर सहेजा जाता है। बैकअप बना लें ताकि ब्राउज़र साफ़ करने या नया फ़ोन लेने पर रिस्टोर कर सकें।'],
+    ['Create backup', 'ಬ್ಯಾಕಪ್ ರಚಿಸಿ', 'बैकअप बनाएँ'],
+    ['Restore', 'ಮರುಸ್ಥಾಪಿಸಿ', 'रिस्टोर करें'],
+    ['Restore from this text', 'ಈ ಪಠ್ಯದಿಂದ ಮರುಸ್ಥಾಪಿಸಿ', 'इस टेक्स्ट से रिस्टोर करें'],
+    ['Backup created. Select all, copy it and keep it somewhere safe.', 'ಬ್ಯಾಕಪ್ ಸಿದ್ಧ. ಎಲ್ಲವನ್ನೂ ಆಯ್ಕೆ ಮಾಡಿ, ನಕಲಿಸಿ ಮತ್ತು ಸುರಕ್ಷಿತ ಜಾಗದಲ್ಲಿ ಇಡಿ.', 'बैकअप तैयार है। सब चुनें, कॉपी करें और सुरक्षित जगह रखें।'],
+    ['Backup created and copied. Paste it into a note or a message to yourself.', 'ಬ್ಯಾಕಪ್ ಸಿದ್ಧವಾಗಿ ನಕಲಾಗಿದೆ. ಅದನ್ನು ನೋಟ್ ಅಥವಾ ನಿಮಗೇ ಸಂದೇಶದಲ್ಲಿ ಪೇಸ್ಟ್ ಮಾಡಿ.', 'बैकअप तैयार और कॉपी हो गया। इसे किसी नोट या खुद को भेजे संदेश में पेस्ट करें।'],
+    ['Paste your backup text here, then tap Restore.', 'ನಿಮ್ಮ ಬ್ಯಾಕಪ್ ಪಠ್ಯವನ್ನು ಇಲ್ಲಿ ಪೇಸ್ಟ್ ಮಾಡಿ, ನಂತರ ಮರುಸ್ಥಾಪಿಸಿ ಒತ್ತಿ.', 'अपना बैकअप टेक्स्ट यहाँ पेस्ट करें, फिर रिस्टोर दबाएँ।'],
+    ['That does not look like a First light backup.', 'ಇದು First light ಬ್ಯಾಕಪ್‌ನಂತೆ ಕಾಣುತ್ತಿಲ್ಲ.', 'यह First light का बैकअप नहीं लगता।'],
+    ['This replaces everything on this device. Tap Restore again to confirm.', 'ಇದು ಈ ಸಾಧನದ ಎಲ್ಲವನ್ನೂ ಬದಲಾಯಿಸುತ್ತದೆ. ಖಚಿತಪಡಿಸಲು ಮತ್ತೆ ಮರುಸ್ಥಾಪಿಸಿ ಒತ್ತಿ.', 'यह इस डिवाइस की हर चीज़ बदल देगा। पुष्टि के लिए रिस्टोर फिर दबाएँ।'],
+    ['Restored. Reloading.', 'ಮರುಸ್ಥಾಪಿಸಲಾಗಿದೆ. ರೀಲೋಡ್ ಆಗುತ್ತಿದೆ.', 'रिस्टोर हो गया। फिर लोड हो रहा है।'],
+    ['Restored. Close and reopen the app.', 'ಮರುಸ್ಥಾಪಿಸಲಾಗಿದೆ. ಆ್ಯಪ್ ಮುಚ್ಚಿ ಮತ್ತೆ ತೆರೆಯಿರಿ.', 'रिस्टोर हो गया। ऐप बंद करके फिर खोलें।'],
+    ['Use it like an app', 'ಆ್ಯಪ್‌ನಂತೆ ಬಳಸಿ', 'ऐप की तरह इस्तेमाल करें'],
+    ['On Android, open this page in Chrome, tap the menu, then choose Add to Home screen. On iPhone, open it in Safari, tap Share, then Add to Home Screen. It opens full screen with its own icon.', 'ಆಂಡ್ರಾಯ್ಡ್‌ನಲ್ಲಿ ಈ ಪುಟವನ್ನು Chrome ನಲ್ಲಿ ತೆರೆದು, ಮೆನು ಒತ್ತಿ, ಹೋಮ್ ಸ್ಕ್ರೀನ್‌ಗೆ ಸೇರಿಸಿ ಆರಿಸಿ. ಐಫೋನ್‌ನಲ್ಲಿ Safari ನಲ್ಲಿ ತೆರೆದು, ಶೇರ್ ಒತ್ತಿ, ಹೋಮ್ ಸ್ಕ್ರೀನ್‌ಗೆ ಸೇರಿಸಿ ಆರಿಸಿ. ಇದು ತನ್ನದೇ ಐಕಾನ್‌ನೊಂದಿಗೆ ಪೂರ್ಣ ಪರದೆಯಲ್ಲಿ ತೆರೆಯುತ್ತದೆ.', 'Android पर इस पेज को Chrome में खोलें, मेन्यू दबाएँ, फिर होम स्क्रीन पर जोड़ें चुनें। iPhone पर Safari में खोलें, शेयर दबाएँ, फिर होम स्क्रीन पर जोड़ें चुनें। यह अपने आइकन के साथ पूरी स्क्रीन पर खुलता है।'],
+    ["Clear today's checks", 'ಇಂದಿನ ಗುರುತುಗಳನ್ನು ಅಳಿಸಿ', 'आज के निशान हटाएँ'],
+    ['Choose the days each routine appears, move it between parts of the day, or change the order.', 'ಪ್ರತಿ ದಿನಚರಿ ಯಾವ ದಿನಗಳಲ್ಲಿ ಕಾಣಿಸಬೇಕೆಂದು ಆರಿಸಿ, ದಿನದ ಭಾಗಗಳ ನಡುವೆ ಸರಿಸಿ, ಅಥವಾ ಕ್ರಮ ಬದಲಿಸಿ.', 'चुनें कि हर दिनचर्या किन दिनों में दिखे, उसे दिन के हिस्सों के बीच ले जाएँ, या क्रम बदलें।'],
+    ['Archived', 'ಆರ್ಕೈವ್ ಮಾಡಿದ್ದು', 'आर्काइव किया हुआ'],
+    ['Archive', 'ಆರ್ಕೈವ್', 'आर्काइव'],
+    ['Delete', 'ಅಳಿಸಿ', 'हटाएँ'],
+    ['Tap again to delete', 'ಅಳಿಸಲು ಮತ್ತೆ ಒತ್ತಿ', 'हटाने के लिए फिर दबाएँ'],
+    ['All done for today ✨', 'ಇಂದಿನದು ಎಲ್ಲಾ ಮುಗಿಯಿತು ✨', 'आज का सब पूरा ✨'],
+    ['Focus session done ✨', 'ಏಕಾಗ್ರತೆಯ ಅವಧಿ ಮುಗಿಯಿತು ✨', 'फ़ोकस सत्र पूरा ✨'],
+    ['Focus session done', 'ಏಕಾಗ್ರತೆಯ ಅವಧಿ ಮುಗಿಯಿತು', 'फ़ोकस सत्र पूरा'],
+    ['Take a short break. You earned it.', 'ಸ್ವಲ್ಪ ವಿರಾಮ ತೆಗೆದುಕೊಳ್ಳಿ. ನೀವು ಅದಕ್ಕೆ ಅರ್ಹರು.', 'थोड़ा ब्रेक लें। आपने इसे कमाया है।'],
+    ['Hard thing done ✨', 'ಕಠಿಣ ಕೆಲಸ ಮುಗಿಯಿತು ✨', 'मुश्किल काम पूरा ✨'],
+    ['Goal reached ✨', 'ಗುರಿ ತಲುಪಿದಿರಿ ✨', 'लक्ष्य पूरा ✨'],
+    ['Level up ✨', 'ಹಂತ ಏರಿಕೆ ✨', 'लेवल अप ✨'],
+    ['Badge unlocked ✨', 'ಬ್ಯಾಡ್ಜ್ ಅನ್‌ಲಾಕ್ ✨', 'बैज अनलॉक ✨'],
+    ['Test reminder', 'ಪರೀಕ್ಷಾ ನೆನಪಿನ ಸೂಚನೆ', 'टेस्ट रिमाइंडर'],
+    ['This is how your reminder will look.', 'ನಿಮ್ಮ ನೆನಪಿನ ಸೂಚನೆ ಹೀಗೆ ಕಾಣಿಸುತ್ತದೆ.', 'आपका रिमाइंडर ऐसा दिखेगा।'],
+    ['Copied', 'ನಕಲಿಸಲಾಗಿದೆ', 'कॉपी हो गया'],
+    ['Share this', 'ಇದನ್ನು ಹಂಚಿಕೊಳ್ಳಿ', 'इसे साझा करें'],
+    ['Time to wind down', 'ವಿಶ್ರಾಂತಿಯ ಸಮಯ', 'आराम का समय'],
+    ['Good morning. Add your routine', 'ಶುಭೋದಯ. ನಿಮ್ಮ ದಿನಚರಿ ಸೇರಿಸಿ', 'सुप्रभात। अपनी दिनचर्या जोड़ें'],
+    ['Add a few routines to start your day.', 'ನಿಮ್ಮ ದಿನ ಶುರು ಮಾಡಲು ಕೆಲವು ದಿನಚರಿಗಳನ್ನು ಸೇರಿಸಿ.', 'अपना दिन शुरू करने के लिए कुछ दिनचर्याएँ जोड़ें।'],
+    ['Evening check-in', 'ಸಂಜೆಯ ಪರಿಶೀಲನೆ', 'शाम की जाँच'],
+    ['Add a routine for tomorrow.', 'ನಾಳೆಗಾಗಿ ಒಂದು ದಿನಚರಿ ಸೇರಿಸಿ.', 'कल के लिए एक दिनचर्या जोड़ें।'],
+    ['Seed', 'ಬೀಜ', 'बीज'],
+    ['Sprout', 'ಮೊಳಕೆ', 'अंकुर'],
+    ['Sapling', 'ಸಸಿ', 'पौधा'],
+    ['Bloom', 'ಹೂ', 'फूल'],
+    ['Climber', 'ಆರೋಹಿ', 'पर्वतारोही'],
+    ['Sunrise', 'ಸೂರ್ಯೋದಯ', 'सूर्योदय'],
+    ['Flame', 'ಜ್ವಾಲೆ', 'लौ'],
+    ['Summit', 'ಶಿಖರ', 'शिखर'],
+    ['Legend', 'ದಂತಕಥೆ', 'दिग्गज'],
+    ['Welcome to First light', 'First light ಗೆ ಸ್ವಾಗತ', 'First light में आपका स्वागत है'],
+    ['Let’s set up your day. It takes about a minute.', 'ನಿಮ್ಮ ದಿನವನ್ನು ಸಿದ್ಧಪಡಿಸೋಣ. ಸುಮಾರು ಒಂದು ನಿಮಿಷ ಸಾಕು.', 'आइए आपका दिन सेट करें। लगभग एक मिनट लगेगा।'],
+    ['What should we call you?', 'ನಿಮ್ಮನ್ನು ಏನೆಂದು ಕರೆಯೋಣ?', 'हम आपको क्या कहकर बुलाएँ?'],
+    ['Next', 'ಮುಂದೆ', 'आगे'],
+    ['Back', 'ಹಿಂದೆ', 'पीछे'],
+    ['Let’s begin', 'ಶುರು ಮಾಡೋಣ', 'चलिए शुरू करें'],
+    ['When does your day start and end?', 'ನಿಮ್ಮ ದಿನ ಯಾವಾಗ ಶುರುವಾಗಿ ಯಾವಾಗ ಮುಗಿಯುತ್ತದೆ?', 'आपका दिन कब शुरू और कब खत्म होता है?'],
+    ['Wake-up time', 'ಏಳುವ ಸಮಯ', 'उठने का समय'],
+    ['We use these for your reminders and wind-down.', 'ಇವನ್ನು ನಿಮ್ಮ ನೆನಪಿನ ಸೂಚನೆ ಮತ್ತು ವಿಶ್ರಾಂತಿಗೆ ಬಳಸುತ್ತೇವೆ.', 'इनका उपयोग आपके रिमाइंडर और वाइंड-डाउन के लिए होगा।'],
+    ['Pick your starter routines', 'ನಿಮ್ಮ ಆರಂಭಿಕ ದಿನಚರಿಗಳನ್ನು ಆರಿಸಿ', 'अपनी शुरुआती दिनचर्याएँ चुनें'],
+    ['You can change these any time.', 'ಇವನ್ನು ಯಾವಾಗ ಬೇಕಾದರೂ ಬದಲಾಯಿಸಬಹುದು.', 'इन्हें आप कभी भी बदल सकते हैं।'],
+    ['Choose your look', 'ನಿಮ್ಮ ಶೈಲಿ ಆರಿಸಿ', 'अपना लुक चुनें'],
+    ['You’re all set. Your first sunrise is waiting.', 'ಎಲ್ಲಾ ಸಿದ್ಧ. ನಿಮ್ಮ ಮೊದಲ ಸೂರ್ಯೋದಯ ಕಾಯುತ್ತಿದೆ.', 'सब तैयार है। आपका पहला सूर्योदय इंतज़ार कर रहा है।'],
+    ['Take your vitamins', 'ವಿಟಮಿನ್ ತೆಗೆದುಕೊಳ್ಳಿ', 'विटामिन लें'],
+    ['Drink a glass of water', 'ಒಂದು ಲೋಟ ನೀರು ಕುಡಿಯಿರಿ', 'एक गिलास पानी पिएँ'],
+    ['Stretch for 5 minutes', '5 ನಿಮಿಷ ಸ್ಟ್ರೆಚ್ ಮಾಡಿ', '5 मिनट स्ट्रेच करें'],
+    ['Get 10 minutes of daylight', '10 ನಿಮಿಷ ಹಗಲು ಬೆಳಕಿನಲ್ಲಿ ಇರಿ', '10 मिनट दिन की रोशनी में रहें'],
+    ['Write your top three tasks', 'ನಿಮ್ಮ ಮೂರು ಮುಖ್ಯ ಕೆಲಸಗಳನ್ನು ಬರೆಯಿರಿ', 'अपने तीन मुख्य काम लिखें'],
+    ['Eat a proper lunch', 'ಸರಿಯಾದ ಊಟ ಮಾಡಿ', 'ठीक से दोपहर का खाना खाएँ'],
+    ['Walk for 10 minutes', '10 ನಿಮಿಷ ನಡೆಯಿರಿ', '10 मिनट टहलें'],
+    ['Screens off 30 minutes before bed', 'ಮಲಗುವ 30 ನಿಮಿಷ ಮೊದಲು ಪರದೆ ಆಫ್ ಮಾಡಿ', 'सोने से 30 मिनट पहले स्क्रीन बंद करें'],
+    ['Write down tomorrow’s first task', 'ನಾಳೆಯ ಮೊದಲ ಕೆಲಸ ಬರೆದಿಡಿ', 'कल का पहला काम लिख लें']
+  ];
+  var PT = [
+    [/^(\d+) of (\d+) glasses$/, '{2} ಲೋಟಗಳಲ್ಲಿ {1}', '{2} गिलास में से {1}'],
+    [/^(\d+) of (\d+) steps, (.+)$/, '{2} ಹಂತಗಳಲ್ಲಿ {1}, {3}', '{2} कदमों में से {1}, {3}'],
+    [/^(\d+) of (\d+) steps$/, '{2} ಹಂತಗಳಲ್ಲಿ {1}', '{2} कदमों में से {1}'],
+    [/^(\d+) of (\d+)$/, '{2}ರಲ್ಲಿ {1}', '{2} में से {1}'],
+    [/^No steps yet, (.+)$/, 'ಇನ್ನೂ ಹಂತಗಳಿಲ್ಲ, {1}', 'अभी कोई कदम नहीं, {1}'],
+    [/^(\d+) days left$/, '{1} ದಿನ ಬಾಕಿ', '{1} दिन बाकी'],
+    [/^Overdue by (\d+) days?$/, '{1} ದಿನ ತಡವಾಗಿದೆ', '{1} दिन की देरी'],
+    [/^(\d+) min today$/, 'ಇಂದು {1} ನಿಮಿಷ', 'आज {1} मिनट'],
+    [/^(\d+) min$/, '{1} ನಿಮಿ', '{1} मिनट'],
+    [/^(\d+) h (\d+) min$/, '{1} ಗಂ {2} ನಿಮಿ', '{1} घं {2} मिनट'],
+    [/^([\d.–]+) h$/, '{1} ಗಂ', '{1} घं'],
+    [/^Bedtime in (.+)$/, 'ಮಲಗಲು {1} ಬಾಕಿ', 'सोने में {1} बाकी'],
+    [/^Bedtime (\d{1,2}:\d{2} [ap]m)$/, 'ಮಲಗುವ ಸಮಯ {1}', 'सोने का समय {1}'],
+    [/^Level (\d+), (.+)$/, 'ಹಂತ {1}, {2}', 'लेवल {1}, {2}'],
+    [/^\+(\d+) XP today$/, 'ಇಂದು +{1} XP', 'आज +{1} XP'],
+    [/^(\d+) XP to level (\d+)$/, 'ಹಂತ {2}ಕ್ಕೆ {1} XP', 'लेवल {2} तक {1} XP'],
+    [/^Shh\. Time to rest\. Sleep well(, .+)?\.$/, 'ಶ್ಶ್. ವಿಶ್ರಾಂತಿಯ ಸಮಯ. ಚೆನ್ನಾಗಿ ನಿದ್ರಿಸಿ{1}.', 'श्श। आराम का समय। अच्छी नींद लें{1}।'],
+    [/^All done! I bloomed for you(, .+)?\.$/, 'ಎಲ್ಲಾ ಮುಗಿಯಿತು! ನಿಮಗಾಗಿ ನಾನು ಅರಳಿದೆ{1}.', 'सब हो गया! मैं आपके लिए खिल उठा{1}।'],
+    [/^Thank you, (.+)!$/, 'ಧನ್ಯವಾದ, {1}!', 'शुक्रिया, {1}!'],
+    [/^Removed “(.+)”$/, '“{1}” ತೆಗೆಯಲಾಗಿದೆ', '“{1}” हटाया गया'],
+    [/^Streak (\d+), best (\d+)$/, 'ಸರಣಿ {1}, ಅತ್ಯುತ್ತಮ {2}', 'स्ट्रीक {1}, सर्वश्रेष्ठ {2}'],
+    [/^Cycle day (\d+)\.$/, 'ಚಕ್ರದ ದಿನ {1}.', 'चक्र का दिन {1}।'],
+    [/^Average cycle (\d+) days\. Next period around (.+)\.$/, 'ಸರಾಸರಿ ಚಕ್ರ {1} ದಿನಗಳು. ಮುಂದಿನ ಮುಟ್ಟು ಸುಮಾರು {2}.', 'औसत चक्र {1} दिन। अगला पीरियड लगभग {2}।'],
+    [/^Most common lately: (.+)\.$/, 'ಇತ್ತೀಚೆಗೆ ಹೆಚ್ಚು: {1}.', 'हाल में सबसे आम: {1}।'],
+    [/^Energy averages ([\d.]+) of 5 on period days and ([\d.]+) on other days\.$/, 'ಶಕ್ತಿಯ ಸರಾಸರಿ: ಮುಟ್ಟಿನ ದಿನಗಳಲ್ಲಿ 5ರಲ್ಲಿ {1}, ಇತರ ದಿನಗಳಲ್ಲಿ {2}.', 'ऊर्जा का औसत: पीरियड के दिनों में 5 में से {1}, बाकी दिनों में {2}।'],
+    [/^(Rain|Ocean|Hush) on$/, '{1} ಆನ್', '{1} चालू'],
+    [/^Breath (\d+) of (\d+)$/, 'ಉಸಿರು {1}/{2}', 'साँस {1}/{2}'],
+    [/^(\d+) slow breaths$/, '{1} ನಿಧಾನ ಉಸಿರುಗಳು', '{1} धीमी साँसें'],
+    [/^From your jar, (.+)$/, 'ನಿಮ್ಮ ಜಾರ್‌ನಿಂದ, {1}', 'आपके जार से, {1}'],
+    [/^Week of (.+)$/, '{1} ರ ವಾರ', '{1} का सप्ताह'],
+    [/^Last week you planned: (.+)$/, 'ಕಳೆದ ವಾರ ನೀವು ಯೋಜಿಸಿದ್ದು: {1}', 'पिछले हफ़्ते आपने योजना बनाई: {1}'],
+    [/^New (morning|midday|evening) routine$/, 'ಹೊಸ {1} ದಿನಚರಿ', 'नई {1} दिनचर्या'],
+    [/^Dashed line: average (.+) on days you logged\. (.+)$/, 'ಚುಕ್ಕೆ ಗೆರೆ: ನೀವು ದಾಖಲಿಸಿದ ದಿನಗಳ ಸರಾಸರಿ {1}. {2}', 'डैश लाइन: दर्ज किए दिनों का औसत {1}। {2}'],
+    [/^Nothing logged yet\. Bars appear as you use the app\. (.+)$/, 'ಇನ್ನೂ ಏನೂ ದಾಖಲಾಗಿಲ್ಲ. ನೀವು ಆ್ಯಪ್ ಬಳಸಿದಂತೆ ಬಾರ್‌ಗಳು ಕಾಣಿಸುತ್ತವೆ. {1}', 'अभी कुछ दर्ज नहीं। ऐप इस्तेमाल करने पर बार दिखेंगे। {1}'],
+    [/^Goal: (\d+) glasses a day\.$/, 'ಗುರಿ: ದಿನಕ್ಕೆ {1} ಲೋಟ.', 'लक्ष्य: रोज़ {1} गिलास।'],
+    [/^Screens down, lights low\. Bedtime is at (.+)\.$/, 'ಪರದೆ ಬಂದ್, ದೀಪ ಮಂದ. ಮಲಗುವ ಸಮಯ {1}.', 'स्क्रीन बंद, रोशनी धीमी। सोने का समय {1} है।'],
+    [/^You have (\d+) routines today\. Check in with the first one\.$/, 'ಇಂದು ನಿಮಗೆ {1} ದಿನಚರಿಗಳಿವೆ. ಮೊದಲನೆಯದರಿಂದ ಶುರು ಮಾಡಿ.', 'आज आपकी {1} दिनचर्याएँ हैं। पहली से शुरू करें।'],
+    [/^(\d+) routines left\. A few minutes will finish the day\.$/, '{1} ದಿನಚರಿ ಬಾಕಿ. ಕೆಲವು ನಿಮಿಷಗಳಲ್ಲಿ ದಿನ ಮುಗಿಯುತ್ತದೆ.', '{1} दिनचर्याएँ बाकी। कुछ मिनटों में दिन पूरा हो जाएगा।'],
+    [/^You are now Level (\d+), (.+)\. Keep going\.$/, 'ನೀವು ಈಗ ಹಂತ {1}, {2}. ಮುಂದುವರಿಸಿ.', 'आप अब लेवल {1}, {2} पर हैं। चलते रहिए।'],
+    [/^([^\x00-\x7F]\S*) ([^:]+): (.+)$/, '{1} {2}: {3}', '{1} {2}: {3}'],
+    [/^(Good morning|Good afternoon|Good evening)(, .+)?$/, '{1}{2}', '{1}{2}']
+  ];
+  var I18N = { kn: Object.create(null), hi: Object.create(null) };
+  TR.forEach(function (r) { I18N.kn[r[0]] = r[1]; I18N.hi[r[0]] = r[2]; });
+  var UNITS = { kn: { glasses: 'ಲೋಟ', h: 'ಗಂ', min: 'ನಿಮಿ', 'of 5': '/5' }, hi: { glasses: 'गिलास', h: 'घं', min: 'मिनट', 'of 5': '/5' } };
+  function trCap(c) {
+    var k = c.trim(), v = I18N[LANG][k];
+    if (v !== undefined) return v;
+    v = patt(k);
+    if (v !== undefined) return v;
+    return c.replace(/ (glasses|h|min|of 5)$/, function (_, u) { return ' ' + UNITS[LANG][u]; });
+  }
+  function patt(key) {
+    for (var i = 0; i < PT.length; i++) {
+      var m = key.match(PT[i][0]);
+      if (m) {
+        return PT[i][LANG === 'kn' ? 1 : 2].replace(/\{(\d)\}/g, function (_, n) {
+          var c = m[+n];
+          return c === undefined ? '' : trCap(c);
+        });
+      }
+    }
+    return undefined;
+  }
+  function trStr(s) {
+    if (LANG === 'en') return s;
+    var key = s.trim();
+    if (!key) return s;
+    var out = I18N[LANG][key];
+    if (out === undefined) out = patt(key);
+    if (out === undefined) return s;
+    var at = s.indexOf(key);
+    return s.slice(0, at) + out + s.slice(at + key.length);
+  }
+  var _tld = Date.prototype.toLocaleDateString;
+  Date.prototype.toLocaleDateString = function (loc, o) {
+    return _tld.call(this, loc || (LANG === 'kn' ? 'kn-IN' : (LANG === 'hi' ? 'hi-IN' : undefined)), o);
+  };
+  var ATTRS = ['placeholder', 'aria-label', 'title'];
+  function trNode(n) {
+    var cur = n.data;
+    if (n.__en === undefined || cur !== n.__tr) n.__en = cur;
+    var out = LANG === 'en' ? n.__en : trStr(n.__en);
+    n.__tr = out;
+    if (out !== cur) n.data = out;
+  }
+  function trAttr(e, a) {
+    if (!e.hasAttribute || !e.hasAttribute(a)) return;
+    var store = e.__a || (e.__a = {});
+    var cur = e.getAttribute(a), rec = store[a];
+    if (!rec || cur !== rec.tr) rec = store[a] = { en: cur, tr: cur };
+    var out = LANG === 'en' ? rec.en : trStr(rec.en);
+    rec.tr = out;
+    if (out !== cur) e.setAttribute(a, out);
+  }
+  function trTree(n) {
+    if (!n) return;
+    if (n.nodeType === 3) { trNode(n); return; }
+    if (n.nodeType !== 1) return;
+    var tag = n.tagName;
+    if (tag === 'SCRIPT' || tag === 'STYLE' || tag === 'TEXTAREA') return;
+    for (var i = 0; i < ATTRS.length; i++) trAttr(n, ATTRS[i]);
+    for (var c = n.firstChild; c; c = c.nextSibling) trTree(c);
+  }
+  function renderLangSeg() {
+    Array.prototype.forEach.call(document.querySelectorAll('#langSeg button'), function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-l') === LANG));
+    });
+  }
+  function setLang(l) {
+    LANG = (l === 'kn' || l === 'hi') ? l : 'en';
+    try { document.documentElement.setAttribute('lang', LANG); } catch (e) {}
+    render();
+    trTree(document.body);
+    renderLangSeg();
+    nativeSync();
+  }
+  function initI18n() {
+    LANG = (S.settings.lang === 'kn' || S.settings.lang === 'hi') ? S.settings.lang : 'en';
+    try { document.documentElement.setAttribute('lang', LANG); } catch (e) {}
+    if (typeof MutationObserver !== 'undefined' && document.body && document.body.nodeType === 1) {
+      new MutationObserver(function (muts) {
+        if (LANG === 'en') return;
+        muts.forEach(function (m) {
+          if (m.type === 'childList') { for (var i = 0; i < m.addedNodes.length; i++) trTree(m.addedNodes[i]); }
+          else if (m.type === 'characterData') trNode(m.target);
+          else if (m.type === 'attributes') trAttr(m.target, m.attributeName);
+        });
+      }).observe(document.body, { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: ATTRS });
+    }
+    trTree(document.body);
+    renderLangSeg();
+  }
+
+  /* First-time setup */
+  var ob = null;
+  var OB_OPTS = [
+    { n: 'Drink a glass of water', s: 'morning' }, { n: 'Stretch for 5 minutes', s: 'morning' },
+    { n: 'Get 10 minutes of daylight', s: 'morning' }, { n: 'Write your top three tasks', s: 'morning' },
+    { n: 'Take your vitamins', s: 'morning' }, { n: 'Brisk walk, 30 minutes', s: 'morning' },
+    { n: 'Eat a proper lunch', s: 'midday' }, { n: 'Walk for 10 minutes', s: 'midday' },
+    { n: 'Gentle yoga flow, 15 minutes', s: 'evening' }, { n: 'Read ten pages', s: 'evening' },
+    { n: 'Screens off 30 minutes before bed', s: 'evening' }, { n: 'Write down tomorrow’s first task', s: 'evening' }
+  ];
+  var OB_DEFAULT = ['Drink a glass of water', 'Stretch for 5 minutes', 'Get 10 minutes of daylight', 'Write your top three tasks', 'Eat a proper lunch', 'Walk for 10 minutes', 'Screens off 30 minutes before bed', 'Write down tomorrow’s first task'];
+  var PALS = [['sunrise', '#FF7A59', '#FFB84D', 'Sunrise'], ['ocean', '#3B9CFF', '#5EE0F0', 'Ocean'], ['forest', '#2FC48D', '#B4E25A', 'Forest'], ['blossom', '#FF6FA0', '#FFB37A', 'Blossom']];
+  function startOnboarding(rerun) {
+    var picks = {};
+    OB_OPTS.forEach(function (o) {
+      picks[o.n] = rerun ? S.routines.some(function (r) { return r.name === o.n; }) : OB_DEFAULT.indexOf(o.n) !== -1;
+    });
+    ob = { step: 0, rerun: !!rerun, name: rerun ? (S.settings.name || '') : '', lang: S.settings.lang || 'en', wake: S.settings.remind.morning, bed: S.settings.bed, palette: S.settings.palette || 'sunrise', picks: picks };
+    document.body.style.overflow = 'hidden';
+    renderOnboard();
+  }
+  function maybeOnboard() { if (!S.settings.onboarded) startOnboarding(false); }
+  function renderOnboard() {
+    var el = document.getElementById('onboard'), i;
+    if (!ob) { el.hidden = true; el.innerHTML = ''; return; }
+    el.hidden = false;
+    var h = '<div class="sheet-in ob"><div class="ob-dots" aria-hidden="true">';
+    for (i = 0; i < 4; i++) h += '<i class="' + (i === ob.step ? 'on' : '') + '"></i>';
+    h += '</div>';
+    if (ob.step === 0) {
+      h += '<div class="ob-sun" aria-hidden="true"></div><h1>Welcome to First light</h1><p class="intro">Let’s set up your day. It takes about a minute.</p>' +
+        '<label class="g-label" for="obName">What should we call you?</label>' +
+        '<input class="g-input" id="obName" type="text" maxlength="24" placeholder="Add your name" value="' + esc(ob.name) + '" autocomplete="off">' +
+        '<span class="g-label">Language</span><div class="seg flat">';
+      [['en', 'English'], ['kn', 'ಕನ್ನಡ'], ['hi', 'हिन्दी']].forEach(function (l) {
+        h += '<button type="button" data-a="obLang" data-l="' + l[0] + '" aria-pressed="' + (ob.lang === l[0]) + '">' + l[1] + '</button>';
+      });
+      h += '</div>';
+    } else if (ob.step === 1) {
+      h += '<h1>When does your day start and end?</h1><p class="intro">We use these for your reminders and wind-down.</p>' +
+        '<div class="c-row"><label class="c-label" for="obWake">Wake-up time</label><input class="time-input" type="time" id="obWake" value="' + esc(ob.wake) + '"></div>' +
+        '<div class="c-row"><label class="c-label" for="obBed">Bedtime</label><input class="time-input" type="time" id="obBed" value="' + esc(ob.bed) + '"></div>';
+    } else if (ob.step === 2) {
+      h += '<h1>Pick your starter routines</h1><p class="intro">You can change these any time.</p><ul class="list">';
+      OB_OPTS.forEach(function (o, ix) {
+        var on = !!ob.picks[o.n];
+        h += '<li class="row' + (on ? ' done' : '') + '"><button type="button" class="toggle" data-a="obPick" data-i="' + ix + '" role="checkbox" aria-checked="' + on + '"><span class="box">' + CHECK + '</span><span class="ico" aria-hidden="true">' + iconFor(o.n) + '</span><span class="name">' + esc(o.n) + '</span></button></li>';
+      });
+      h += '</ul>';
+    } else {
+      h += '<h1>Choose your look</h1><p class="intro">You’re all set. Your first sunrise is waiting.</p><div class="swatches big">';
+      PALS.forEach(function (p) {
+        h += '<button type="button" class="sw" data-a="obPal" data-p="' + p[0] + '" aria-label="' + p[3] + '" aria-pressed="' + (ob.palette === p[0]) + '" style="--s1:' + p[1] + ';--s2:' + p[2] + '"></button>';
+      });
+      h += '</div>';
+    }
+    h += '<div class="ob-nav">' + (ob.step > 0 ? '<button type="button" class="btn outline" data-a="obBack">Back</button>' : '<span></span>') +
+      '<button type="button" class="btn primary" data-a="obNext">' + (ob.step === 3 ? 'Let’s begin' : 'Next') + '</button></div></div>';
+    el.innerHTML = h;
+  }
+  function finishOnboard() {
+    S.settings.name = ob.name.trim();
+    S.settings.lang = ob.lang;
+    S.settings.remind.morning = ob.wake || '07:00';
+    S.settings.remind.last = { m: '', e: '' };
+    S.settings.bed = ob.bed || '22:30';
+    S.settings.palette = ob.palette;
+    var chosen = OB_OPTS.filter(function (o) { return ob.picks[o.n]; });
+    if (!ob.rerun) {
+      S.routines = chosen.map(function (o) { return { id: uid(), name: o.n, slot: o.s }; });
+    } else {
+      chosen.forEach(function (o) {
+        if (!S.routines.some(function (r) { return r.name === o.n; })) S.routines.push({ id: uid(), name: o.n, slot: o.s });
+      });
+    }
+    S.settings.onboarded = true;
+    save();
+    ob = null;
+    document.body.style.overflow = '';
+    document.getElementById('nameInput').value = S.settings.name;
+    document.getElementById('tMorning').value = S.settings.remind.morning;
+    document.getElementById('tBed').value = S.settings.bed;
+    renderOnboard();
+    applyPalette();
+    setLang(S.settings.lang);
+    window.scrollTo(0, 0);
+  }
+  document.addEventListener('input', function (e) {
+    if (!ob) return;
+    var id = e.target.id;
+    if (id === 'obName') ob.name = e.target.value;
+    else if (id === 'obWake') ob.wake = e.target.value;
+    else if (id === 'obBed') ob.bed = e.target.value;
+  });
+
+  /* Android bridge: schedules native daily notifications when running inside the Android app */
+  var lastNative = '';
+  function nativeSync() {
+    try {
+      if (!window.Android || !window.Android.scheduleReminders) return;
+      var r = S.settings.remind, bm = toMin(S.settings.bed) - 30;
+      if (bm < 0) bm += 1440;
+      var wind = pad(Math.floor(bm / 60)) + ':' + pad(bm % 60);
+      var payload = JSON.stringify({ on: !!r.on, items: [
+        { id: 1, hm: r.morning, title: tx('Good morning. Add your routine'), body: tx('Add a few routines to start your day.') },
+        { id: 2, hm: r.evening, title: tx('Evening check-in'), body: tx('Complete your routine') },
+        { id: 3, hm: wind, title: tx('Time to wind down'), body: tx('Screens down, lights low. Bedtime is at ' + fmt12(S.settings.bed) + '.') }
+      ] });
+      if (payload === lastNative) return;
+      lastNative = payload;
+      window.Android.scheduleReminders(payload);
+    } catch (e) {}
+  }
+
+  /* ---------- Theme ---------- */
+  function applyTheme() {
+    var t = S.settings.theme || 'auto', root = document.documentElement;
+    if (t === 'auto') root.removeAttribute('data-theme'); else root.setAttribute('data-theme', t);
+    Array.prototype.forEach.call(document.querySelectorAll('#themeSeg button'), function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-t') === t));
+    });
+  }
+
+  /* ---------- Example workouts ---------- */
+  var MOVES = [
+    { id: 'walk', title: 'Brisk walk', meta: '30 min \u00b7 4 to 5 days a week', slot: 'morning', routine: 'Brisk walk, 30 minutes',
+      body: 'Walk fast enough that you can talk but not sing. An easy place to start if you are new to exercise.', q: 'brisk walking workout 30 minutes beginners' },
+    { id: 'strength', title: 'Strength basics', meta: 'Squats, glute bridges, wall push-ups \u00b7 2 to 3 days a week', slot: 'midday', routine: 'Strength basics: squats, bridges, push-ups',
+      body: 'Do 2 to 3 sets of 10 to 12 reps of each, resting a minute between sets. Muscle helps your body use energy well. Go slow and keep your form clean.', q: 'PCOS strength workout at home beginners' },
+    { id: 'yoga', title: 'Gentle yoga flow', meta: 'Butterfly, cat-cow, child\u2019s pose, cobra \u00b7 15 to 20 min', slot: 'evening', routine: 'Gentle yoga flow, 15 minutes',
+      body: 'Hold each pose for about 5 slow breaths. Good for stress, stiff hips and a tired lower back.', q: 'yoga for PCOS PCOD beginners' },
+    { id: 'surya', title: 'Surya namaskar', meta: '5 to 10 rounds \u00b7 morning', slot: 'morning', routine: 'Surya namaskar, 5 rounds',
+      body: 'A full-body sequence that links movement with breath. Start with 3 to 5 rounds and add one a week.', q: 'surya namaskar step by step beginners' },
+    { id: 'intervals', title: 'Walk-run intervals', meta: '1 min fast, 2 min easy \u00b7 6 rounds', slot: 'morning', routine: 'Walk-run intervals, 6 rounds',
+      body: 'Short bursts of effort with easy recovery in between. Keep it light on low-energy days.', q: 'beginner interval walking workout' },
+    { id: 'cycle', title: 'Cycling or swimming', meta: '20 to 30 min \u00b7 2 to 3 days a week', slot: 'midday', routine: 'Cycling or swimming, 20 minutes',
+      body: 'Gentle on the joints and good for stamina. Keep a steady pace you could hold a conversation at.', q: 'beginner cycling workout indoor 20 minutes' },
+    { id: 'breath', title: 'Breathing practice', meta: 'Anulom vilom \u00b7 5 min', slot: 'evening', routine: 'Breathing practice, 5 minutes',
+      body: 'Slow alternate-nostril breathing to settle stress before bed. Sit tall and keep the breath soft.', q: 'anulom vilom pranayama beginners' }
+  ];
+  function buildMove() {
+    var html = '';
+    MOVES.forEach(function (x) {
+      html += '<details class="ex"><summary><span><span class="ex-title">' + esc(x.title) + '</span><span class="ex-meta">' + esc(x.meta) + '</span></span></summary>' +
+        '<div class="ex-body"><p>' + esc(x.body) + '</p><div class="ex-actions">' +
+        '<a class="btn primary" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/results?search_query=' + encodeURIComponent(x.q) + '">Watch videos</a>' +
+        '<button type="button" class="btn outline" data-a="addEx" data-id="' + x.id + '">Add to routine</button>' +
+        '</div></div></details>';
+    });
+    document.getElementById('moveList').innerHTML = html;
+  }
+  function updateExButtons() {
+    Array.prototype.forEach.call(document.querySelectorAll('[data-a="addEx"]'), function (btn) {
+      var ex = MOVES.filter(function (x) { return x.id === btn.getAttribute('data-id'); })[0];
+      var has = S.routines.some(function (r) { return r.name === ex.routine; });
+      btn.textContent = has ? 'In your routine' : 'Add to routine';
+      btn.disabled = has;
+    });
+  }
+  function addExercise(id) {
+    var ex = MOVES.filter(function (x) { return x.id === id; })[0];
+    if (!ex || S.routines.some(function (r) { return r.name === ex.routine; })) return;
+    S.routines.push({ id: uid(), name: ex.routine, slot: ex.slot });
+    save(); render();
+  }
+
+  function render(keepForm) {
+    var st = stats();
+    renderHeader(st);
+    renderQuote(st);
+    renderWeek();
+    if (!keepForm) renderLists(st);
+    renderCheckin(st);
+    renderStats();
+    renderGood();
+    renderHard();
+    renderFocus();
+    renderRecap();
+    renderWind();
+    renderLevel();
+    renderSpark();
+    renderBadges();
+    renderHealth();
+    renderReview();
+    renderOutfitSeg();
+    renderChart();
+    updateExButtons();
+    updateJoyButtons();
+    updateSoundBtn();
+  }
+
+  function uid() { return 'r' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
+
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-a]');
+    if (!b) return;
+    var a = b.getAttribute('data-a');
+    var d = dayOf(todayKey());
+    ensureAudio();
+    if (a === 'chart') { chartMode = b.getAttribute('data-m'); renderChart(); return; }
+    if (a === 'sound') { S.settings.sound = !S.settings.sound; save(); updateSoundBtn(); if (S.settings.sound) tick(); return; }
+    if (a === 'addEx') { addExercise(b.getAttribute('data-id')); return; }
+    if (a === 'closeCheer') { hideCheer(); return; }
+    if (a === 'edit') { editing = b.getAttribute('data-id'); adding = null; render(); return; }
+    if (a === 'cancelEdit') { editing = null; render(); return; }
+    if (a === 'undo') {
+      if (lastRemoved) {
+        S.routines.splice(Math.min(lastRemoved.i, S.routines.length), 0, lastRemoved.r);
+        if (lastRemoved.done && d.done.indexOf(lastRemoved.r.id) === -1) d.done.push(lastRemoved.r.id);
+        lastRemoved = null;
+        hideToast(); save(); render();
+      }
+      return;
+    }
+    if (a === 'breath') { if (breath.on) breathStop(); else breathStart(); return; }
+    if (a === 'addJoy') { addJoy(b.getAttribute('data-id')); return; }
+    if (a === 'hardDone') {
+      if (!d.hard || !d.hard.t.trim()) { document.getElementById('hardText').focus(); return; }
+      d.hard.done = !d.hard.done;
+      save(); renderHard(); renderRecap();
+      if (d.hard.done) { chime(); burst(); showCheer('Hard thing done ✨', pickWork()); }
+      return;
+    }
+    if (a === 'focus') { if (fx.on) focusFinish(false); else focusStart(); return; }
+    if (a === 'focusLen') { if (!fx.on) { fx.len = +b.getAttribute('data-n'); renderFocus(); } return; }
+    if (a === 'goalDel') {
+      var gdid = b.getAttribute('data-id');
+      S.goals = S.goals.filter(function (g) { return g.id !== gdid; });
+      save(); renderGoals(); return;
+    }
+    if (a === 'stepToggle') { toggleStep(b.getAttribute('data-g'), b.getAttribute('data-id')); return; }
+    if (a === 'stepDel') {
+      var sdg = b.getAttribute('data-g'), sdi = b.getAttribute('data-id');
+      S.goals.forEach(function (g) { if (g.id === sdg) g.steps = g.steps.filter(function (s) { return s.id !== sdi; }); });
+      save(); renderGoals(); return;
+    }
+    if (a === 'notif') { toggleReminders(); return; }
+    if (a === 'view') { setView(b.getAttribute('data-v')); return; }
+    if (a === 'palette') { S.settings.palette = b.getAttribute('data-p'); save(); applyPalette(); return; }
+    if (a === 'pet') { petTap(); return; }
+    if (a === 'gentle') {
+      d.gentle = !d.gentle;
+      save(); render();
+      if (d.gentle) { tick(); showCheer('Gentle day is on', 'Today counts at half the effort. Do what you can, and rest when you need to.'); }
+      return;
+    }
+    if (a === 'spark') { if (!d.spark) { d.spark = true; save(); renderSpark(); renderLevel(); chime(); } return; }
+    if (a === 'manage') { managing = true; pendingDel = null; document.body.style.overflow = 'hidden'; renderManage(); return; }
+    if (a === 'manageClose') { managing = false; document.body.style.overflow = ''; renderManage(); render(); return; }
+    if (a === 'mDay' || a === 'mSlot' || a === 'mUp' || a === 'mDown' || a === 'mArchive' || a === 'mRestore' || a === 'mDelete') { manageAction(a, b.getAttribute('data-id'), b); return; }
+    if (a === 'flow') { d.flow = +b.getAttribute('data-n'); save(); renderHealth(); return; }
+    if (a === 'energy') { var en = +b.getAttribute('data-n'); d.energy = (d.energy === en) ? 0 : en; save(); renderHealth(); return; }
+    if (a === 'sym') {
+      if (!d.sym) d.sym = [];
+      var sid = b.getAttribute('data-id'), six = d.sym.indexOf(sid);
+      if (six === -1) d.sym.push(sid); else d.sym.splice(six, 1);
+      save(); renderHealth(); return;
+    }
+    if (a === 'outfit') { S.settings.outfit = b.getAttribute('data-o'); save(); renderLevel(); renderOutfitSeg(); return; }
+    if (a === 'shareWeek') { shareWeek(); return; }
+    if (a === 'backup') { backupNow(); return; }
+    if (a === 'restoreOpen') { restoreOpen(); return; }
+    if (a === 'restoreGo') { restoreGo(); return; }
+    if (a === 'lang') { S.settings.lang = b.getAttribute('data-l'); save(); setLang(S.settings.lang); return; }
+    if (a === 'setupAgain') { startOnboarding(true); return; }
+    if (a === 'obLang') { ob.lang = b.getAttribute('data-l'); S.settings.lang = ob.lang; setLang(ob.lang); renderOnboard(); return; }
+    if (a === 'obPick') { var oo = OB_OPTS[+b.getAttribute('data-i')]; ob.picks[oo.n] = !ob.picks[oo.n]; renderOnboard(); return; }
+    if (a === 'obPal') { ob.palette = b.getAttribute('data-p'); S.settings.palette = ob.palette; applyPalette(); renderOnboard(); return; }
+    if (a === 'obNext') { if (ob.step < 3) { ob.step++; renderOnboard(); } else finishOnboard(); return; }
+    if (a === 'obBack') { if (ob.step > 0) { ob.step--; renderOnboard(); } return; }
+    if (a === 'amb') { var at = b.getAttribute('data-t'); if (at === 'off') ambStop(); else ambStart(at); return; }
+    if (a === 'ambLen') {
+      amb.mins = +b.getAttribute('data-n');
+      if (amb.type !== 'off') { clearTimeout(amb.timer); amb.timer = setTimeout(ambStop, amb.mins * 60000); }
+      renderAmb(); return;
+    }
+    if (a === 'windToggle') { toggleWind(b.getAttribute('data-id')); return; }
+    if (a === 'windBreathe') {
+      document.getElementById('breathBtn').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      if (!breath.on) breathStart();
+      return;
+    }
+    if (a === 'notifTest') { notify('First light', 'This is how your reminder will look.'); showCheer('Test reminder', 'This is how your reminder will look.'); return; }
+    if (a === 'wgoal') {
+      var wg = (S.settings.waterGoal || 8) + parseInt(b.getAttribute('data-n'), 10);
+      S.settings.waterGoal = Math.max(4, Math.min(16, wg));
+      applyWaterGoal(); save(); render(); return;
+    }
+    if (a === 'theme') { S.settings.theme = b.getAttribute('data-t'); save(); applyTheme(); return; }
+    var before = stats().pct;
+
+    if (a === 'toggle') {
+      var id = b.getAttribute('data-id'), ix = d.done.indexOf(id);
+      if (ix === -1) d.done.push(id); else d.done.splice(ix, 1);
+    } else if (a === 'remove') {
+      var rid = b.getAttribute('data-id');
+      var rix = -1, rr = null;
+      S.routines.forEach(function (r, i) { if (r.id === rid) { rix = i; rr = r; } });
+      if (rr) lastRemoved = { r: rr, i: rix, done: d.done.indexOf(rid) !== -1 };
+      S.routines = S.routines.filter(function (r) { return r.id !== rid; });
+      if (rr) showToast('Removed “' + rr.name + '”', 'Undo');
+    } else if (a === 'openAdd') {
+      adding = b.getAttribute('data-slot');
+      render(); return;
+    } else if (a === 'cancelAdd') {
+      adding = null; render(); return;
+    } else if (a === 'water') {
+      var n = +b.getAttribute('data-n');
+      d.water = (d.water === n) ? n - 1 : n;
+    } else if (a === 'sleep') {
+      var next = (d.sleep || 0) + parseFloat(b.getAttribute('data-n'));
+      d.sleep = Math.max(0, Math.min(14, next));
+    } else if (a === 'mood') {
+      var m = +b.getAttribute('data-n');
+      d.mood = d.mood === m ? 0 : m;
+    } else if (a === 'resetDay') {
+      d.done = []; d.water = 0; d.sleep = 0; d.mood = 0;
+    }
+    save(); render();
+    if (a === 'toggle' || a === 'resetDay') {
+      var after = stats().pct;
+      if (before < 100 && after === 100) { chime(); celebrate(); }
+      else if (after > before) { tick(); }
+      if (after < 100) hideCheer();
+    }
+  });
+
+  document.addEventListener('submit', function (e) {
+    var gf = e.target.closest('#goalForm');
+    if (gf) {
+      e.preventDefault();
+      var gt = document.getElementById('goalTitle').value.trim();
+      var gdue = document.getElementById('goalDue').value;
+      if (gt) {
+        S.goals.push({ id: uid(), title: gt, due: gdue || '', steps: [] });
+        save();
+        document.getElementById('goalTitle').value = '';
+        document.getElementById('goalDue').value = '';
+        renderGoals();
+      }
+      return;
+    }
+    var sf = e.target.closest('.step-add');
+    if (sf) {
+      e.preventDefault();
+      var stx = sf.querySelector('input').value.trim();
+      var sgid = sf.getAttribute('data-id');
+      if (stx) {
+        S.goals.forEach(function (g) { if (g.id === sgid) g.steps.push({ id: uid(), t: stx, done: false }); });
+        save();
+        renderGoals();
+        var again = document.querySelector('.step-add[data-id="' + sgid + '"] input');
+        if (again) again.focus();
+      }
+      return;
+    }
+    var ef = e.target.closest('.edit-form');
+    if (ef) {
+      e.preventDefault();
+      var nm2 = ef.querySelector('input').value.trim();
+      var eid = ef.getAttribute('data-id');
+      if (nm2) S.routines.forEach(function (r) { if (r.id === eid) r.name = nm2; });
+      editing = null; save(); render();
+      return;
+    }
+    var f = e.target.closest('.add-form');
+    if (!f) return;
+    e.preventDefault();
+    var input = f.querySelector('input');
+    var name = input.value.trim();
+    if (name) {
+      S.routines.push({ id: uid(), name: name, slot: f.getAttribute('data-slot') });
+      save();
+    }
+    adding = null;
+    render();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && (adding || editing)) { adding = null; editing = null; render(); }
+  });
+
+  // New day while the page stays open
+  function checkDay() {
+    if (todayKey() !== shownKey) { shownKey = todayKey(); adding = null; render(); }
+    else { renderHeader(stats()); }
+  }
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) checkDay(); });
+  setInterval(checkDay, 60000);
+
+  buildMove();
+  buildJoys();
+  document.addEventListener('input', function (e) {
+    var id = e.target.id, gd;
+    if (id === 'intent') { dayOf(todayKey()).intent = e.target.value; save(); }
+    else if (id === 'hardText') {
+      gd = dayOf(todayKey());
+      if (!gd.hard) gd.hard = { t: '', done: false };
+      gd.hard.t = e.target.value;
+      save();
+    }
+    else if (/^good[0-2]$/.test(id)) {
+      gd = dayOf(todayKey());
+      if (!gd.good) gd.good = ['', '', ''];
+      gd.good[+id.charAt(4)] = e.target.value;
+      save();
+    }
+  });
+  var nameInput = document.getElementById('nameInput');
+  nameInput.value = S.settings.name || '';
+  nameInput.addEventListener('input', function (e) {
+    S.settings.name = e.target.value.trim();
+    save();
+    renderHeader(stats());
+  });
+  applyTheme();
+  applyPalette();
+  applyWaterGoal();
+  initI18n();
+  renderGoals();
+  var tm = document.getElementById('tMorning'), te = document.getElementById('tEvening');
+  tm.value = S.settings.remind.morning; te.value = S.settings.remind.evening;
+  [tm, te].forEach(function (el) {
+    el.addEventListener('change', function (e) {
+      if (!e.target.value) return;
+      if (el === tm) S.settings.remind.morning = e.target.value; else S.settings.remind.evening = e.target.value;
+      S.settings.remind.last = { m: '', e: '' };
+      save();
+    });
+  });
+  updateNotifUI();
+  setView(S.settings.view || 'today');
+  document.getElementById('tBed').addEventListener('change', function (e) {
+    if (!e.target.value) return;
+    S.settings.bed = e.target.value;
+    if (S.settings.remind.last) S.settings.remind.last.w = '';
+    save(); renderWind();
+  });
+  setInterval(renderWind, 60000);
+  setInterval(checkReminders, 30000);
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) { focusTick(); checkReminders(); } });
+  render();
+  checkReminders();
+  maybeOnboard();
+  // let the sun rise on load
+  var first = document.getElementById('sun');
+  first.style.transition = 'none';
+  first.style.transform = 'translateY(100px)';
+  var skyEl = document.querySelector('.sky');
+  skyEl.style.transition = 'none';
+  skyEl.style.setProperty('--k', 0);
+  requestAnimationFrame(function () {
+    requestAnimationFrame(function () {
+      first.style.transition = '';
+      skyEl.style.transition = '';
+      renderHeader(stats());
+    });
+  });
+  save();
+})();
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () { navigator.serviceWorker.register('sw.js').catch(function () {}); });
+}
+</script>
+</body>
+</html>
