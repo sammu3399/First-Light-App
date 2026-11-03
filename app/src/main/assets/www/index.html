@@ -910,8 +910,13 @@
   if (!S.settings.palette) S.settings.palette = 'sunrise';
   if (!S.settings.lang) S.settings.lang = 'en';
   if (S.settings.onboarded === undefined) S.settings.onboarded = !!raw;
+  var DEFAULT_SUPABASE_URL = 'https://qsatbljdquqnaiacrgrf.supabase.co';
+  var DEFAULT_SUPABASE_KEY = 'sb_publishable_dZ1M-zVIPN1pDEKHgL8ziQ_INkfFoYB';
+
   if (!S.reviews || typeof S.reviews !== 'object') S.reviews = {};
-  if (!S.supabase || typeof S.supabase !== 'object') S.supabase = { url: '', anonKey: '' };
+  if (!S.supabase || typeof S.supabase !== 'object') S.supabase = { url: DEFAULT_SUPABASE_URL, anonKey: DEFAULT_SUPABASE_KEY };
+  S.supabase.url = DEFAULT_SUPABASE_URL;
+  S.supabase.anonKey = DEFAULT_SUPABASE_KEY;
   if (!S.krishna || typeof S.krishna !== 'object') S.krishna = { enabled: null, dismissedDates: [] }; // null = not asked yet, true = approved, false = declined
 
   var cloudSaveTimer = null;
@@ -3257,10 +3262,18 @@
   var authSheetOpen = false;
 
   function initSupabase() {
-    var url = (S.supabase && S.supabase.url) || '';
-    var key = (S.supabase && S.supabase.anonKey) || '';
-    if (url && key && window.supabase && window.supabase.createClient) {
-      try {
+    var url = (S.supabase && S.supabase.url) || DEFAULT_SUPABASE_URL;
+    var key = (S.supabase && S.supabase.anonKey) || DEFAULT_SUPABASE_KEY;
+
+    if (!window.supabase || !window.supabase.createClient) {
+      // If CDN script is still downloading, retry in 300ms
+      setTimeout(initSupabase, 300);
+      renderAccountBox();
+      return;
+    }
+
+    try {
+      if (!supabaseClient) {
         supabaseClient = window.supabase.createClient(url, key);
         supabaseClient.auth.getSession().then(function (res) {
           if (res && res.data && res.data.session) {
@@ -3278,6 +3291,15 @@
           authUser = session ? session.user : null;
           renderAccountBox();
           if (authUser && (evt === 'SIGNED_IN' || evt === 'TOKEN_REFRESHED')) {
+            pullCloudData();
+          }
+        });
+      }
+    } catch (err) {
+      supabaseClient = null;
+    }
+    renderAccountBox();
+  }
             pullCloudData();
           }
         });
@@ -3313,11 +3335,10 @@
         '<div class="actions"><button type="button" class="btn outline" data-a="syncCloud">Sync now</button>' +
         '<button type="button" class="btn quiet" data-a="signOut">Sign out</button></div></div>';
     } else {
-      if (st) st.textContent = 'Not signed in';
+      if (st) st.textContent = 'Cloud sync';
       box.innerHTML =
-        '<div class="c-row"><div class="c-label">Cloud account<span>Sign in to sync routines and logs</span></div>' +
-        '<div class="actions"><button type="button" class="btn primary" data-a="openAuth">Sign in / Sign up</button>' +
-        '<button type="button" class="btn quiet" data-a="openConfig">Keys</button></div></div>';
+        '<div class="c-row"><div class="c-label">Cloud account<span>Sign in or create account to sync routines</span></div>' +
+        '<div class="actions"><button type="button" class="btn primary" data-a="openAuth">Sign in / Sign up</button></div></div>';
     }
   }
 
@@ -3327,37 +3348,26 @@
     el.hidden = !authSheetOpen;
     if (!authSheetOpen) return;
 
-    var hasKeys = S.supabase && S.supabase.url && S.supabase.anonKey;
-    var showConfig = view === 'config' || !hasKeys;
-
     var html = '<div class="sheet-in">';
-    html += '<div class="sheet-head"><h2>' + (showConfig ? 'Supabase Settings' : (authMode === 'login' ? 'Sign in' : 'Create account')) + '</h2>';
+    html += '<div class="sheet-head"><h2>' + (authMode === 'login' ? 'Sign in' : 'Create account') + '</h2>';
     html += '<button type="button" class="btn primary" data-a="closeAuth">Done</button></div>';
 
-    if (showConfig) {
-      html += '<p class="intro">Enter your Supabase Project URL and public anon key to enable user registration, login, and cloud sync.</p>';
-      html += '<form id="supabaseConfigForm" class="auth-form" autocomplete="off">';
-      html += '<div class="auth-field"><label class="c-label" for="sbUrl">Project URL</label><input id="sbUrl" class="g-input" type="url" placeholder="https://xyzcompany.supabase.co" value="' + esc((S.supabase && S.supabase.url) || '') + '" required></div>';
-      html += '<div class="auth-field"><label class="c-label" for="sbKey">Anon API Key</label><input id="sbKey" class="g-input" type="text" placeholder="eyJhbGciOiJIUzI1NiIsInR5cCI6..." value="' + esc((S.supabase && S.supabase.anonKey) || '') + '" required></div>';
-      html += '<div class="auth-err" id="configErr"></div>';
-      html += '<div class="actions" style="margin-top:14px"><button type="submit" class="btn primary">Save & Connect</button>';
-      if (hasKeys) html += '<button type="button" class="btn outline" data-a="switchAuthView">Go to Sign in</button>';
-      html += '</div></form>';
-    } else {
-      html += '<div class="auth-tabs">';
-      html += '<button type="button" class="auth-tab' + (authMode === 'login' ? ' active' : '') + '" data-a="setAuthMode" data-m="login">Sign in</button>';
-      html += '<button type="button" class="auth-tab' + (authMode === 'signup' ? ' active' : '') + '" data-a="setAuthMode" data-m="signup">Sign up</button>';
-      html += '</div>';
+    html += '<div class="auth-tabs">';
+    html += '<button type="button" class="auth-tab' + (authMode === 'login' ? ' active' : '') + '" data-a="setAuthMode" data-m="login">Sign in</button>';
+    html += '<button type="button" class="auth-tab' + (authMode === 'signup' ? ' active' : '') + '" data-a="setAuthMode" data-m="signup">Sign up</button>';
+    html += '</div>';
 
-      html += '<form id="supabaseAuthForm" class="auth-form" autocomplete="off">';
-      html += '<div class="auth-field"><label class="c-label" for="authEmail">Email</label><input id="authEmail" class="g-input" type="email" placeholder="you@example.com" required></div>';
-      html += '<div class="auth-field"><label class="c-label" for="authPassword">Password</label><input id="authPassword" class="g-input" type="password" placeholder="At least 6 characters" minlength="6" required></div>';
-      html += '<div class="auth-err" id="authErr"></div>';
-      html += '<div class="actions" style="margin-top:14px">';
-      html += '<button type="submit" class="btn primary" id="authSubmitBtn">' + (authMode === 'login' ? 'Sign in' : 'Create account') + '</button>';
-      html += '<button type="button" class="btn quiet" data-a="openConfig">Change API Keys</button>';
-      html += '</div></form>';
-    }
+    html += '<form id="supabaseAuthForm" class="auth-form" autocomplete="off">';
+    html += '<div class="auth-field"><label class="c-label" for="authEmail">Email</label><input id="authEmail" class="g-input" type="email" placeholder="you@example.com" required></div>';
+    html += '<div class="auth-field"><label class="c-label" for="authPassword">Password</label><input id="authPassword" class="g-input" type="password" placeholder="At least 6 characters" minlength="6" required></div>';
+    html += '<div class="auth-err" id="authErr"></div>';
+    html += '<div class="actions" style="margin-top:14px">';
+    html += '<button type="submit" class="btn primary" id="authSubmitBtn">' + (authMode === 'login' ? 'Sign in' : 'Create account') + '</button>';
+    html += '</div></form>';
+
+    html += '</div>';
+    el.innerHTML = html;
+  }
 
     html += '</div>';
     el.innerHTML = html;
